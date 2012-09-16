@@ -3,7 +3,7 @@ layout: post
 title: "VC++使用C#的Dll"
 description: "VC++中使用C#的Dll, 即C#的类库."
 category: 
-tags: []
+tags: [VC++, C#Dll]
 ---
 {% include JB/setup %}
 
