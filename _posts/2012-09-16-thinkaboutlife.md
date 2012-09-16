@@ -15,7 +15,10 @@ markdown语法练习
 插入代码
 `select * from table`
 
-"![图片名](连接)"插入图片
+Insert Image    
+
+	![image name](link url)
+
 ![sudoku](/assets/image/posts/sudoku.jpg)
 
 # 一级标题
