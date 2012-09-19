@@ -7,10 +7,13 @@ tags: [FileBackup]
 ---
 {% include JB/setup %}
 
-## Defined of File Backup
+#### Defined of File Backup
 
-基本分为三种:
-* 全备份
-* 增量备份
-* 差异备份
-* A test code
+You can make it three type as below:
+* Full only
+* Incremental
+* Differential
+
+#### Reference
+[http://en.wikipedia.org/wiki/Backup](http://en.wikipedia.org/wiki/Backup)
+

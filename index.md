@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Matrix world
+tagline: 
 ---
 {% include JB/setup %}
 

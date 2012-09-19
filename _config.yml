@@ -9,8 +9,8 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : matrix207 blog
-tagline: Site Tagline
+title : Matrix207
+tagline: 
 author :
   name : Dennis
   email : dennis.cpp@gmail.com
