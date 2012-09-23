@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "MS Visual Studio自动化编译"
-description: ""
+title: "MS Visual Studio auto compile"
+description: "MS Visual Studio auto compile"
 category:
 tags: [Batch File, Auto Compile]
 ---
