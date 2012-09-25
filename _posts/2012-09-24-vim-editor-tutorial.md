@@ -10,10 +10,13 @@ A very good tutorial of vim skills improve:
 
 [10 Vim Tutorials to jumpstart your editor skills](http://www.thegeekstuff.com/2010/04/vim-editor-tutorial/)
 
-List my study footprints as below:
+List my study footprints as below:`strikeout line mean study finish`
 
-* Essential Vim editor navigation commands
-* Vim search and replace-12 powerful find and replace examples.
+* <del>Essential Vim editor navigation commands</del>
+* <del>Vim search and replace-12 powerful find and replace examples</del>
+  * Substitute only the whole word and not partial match `:s/\<his\>/her/`
+  * Substituting all lines with its line number `:%s/^/\=line(".") . ". "/g`
+  * `:4,$s/\d\+/\=submatch(0) + 1/`
 * How To add bookmarks inside the Vim editor
 * How To record and play inside the Vim editor
 * Correct spelling mistakes automatically inside the Vim Editor
