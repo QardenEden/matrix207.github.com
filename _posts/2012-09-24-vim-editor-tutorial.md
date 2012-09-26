@@ -23,10 +23,10 @@ List my study footprints as below:`strikeout line mean study finish`
   * `/i ?i * # n N`
   * `%`
 * <del>Vim search and replace-12 powerful find and replace examples</del>
-  * Substitute only the whole word and not partial match `:s/\<his\>/her/`
-  * Substituting all lines with its line number `:%s/^/\=line(".") . ". "/g`
-  * Resort numeric `:4,$s/\d\+/\=submatch(0) + 1/`
-  * Add backtick to the end of lines <code>:%s/$/`/g</code>
+  * `:s/\<his\>/her/` Substitute only the whole word and not partial match
+  * `:%s/^/\=line(".") . ". "/g` Substituting all lines with its line number
+  * `:4,$s/\d\+/\=submatch(0) + 1/` Resort numeric
+  * <code>:%s/$/`/g</code> Add backtick to the end of lines
 * <del>How To add bookmarks inside the Vim editor</del>
   * `:marks`
   * `mx`
