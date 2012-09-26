@@ -27,10 +27,18 @@ List my study footprints as below:`strikeout line mean study finish`
   * Substituting all lines with its line number `:%s/^/\=line(".") . ". "/g`
   * Resort numeric `:4,$s/\d\+/\=submatch(0) + 1/`
   * Add backtick to the end of lines <code>:%s/$/`/g</code>
-* How To add bookmarks inside the Vim editor
+* <del>How To add bookmarks inside the Vim editor</del>
+  * `:marks`
+  * `mx`
+  * `'x`
+  * <code>`x</code>
 * How To record and play inside the Vim editor
 * Correct spelling mistakes automatically inside the Vim Editor
-* Automatic word completion using Ctrl-X
+* <del>Automatic word completion using Ctrl-x</del>
+  * `C-x C-p` Word completion, backward
+  * `C-x C-n` Word completion, forward
+  * `C-x C-l` Line completion
+  * `C-x C-f` File name completion
 * Enable thesaurus option in the Vim editor
 * Vim autocommand magic. Add custom header to your files automatically.
 * Convert Vim editor to a beautiful source code browser.
