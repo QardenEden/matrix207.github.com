@@ -6,7 +6,7 @@ tags: [batch, svn, blat]
 ---
 {% include JB/setup %}
 
-###Clean visual studio project###
+###Monitor revision change of SVN repository###
 
 __pmt.bat__
 
