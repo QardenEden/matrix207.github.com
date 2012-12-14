@@ -6,30 +6,25 @@ tags: [batch, svn, blat]
 ---
 {% include JB/setup %}
 
-What is blat?  
+####What is blat?####  
 Blat is a Windows (32 & 64 bit) command line utility that sends eMail using SMTP or post to usenet using NNTP.  
 
 Home: [www.blat.net](www.blat.net)  
 syntax: [www.blat.net/syntax/syntax.html](www.blat.net/syntax/syntax.html)  
 ref: [how to send emails using blat](www.cybergav.in/2010/10/28/how-to-send-emails-using-blat/)  
 
-##Installation##  
+####Installation####  
 `blat -installSMTP smtp.gmail.com abc@gmail.com -u username -pw yourpasswd
 
-##Send mail## 
+####Send mail####  
 `blat -s "Test mail" -to test@gmail.com -f abc@gmail.com -body"test body"`
-Blat v3.0.7 (build : Jul 20 2012 01:24:19)
-32-bit Windows, Full, Unicode
-Sending stdin.txt to test@gmail.com
-Subject: Test mail
-Login name is abc@gmail.com
 
-##Send email with body from a file##  
+####Send email with body from a file####  
 `blat svn17400-17473.log -s "send mail by blat" -to chencr@uit.com.cn -f abc@gmail.com`
 
-##specify charset of body file##  
+####specify charset of body file####  
 `blat utf8.txt -s "send mail by blat" -to chencr@uit.com.cn -f abc@gmail.com -charset GBK`
 
-##Send attachment##  
+####Send attachment####  
 `blat -s "send mail by blat" -to chencr@uit.com.cn -f abc@gmail.com -body"test attach" -attach 1.txt`
 
