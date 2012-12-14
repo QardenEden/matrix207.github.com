@@ -8,6 +8,8 @@ tags: [batch, svn, blat]
 
 ###Clean visual studio project###
 
+__pmt.bat__
+
 	@echo off
 	::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	:: 功能: 监控SVN版本库项目,发现更新自动发送邮件通知 
@@ -50,7 +52,7 @@ tags: [batch, svn, blat]
 	echo Monitor %prj_count% project >> %app_log%
 	set /a last_rev=0
 
-	set "pmt_mail=chencr@uit.com.cn"
+	set "pmt_mail=example@gmail.com"
 	set "f=-f %pmt_mail%"
 	set "c=-charset GBK"
 	:_CHK_REV
@@ -113,4 +115,11 @@ tags: [batch, svn, blat]
 	REM :: Update revision
 	REM sed -i '/rev=/{s/\(rev=\)[0-9]\+/\1%2/}' %1
 	REM GOTO :EOF
+
+__example.conf__
+
+	name=example_project
+	url=http://172.168.1.122/repos/dev/example_project/trunk
+	rev=15793
+	mail=user@gmail.com,abc@yahoo.com,test@hotmail.com
 
