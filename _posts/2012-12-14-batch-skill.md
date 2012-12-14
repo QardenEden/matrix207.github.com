@@ -72,9 +72,9 @@ _运行效果:_
 		D:\work\project\tmp\CI\zd15_lcd\src\service\apprun.cfg
 		D:\work\project\tmp\CI\zd15_lcd\src\service\service.cfg  
 
-	方法二:(注意，该命令在批处理文件中运行)  
+方法二:(注意，该命令在批处理文件中运行)  
 	`for /f %%i in ('dir /s /b /a-d *.cfg') do @ECHO %%i`  
-	解决路径中出现空格  
+解决路径中出现空格  
 	`for /f “delims=*”%%i in ('dir /s /b /a-d *.cfg') do @ECHO %%`  
 
 
