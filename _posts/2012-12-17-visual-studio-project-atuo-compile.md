@@ -21,7 +21,7 @@ __svn_co.bat__
 
 	@ECHO off&SETlocal enabledelayedexpansion 
 
-	REM Useage: script_svn.bat svn_src_url out_path revision log_file
+	REM Useage: svn_co.bat svn_src_url out_path revision log_file
 
 	SET func="check out project"
 
@@ -56,7 +56,7 @@ __compile.bat__
 
 	@ECHO off
 
-	REM Useage: script_compile.bat solution_file
+	REM Useage: compile.bat solution_file
 
 	SET sln_file=%1
 	SET cfg_build="Release|Win32"
