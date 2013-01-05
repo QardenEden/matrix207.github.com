@@ -8,9 +8,21 @@ tags: [linux, shell]
 
 ####shell终端命令技巧  
 
-* `!!` 上一个命令, 常用于su或sudo执行上一次命令，如`su !!`，相当于`su !-1`  
-  其实就是history显示的命令的倒数第一个，类似的到!-2为倒数第二个  
+* `!!` 上一个命令, 常用于su或sudo执行上一次命令，如`su !!`  
+  相当于`su !-1`,其实就是history显示的命令的倒数第一个，类似的!-2为倒数第二个  
   同类型的技巧: `!^`上一个命令的第一个参数(同`!:1`,其他参数类推)，`!$`最后一个参数
+
+* `C-A/E` 跳到命令头/尾  
+  `C-U/K` 截取命令字串至头/尾  
+  `C-P/N` 前/后一个命令  
+  `C-R`	  历史命令  
+  `C--`   缩小  
+  `C-L`	  清屏,同`clear`  
+  `C-C`	  取消  
+  `C-&`	  撤销  
+  `C-T`	  交换  
+  `C-Y`   粘贴  
+  `C-W`   删除一个词  
 
 * `cd -`切回上次目录  
   `cd` 回到用户目录
@@ -28,25 +40,97 @@ tags: [linux, shell]
   挂载iso文件  
   `mount --bind /root/project/myprj /root/x86_64_build/source` 
   一个目录挂载到另外一个目录, 交叉编译的时候省掉文件拷贝  
+  `mount -t tmpfs -o size=1024m tmpfs /mnt/ram` 
+  映射内存(高速IO操作,磁盘空间不足利用内存)
 
 * `tar xvf example.tar.gz -C /root/test` 解压缩文件到指定目录
 
 * `getconf LONG-BIT`           查看系统位数  
   `grep -c "lm" /proc/cpuinfo` 查看cpu位数  
 
-* `Ctrl+L`清屏, 等价与`clear`
+* `df   fdisk -l  du -sh    du -s * |sort -n |tail`
+* `free   bg   kill pid    killall proc    chmod 777 (r:4,w:2,x:1)(user,group,all)`
+
+* `find / -name "***"`  
+  `find path \( -name "*.h" -or -name "*.c" \) -exec grep -in "***" {} \;`
+* `grep -r --include "*.h" "date" path`
+
+####awk and sed  
+* awk  
+  `awk FS'' 'condition1{operator1}condition2{operator2}...' filename`  
+  NR:number row, NF:number field  
+  `awk 'NR==1{print $0}'`  
+  `arr=($(awk -F'#' '{print $1,$2,$3,$4}' $conf_file))`  
+  `ps aux | awk 'NR==1{print $0}$3>10{print $0}'`  
+
+* sed  
+  `sed [options] 'command' file(s)`  
+  `sed [options] -f scriptfile file(s)`  
+  `sed -i '/'$prj'/{s/\(.*#.*#\)[0-9]\+/\1'$rev_new'/}' $conf_file`  
+
+* `history|awk '{print $3}'|awk 'begin {FS="1"} {print $1}'|sort|uniq -c|sort -rn|head -10`
+* `ps aux | sort -nk +4 | tail`
+* `uname -a`
+* `rpm -qf /usr/bin/cp`
+* `mkdir -p`
+
+
+####VIM  
+	v|c|d  i|a  {|[\(|"|'  
+	qq operator q   100@q  
+	:Tlist    C-WW  
+	ctags -R   :set tags=..../tags     C-[, C-T  
+	cscope -Rb :cs add .../cscope.out :cs find g *** :cs find c ***  
+	:cw  
+	C-X C-P/N/L  
+
+####git and svn  
+* git  
+  `git clone url`
+  `git add .`  添加当前需该的文件到暂存区  
+  `git commit -m` “注释”提交修改的注释  
+  `git push origin master` 提交修改到服务器  
+  `git status` 查看文件状态  
+  `git rm ***` 移除文件  
+  `git rm -r ***` 移除目录  
+  `git pull` 更新文件,类似于 svn update  
+  `git mv *** ###` 重命名  
+
+* svn  
+  `svn list url`  
+  `svn co url`  
+  `svn status`  
+  `svn info url`  
+  `svn log -r ***:****`  
+  `svn commit -m "***"`  
+  `svn add ***`  
+
+####network  
 * `python -m SimpleHTTPServer` 快速共享当前目录方式
 * `ssh root@172.168.1.101` ssh登陆远程主机  
 * `scp abc.sh root@172.168.1.101:/root/test` 上传文件  
   `scp root@172.168.1.101:/root/test/abc.sh /root/mytest` 下载文件
-* `mount -t tmpfs -o size=1024m tmpfs /mnt/ram` 映射内存(高速IO操作,磁盘空间不足利用内存)
+* `nmap ip`     
+  `nmap -v -sn 192.168.1.1/24` 
+* `curl ifconfig.me`
+* `dig domain`   `dig -x host`
 
-#### TODO
-* find
-* grep
-* awk
-* sed
-* dd
+####other  
+* patch  
+  `diff a.c b.c > c.patch`  
+  `patch a.c c.patch`  
+
+* `vmstat iostat ifstat nload top hexdump od`
+
+* `dd if=/dev/zero of=$test_file bs=1M count=$dev_size 2>> $log`
+
+* `> file.txt`
+* `man ascii`
+* `watch -n 5 command`
+* `chroot .`
+
+* `date "+%F %R:%S"`       
+  `date "+%s"`
 
 #### 参考链接
 [你可能不知道的Shell](http://coolshell.cn/articles/8619.html)
