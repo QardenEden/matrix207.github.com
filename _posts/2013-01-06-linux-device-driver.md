@@ -9,7 +9,7 @@ tags: []
 
 
 
-####Linux驱动开发学习的一些必要步骤  
+####\[转载\]Linux驱动开发学习的一些必要步骤  
 
 
 1. 学会写简单的makefile
@@ -42,5 +42,5 @@ tags: []
 
 最简单的方法，跟着ldd（Linux devive driver）做一遍
 
-
+来源:  
 [http://linux.chinaitlab.com/driver/745132.html](http://linux.chinaitlab.com/driver/745132.html)
