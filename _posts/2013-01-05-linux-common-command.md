@@ -44,6 +44,7 @@ tags: [linux, shell]
   映射内存(高速IO操作,磁盘空间不足利用内存)
 
 * `tar xvf example.tar.gz -C /root/test` 解压缩文件到指定目录
+  `tar tvf example.tar.gz` 查看压缩包文件
 
 * `getconf LONG-BIT`           查看系统位数  
   `grep -c "lm" /proc/cpuinfo` 查看cpu位数  
@@ -86,15 +87,15 @@ tags: [linux, shell]
 
 ####git and svn  
 * git  
-  `git clone url`
-  `git add .`  添加当前需该的文件到暂存区  
-  `git commit -m` “注释”提交修改的注释  
-  `git push origin master` 提交修改到服务器  
-  `git status` 查看文件状态  
-  `git rm ***` 移除文件  
-  `git rm -r ***` 移除目录  
-  `git pull` 更新文件,类似于 svn update  
-  `git mv *** ###` 重命名  
+  `git clone url`  
+  `git add .`  
+  `git commit -m "***"`  
+  `git push origin master`  
+  `git status`  
+  `git rm ***`	remove file  
+  `git rm -r ***` remove directory  
+  `git pull`  
+  `git mv *** ###`  
 
 * svn  
   `svn list url`  
@@ -106,10 +107,10 @@ tags: [linux, shell]
   `svn add ***`  
 
 ####network  
-* `python -m SimpleHTTPServer` 快速共享当前目录方式
-* `ssh root@172.168.1.101` ssh登陆远程主机  
-* `scp abc.sh root@172.168.1.101:/root/test` 上传文件  
-  `scp root@172.168.1.101:/root/test/abc.sh /root/mytest` 下载文件
+* `python -m SimpleHTTPServer`  
+* `ssh root@172.168.1.101`  
+* `scp abc.sh root@172.168.1.101:/root/test` upload file  
+  `scp root@172.168.1.101:/root/test/abc.sh /root/mytest` download file  
 * `nmap ip`     
   `nmap -v -sn 192.168.1.1/24` 
 * `curl ifconfig.me`
