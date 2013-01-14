@@ -55,6 +55,14 @@ tags: [linux, shell]
 * `find / -name "***"`  
   `find path \( -name "*.h" -or -name "*.c" \) -exec grep -in "***" {} \;`
 * `grep -r --include "*.h" "date" path`
+* `cut -d"" -f1`  
+	e.g:  
+	`[root@localhost ~]# sensors |grep "Core "`  
+	Core 0:       +30.0°C  (high = +76.0°C, crit = +100.0°C)  
+	Core 1:       +37.0°C  (high = +76.0°C, crit = +100.0°C)  
+	`[root@localhost ~]# sensors |grep "Core " |cut -d"+" -f2 |cut -d" " -f1`  
+	30.0°C  
+	37.0°C  
 
 ####awk and sed  
 * awk  
@@ -72,7 +80,8 @@ tags: [linux, shell]
 * `history|awk '{print $3}'|awk 'begin {FS="1"} {print $1}'|sort|uniq -c|sort -rn|head -10`
 * `ps aux | sort -nk +4 | tail`
 * `uname -a`
-* `rpm -qf /usr/bin/cp`
+* `rpm -qf /usr/bin/cp`  
+  `rpm -ivp ***.rpm`  
 * `mkdir -p`
 
 
