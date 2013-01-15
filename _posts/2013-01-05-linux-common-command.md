@@ -118,6 +118,7 @@ tags: [linux, shell]
 ####network  
 * `python -m SimpleHTTPServer`  
 * `ssh root@172.168.1.101`  
+* `ssh -f -NC -D7070 user@shell.cjb.net` ssh tunnel 
 * `scp abc.sh root@172.168.1.101:/root/test` upload file  
   `scp root@172.168.1.101:/root/test/abc.sh /root/mytest` download file  
 * `nmap ip`     
