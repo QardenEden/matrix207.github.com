@@ -7,6 +7,26 @@ tags: [Linux]
 ---
 {% include JB/setup %}
 
+更新历史:
+<table class="table">
+   <tr>
+      <td>日期</td>
+      <td>版本</td>
+      <td>详细</td>
+   </tr>
+   <tr>
+      <td>2013-01-16</td>
+      <td>1.0</td>
+      <td>第一版</td>
+   </tr>
+   <tr>
+      <td>2013-01-19</td>
+      <td>1.1</td>
+      <td>加入前序,排版,增加项目</td>
+   </tr>
+</table>
+
+
 约在04年左右开始接触Linux，印象中使用的应该是国内的红旗;
 但后续的日子，基本上没有再接触了. 直到在上海工作，闲来无事，在网上写了个地址，然
 后收到张A国寄来的Ubuntu光盘，就又重新接触了，大约是08年吧；之后有使用过Fedora，
@@ -39,32 +59,7 @@ tags: [Linux]
 
 * 下载: 一般直接浏览器下载, 其他wget
 
+* 墙外: ssh + shell account + firefox autoproxy
+
 * 其他:  系统监测-Conky
 
-下面是个表格测试:  
-<table class="table">
-   <tr>
-      <td>序号</td>
-      <td>语言</td>
-      <td>系统</td>
-      <td>Other</td>
-   </tr>
-   <tr>
-      <td>1</td>
-      <td>C</td>
-      <td>Linux</td>
-      <td>abc</td>
-   </tr>
-   <tr>
-      <td>2</td>
-      <td>Lisp</td>
-      <td>Unix</td>
-      <td>amazing</td>
-   </tr>
-   <tr>
-      <td>3</td>
-      <td>C++</td>
-      <td>Windows</td>
-      <td>Low</td>
-   </tr>
-</table>
