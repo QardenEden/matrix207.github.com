@@ -3,15 +3,13 @@ layout: post
 title: "write blog on github"
 description: ""
 category: 
-tags: []
+tags: [github,git,jekyll]
 ---
 {% include JB/setup %}
 
 
- * 在github创建blog日志
- * Dennis
- * 2012-9-9
-
+##2012年9月9日  
+	在github创建blog日志
 ###下载模版上传
 	1.git clone https://github.com/plusjade/jekyll-bootstrap.git matrix207.github.com
 	2.cd matrix207.github.com/
@@ -113,6 +111,8 @@ Markdown中的转义字符为\
 	确认配置是否成功:
 	git config user.name
 	git config user.email
+	也可以直接编辑文件:
+	$ cat ~/.gitconfig
 	
 ###2012年12月14日
 	环境windows xp，git
