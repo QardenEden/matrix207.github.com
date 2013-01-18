@@ -54,6 +54,7 @@ tags: [linux, shell]
 
 * `find / -name "***"`  
   `find path \( -name "*.h" -or -name "*.c" \) -exec grep -in "***" {} \;`
+  `find / -type d -name "gedit"` 查找目录
 * `grep -r --include "*.h" "date" path`
 * `cut -d"" -f1`  
 	e.g:  
