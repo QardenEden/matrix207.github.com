@@ -9,11 +9,14 @@ tags: [lisp]
 
 *学习资料*:
 
-+ [ANSI Common Lisp 中文翻譯版](http://acl.readthedocs.org/en/latest/) (重点学习书籍)
++ [ANSI Common Lisp 中文翻譯版](http://acl.readthedocs.org/en/latest/) 
+	(重点学习书籍)
 
 + [lisp work](http://www.lispworks.com/success-stories/index.html)
+	(Lisp成功案例)
 
-+ [gcl-GNU Common Lisp](http://www.gnu.org/software/gcl/gcl.html) (编译器)
++ [gcl-GNU Common Lisp](http://www.gnu.org/software/gcl/gcl.html) 
+	(编译器)
 
 + [推动Common Lisp的实际应用](http://www.douban.com/group/topic/26704799/)
 
@@ -21,5 +24,47 @@ tags: [lisp]
 
 + [Lisp的永恒之道](http://coolshell.cn/articles/7526.html)
 
-+ [实用Common Lisp编程](http://book.douban.com/subject/6859720/) (书籍)
++ [实用Common Lisp编程](http://book.douban.com/subject/6859720/) 
+	(书籍)
 
++ [你是如何成为 Lisp 程序员的](http://www.cnblogs.com/xuliu/archive/2010/08/20/1804900.html)
+
++ [How can I simply “run” lisp files](http://stackoverflow.com/questions/2992925/how-can-i-simply-run-lisp-files)
+
++ [小议common lisp程序开发流程](http://www.flatws.cn/article/program/python/2011-04-18/21091.html)
+
++ [Google Common Lisp Style Guide](http://google-styleguide.googlecode.com/svn/trunk/lispguide.xml) 
+	(google Common Lisp编程规范)
+
++ [Paradigms of AI Programming Source Code](http://www.norvig.com/paip/README.html)
+
++ [lisp compiler/interpreter](http://www-2.cs.cmu.edu/Groups/AI/html/faqs/lang/lisp/part4/faq-doc-1.html) 
+	  (lisp 编译器/解析器)
+
++ [All Common Lisp Implementations](http://tianchunbinghe.blog.163.com/blog/static/700120089175316746/)
+	(13 种 Common Lisp 实现，其中 7 个是开源的，6 个是商业实现)
+
++ [走进Lisp的世界——兼谈Emacs下Lisp的开发环境（上](http://cnlox.is-programmer.com/posts/34114.html#fn.11)
+
++ [Knight Rush——关于编程语言学习的一些思考](http://cnlox.is-programmer.com/categories/7113/posts#fn.4)
+	(这篇文章主要不是讲Lisp的，但值得一读，可借鉴于未来的博文写法)
+
++ [中国lisp hacker冰河的lisp文章](http://tianchunbinghe.blog.163.com/blog/#m=0&t=1&c=fks_081066084087083095083086086066)
+
++ 洪峰何许人也，说白了GNU唯一认可的中国（可能现在该说华裔了）“HACKER” [来源](http://tieba.baidu.com/p/883892221)
+
++ [至今听到关于 Lisp 最迷人的故事](http://article.yeeyan.org/view/legendsland/209584)
+
+> 在 ILC 2002 大会上前Lisp大神，当今的Python倡导者Peter Norvig，由于某些原因，做一个类似于马丁路德在梵蒂冈宣扬新教的主题演讲，因为他在演讲中大胆地声称Python就是一种Lisp。
+> 
+> 讲完后进入提问环节，出乎我意料的是，Peter点了我过道另一侧，靠上面几排座位的一个老头，他衣着皱褶，在演讲刚开始的时候踱步进来，然后就靠在了那个座位上面。
+> 
+> 这老头满头凌乱的白发，邋遢的白胡须，像是从旅行团中落下的游客，已经完全迷路了，闲逛到这里来歇歇脚，随便看看我们都在这里干什么。我的第一个念头是，他会因为我们的奇怪的话题感到相当失望；接着，我意识到这位老头的年纪，想到斯坦福就在附近，而且我想那人也在斯坦福 —— 难道他是……
+> 
+> “嗨，John，有什么问题？” Peter说。
+> 
+> 虽然这只是10个字左右的问题，我不会假装自己记住了Lisp之父约翰麦卡锡说的每一个字。他在问Python程序能不能像处理数据一样，优雅地处理Python代码。
+> 
+> “不行。John, Python做不到。” Peter就回答了这一句，然后静静地等待，准备接受教授的质疑，但老人没有再说什么了。此时，无语已胜千言
+
++ [用 Emacs Lisp 开发 CGI 程序](http://www.oschina.net/code/snippet_58387_13359)
