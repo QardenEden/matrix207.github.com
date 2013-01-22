@@ -39,7 +39,7 @@ tags: [lisp]
 + [Paradigms of AI Programming Source Code](http://www.norvig.com/paip/README.html)
 
 + [lisp compiler/interpreter](http://www-2.cs.cmu.edu/Groups/AI/html/faqs/lang/lisp/part4/faq-doc-1.html) 
-	  (lisp 编译器/解析器)
+	  (lisp 编译器/解释器)
 
 + [All Common Lisp Implementations](http://tianchunbinghe.blog.163.com/blog/static/700120089175316746/)
 	(13 种 Common Lisp 实现，其中 7 个是开源的，6 个是商业实现)
@@ -68,3 +68,14 @@ tags: [lisp]
 > “不行。John, Python做不到。” Peter就回答了这一句，然后静静地等待，准备接受教授的质疑，但老人没有再说什么了。此时，无语已胜千言
 
 + [用 Emacs Lisp 开发 CGI 程序](http://www.oschina.net/code/snippet_58387_13359)
+
++ [Ubuntu下搭建Emacs+SLIME+Lisp环境](http://www.googies.info/blog/374.html)
+
++ [Common Lisp Implementations](http://common-lisp.net/~dlw/LispSurvey.html)
+	(各种CommonLisp的实现---编译器、解释器)
+
++ [Lisp 中文社区维基](http://lisp.org.cn/)
+
++ [SLIME: The Superior Lisp Interaction Mode for Emacs](http://common-lisp.net/project/slime/)
+
++ [google lisp中文用户组](https://groups.google.com/forum/?fromgroups=#!forum/lisp-cn)
