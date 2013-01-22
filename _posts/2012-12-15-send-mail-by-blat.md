@@ -14,7 +14,7 @@ syntax: [www.blat.net/syntax/syntax.html](www.blat.net/syntax/syntax.html)
 ref: [how to send emails using blat](www.cybergav.in/2010/10/28/how-to-send-emails-using-blat/)  
 
 ####Installation####  
-`blat -installSMTP smtp.gmail.com abc@gmail.com -u username -pw yourpasswd
+`blat -installSMTP smtp.gmail.com abc@gmail.com -u username -pw yourpasswd`
 
 ####Send mail####  
 `blat -s "blat mail" -to test@gmail.com -f abc@gmail.com -body"test body"`
