@@ -3,9 +3,11 @@ layout: post
 title: "my book list"
 description: ""
 category: 
-tags: []
+tags: [book]
 ---
 {% include JB/setup %}
+
++ ___实用Common Lisp编程___(购买中)
 
 + ___Unix编程艺术___(已读,需再读)
 
