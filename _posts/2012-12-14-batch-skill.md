@@ -58,11 +58,14 @@ tags: [batch]
 		pause
 
 6.__罗列当前和子目录所有 cfg 文件__  
+
 	for /r 参数 遍历搜索  
 	格式：`FOR /R [[drive:]path] %%variable IN (set) DO command [command-parameters]`  
+
 	举例:  
 	命令:(注意，该命令在 dos 窗口运行)  
 		`D:\work\project\tmp\CI>for /r %i in (*.cfg) do @echo %i`  
+
 	输出:  
 
 		D:\work\project\tmp\CI\ci_cfg\ci_scm_trunk.cfg
@@ -72,9 +75,10 @@ tags: [batch]
 		D:\work\project\tmp\CI\zd15_lcd\src\service\apprun.cfg
 		D:\work\project\tmp\CI\zd15_lcd\src\service\service.cfg  
 
-方法二:(注意，该命令在批处理文件中运行)  
-	`for /f %%i in ('dir /s /b /a-d *.cfg') do @ECHO %%i`  
-解决路径中出现空格  
-	`for /f “delims=*”%%i in ('dir /s /b /a-d *.cfg') do @ECHO %%`  
+	方法二:(注意，该命令在批处理文件中运行)  
+		`for /f %%i in ('dir /s /b /a-d *.cfg') do @ECHO %%i`  
+	
+	解决路径中出现空格  
+		`for /f “delims=*”%%i in ('dir /s /b /a-d *.cfg') do @ECHO %%`  
 
 
