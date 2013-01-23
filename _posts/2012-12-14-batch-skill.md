@@ -24,38 +24,38 @@ tags: [batch]
 
 4.__计算运行时间__  
 
-	@ECHO off&setlocal enabledelayedexpansion
-	CALL :TIME_START
-	REM 修改这里的 ping 为你需要写的代码
-	ping 127.1 -n 2 >nul
-	CALL :TIME_END
-	PAUSE&exit /B 0
-	:TIME_START
-	SET /a time_s=%time:~6,2%
-	SET /a time_m=%time:~3,2%
-	@ECHO Start  time: %time%
-	GOTO :EOF
-	:TIME_END
-	@ECHO End  time: %time%
-	SET /a diff_m=%time:~3,2%-%time_m%
-	SET /a diff_s=%time:~6,2%-%time_s%
-	SET /a total="%diff_m%"*60+"%diff_s%"
-	@ECHO Elapsed time: %total% sec
-	GOTO :EOF
+		@ECHO off&setlocal enabledelayedexpansion
+		CALL :TIME_START
+		REM 修改这里的 ping 为你需要写的代码
+		ping 127.1 -n 2 >nul
+		CALL :TIME_END
+		PAUSE&exit /B 0
+		:TIME_START
+		SET /a time_s=%time:~6,2%
+		SET /a time_m=%time:~3,2%
+		@ECHO Start  time: %time%
+		GOTO :EOF
+		:TIME_END
+		@ECHO End  time: %time%
+		SET /a diff_m=%time:~3,2%-%time_m%
+		SET /a diff_s=%time:~6,2%-%time_s%
+		SET /a total="%diff_m%"*60+"%diff_s%"
+		@ECHO Elapsed time: %total% sec
+		GOTO :EOF
 
-_运行效果:_  
+	_运行效果:_  
 
-	D:\work\project\tmp>test.bat
-	Start  time: 13:52:00.43
-	End  time: 13:52:01.48
-	Elapsed time: 1 sec
-	请按任意键继续. . .
+		D:\work\project\tmp>test.bat
+		Start  time: 13:52:00.43
+		End  time: 13:52:01.48
+		Elapsed time: 1 sec
+		请按任意键继续. . .
 
 5.__罗列当前目录所有 txt 文件__  
 
-	@echo off
-	for %%i in (*.txt) do echo "%%i"
-	pause
+		@echo off
+		for %%i in (*.txt) do echo "%%i"
+		pause
 
 6.__罗列当前和子目录所有 cfg 文件__  
 	for /r 参数 遍历搜索  
