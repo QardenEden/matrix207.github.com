@@ -26,12 +26,11 @@ List my study footprints as below:`strikeout line mean study finish`
   * `:s/\<his\>/her/` Substitute only the whole word and not partial match
   * `:%s/^/\=line(".") . ". "/g` Substituting all lines with its line number
   * `:4,$s/\d\+/\=submatch(0) + 1/` Resort numeric
-  * <code>:%s/$/`/g</code> Add backtick to the end of lines
+  * ``:%s/$/`/g`` Add backtick to the end of lines
 * <del>How To add bookmarks inside the Vim editor</del>
   * `:marks`
   * `mx`
-  * `'x`
-  * <code>`x</code>
+  * `` `x ``
 * How To record and play inside the Vim editor
 * Correct spelling mistakes automatically inside the Vim Editor
 * <del>Automatic word completion using Ctrl-x</del>
