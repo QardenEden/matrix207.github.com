@@ -55,7 +55,8 @@ tags: [linux, shell]
 * `find / -name "***"`  
   `find path \( -name "*.h" -or -name "*.c" \) -exec grep -in "***" {} \;`
   `find / -type d -name "gedit"` 查找目录
-* `grep -r --include "*.h" "date" path`
+* `grep -r "abc" /root/source`  
+  `grep -r --include "*.h" "date" path`  
 * `cut -d"" -f1`  
 	e.g:  
 	`[root@localhost ~]# sensors |grep "Core "`  
@@ -143,6 +144,8 @@ tags: [linux, shell]
 
 * `date "+%F %R:%S"`       
   `date "+%s"`
+
+* `ldd file` print shared library dependencies
 
 #### 参考链接
 [你可能不知道的Shell](http://coolshell.cn/articles/8619.html)
