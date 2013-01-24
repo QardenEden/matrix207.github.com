@@ -13,3 +13,24 @@ tags: [Emacs, org mode]
 + [组织你的意念：Emacs org mode](http://i.linuxtoy.org/docs/guide/ch32.html)
 + [神器中的神器org-mode之入门篇](http://www.cnblogs.com/qlwy/archive/2012/06/15/2551034.html)
 
+-----
+
+___解决导出pdf无法显示中文问题___  
+
++  _安装xetex_  
+	`yum install texlive-xetex-bin.x86_64`
+
++  _安装其他缺少的包_  
+	`yum install texlive-xetex-def`  
+	`yum install texlive-xltxtra`
+
++  _问题_: LaTeX Error: Encoding scheme EU1 unknown.  
+	解决: 使用yum安装yum install 'tex(eu1enc.def)'，ok问题解决，可以生成中文pdf了.  
+	参考: [fedora 17 ctex 中文](http://hi.baidu.com/coco_zhao/item/0ceb6ff40885ca68922af276)
+
+参考文章:   
++ [配置Emacs org-mode利用latex生成pdf文件](http://www.cnblogs.com/visayafan/archive/2012/06/16/2552023.html)
++ [LaTeX Export In Emacs Org-Mode](http://tangboyun.ixiezi.com/index.php/2011/05/latex-export-in-emacs-org-mode/)
+
+-----
+
