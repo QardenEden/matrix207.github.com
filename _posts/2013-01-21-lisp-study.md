@@ -79,3 +79,5 @@ tags: [lisp]
 + [SLIME: The Superior Lisp Interaction Mode for Emacs](http://common-lisp.net/project/slime/)
 
 + [google lisp中文用户组](https://groups.google.com/forum/?fromgroups=#!forum/lisp-cn)
+
++ [Lisp文章汇总](http://floss.zoomquiet.org/item20051011211537-frameset.html)
