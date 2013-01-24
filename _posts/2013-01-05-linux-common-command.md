@@ -160,3 +160,4 @@ tags: [linux, shell, git, svn, vim]
 + [你可能不知道的Shell](http://coolshell.cn/articles/8619.html)
 + [高效操作Bash](http://ahei.info/bash.htm)
 + [Bash readline 使用技巧](http://docs.huihoo.com/homepage/shredderyin/readline.html)
++ [Shell大杂烩](http://floss.zoomquiet.org/item20051011211622-frameset.html)
