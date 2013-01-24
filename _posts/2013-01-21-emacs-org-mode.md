@@ -22,10 +22,12 @@ ___解决导出pdf无法显示中文问题___
 
 +  _安装其他缺少的包_  
 	`yum install texlive-xetex-def`  
-	`yum install texlive-xltxtra`
+	`yum install texlive-xltxtra`  
+	`yum install texlive-xecjk`  
+	`yum install texlive-wrapfig`  
 
 +  _问题_: LaTeX Error: Encoding scheme EU1 unknown.  
-	解决: 使用yum安装yum install 'tex(eu1enc.def)'，ok问题解决，可以生成中文pdf了.  
+	解决: 使用yum安装`yum install 'tex(eu1enc.def)'` 或 `yum install texlive-euenc`，ok问题解决，可以生成中文pdf了.  
 	参考: [fedora 17 ctex 中文](http://hi.baidu.com/coco_zhao/item/0ceb6ff40885ca68922af276)
 
 参考文章:   
