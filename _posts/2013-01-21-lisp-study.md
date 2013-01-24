@@ -81,3 +81,5 @@ tags: [lisp]
 + [google lisp中文用户组](https://groups.google.com/forum/?fromgroups=#!forum/lisp-cn)
 
 + [Lisp文章汇总](http://floss.zoomquiet.org/item20051011211537-frameset.html)
+
++ [用sbcl,asdf和cl-launch编写可分发的lisp程序](http://tianchunbinghe.blog.163.com/blog/static/7001200692314249376/?suggestedreading&wumii)
