@@ -2,7 +2,7 @@
 layout: post
 title: "Linux常用命令技巧"
 description:
-tags: [linux, shell]
+tags: [linux, shell, git, svn, vim]
 ---
 {% include JB/setup %}
 
@@ -23,6 +23,14 @@ tags: [linux, shell]
   `C-T`	  交换  
   `C-Y`   粘贴  
   `C-W`   删除一个词  
+  下面的操作需要去掉Terminal的Enable menu access keys选项.  
+  `C-f/b` 向前/后移动一个字符  
+  `M-f/b` 向前/后移动一个字  
+  `C-d`	  向前删一个字符  
+  `C-h`   向后删一个字符  
+  `M-d`   向前删一个单词  
+  `C-M-h` 向后删一个单词, 单词之间以符号分割  
+  `C-w`   向后删一个单词, 单词之间以空格分割  
 
 * `cd -`切回上次目录  
   `cd` 回到用户目录
@@ -43,7 +51,7 @@ tags: [linux, shell]
   `mount -t tmpfs -o size=1024m tmpfs /mnt/ram` 
   映射内存(高速IO操作,磁盘空间不足利用内存)
 
-* `tar xvf example.tar.gz -C /root/test` 解压缩文件到指定目录
+* `tar xvf example.tar.gz -C /root/test` 解压缩文件到指定目录  
   `tar tvf example.tar.gz` 查看压缩包文件
 
 * `getconf LONG-BIT`           查看系统位数  
@@ -53,7 +61,7 @@ tags: [linux, shell]
 * `free   bg   kill pid    killall proc    chmod 777 (r:4,w:2,x:1)(user,group,all)`
 
 * `find / -name "***"`  
-  `find path \( -name "*.h" -or -name "*.c" \) -exec grep -in "***" {} \;`
+  `find path \( -name "*.h" -or -name "*.c" \) -exec grep -in "***" {} \;`  
   `find / -type d -name "gedit"` 查找目录
 * `grep -r "abc" /root/source`  
   `grep -r --include "*.h" "date" path`  
@@ -63,8 +71,8 @@ tags: [linux, shell]
 	Core 0:       +30.0°C  (high = +76.0°C, crit = +100.0°C)  
 	Core 1:       +37.0°C  (high = +76.0°C, crit = +100.0°C)  
 	`[root@localhost ~]# sensors |grep "Core " |cut -d"+" -f2 |cut -d" " -f1`  
-	30.0°C  
-	37.0°C  
+	30\.0°C  
+	37\.0°C  
 
 ####awk and sed  
 * awk  
@@ -146,6 +154,9 @@ tags: [linux, shell]
   `date "+%s"`
 
 * `ldd file` print shared library dependencies
-
+  
+  
 #### 参考链接
-[你可能不知道的Shell](http://coolshell.cn/articles/8619.html)
++ [你可能不知道的Shell](http://coolshell.cn/articles/8619.html)
++ [高效操作Bash](http://ahei.info/bash.htm)
++ [Bash readline 使用技巧](http://docs.huihoo.com/homepage/shredderyin/readline.html)
