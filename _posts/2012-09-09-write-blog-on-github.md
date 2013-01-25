@@ -141,3 +141,6 @@ Markdown中的转义字符为\
 	4.rake产生post文章
 		gem install rake
 		rake post title="***"
+
+###2013年01月25日  
+[轻量级标记语言](http://www.worldhello.net/gotgithub/appendix/markups.html)
