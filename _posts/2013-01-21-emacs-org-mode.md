@@ -7,6 +7,7 @@ tags: [Emacs, org mode]
 ---
 {% include JB/setup %}
 
++ [org tutorials](http://orgmode.org/worg/org-tutorials/)
 + [Emacs org mode学习笔记](http://emacser.com/org-mode.htm)
 + [org-mode，最好的文档编辑利器，没有之一](http://www.cnblogs.com/holbrook/archive/2012/04/12/2444992.html#sec-3-5)
 + [Org-mode写作的几个快捷方式](http://emacser.com/org-mode-tricks.htm)
@@ -36,3 +37,9 @@ ___解决导出pdf无法显示中文问题___
 
 -----
 
++ [使用Org-mode和html5slides制作幻灯片](http://www.worldhello.net/gotgithub/index.html)
+> html5slides 是 Google 公司的一个开源项目，可使用 HTML5 技术制作幻灯片。
+> 在线演示：
+> [http://html5slides.googlecode.com/svn/trunk/template/index.html](http://html5slides.googlecode.com/svn/trunk/template/index.html)
+
+-----
