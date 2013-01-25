@@ -24,3 +24,6 @@ into the lines:
 Here is the command to do this:  
 `%s/+ \(.*\)\(\[.*\]\)/+ \2\1/g`
 
+3. compare file  
+   `vimdiff file1 file2` or `gvim -d file1 file2`
+
