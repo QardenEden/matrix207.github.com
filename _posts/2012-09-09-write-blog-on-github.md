@@ -36,26 +36,16 @@ tags: [github,git,jekyll]
 		如: cd /home/dennis/project/matrix207.github.com
 	8.jekyll --server
 
-
 ###Reference:
-[像极客一样写博客](http://zyzhang.github.com/blog/2012/08/29/%E5%83%8F%E6%9E%81%E5%AE%A2%E4%B8%80%E6%A0%B7%E5%86%99%E5%8D%9A%E5%AE%A2/)
-
-[博客源码](https://github.com/zyzhang/zyzhang.github.com)
-
-[用git维护博客,酷.](http://www.worldhello.net/2011/11/29/jekyll-based-blog-setup.html)
-
-[在github上写博客](http://www.cnblogs.com/Lvkun/archive/2012/02/08/write-blog-on-github.html)
-
-[为github帐号添加SSH keys](http://blog.csdn.net/keyboardota/article/details/7603630)
-
-[ubuntu 搭建 Jekyll环境](http://blog.csdn.net/liumengxinfly/article/details/7419144)
-
-[像黑客一样写博客——Jekyll入门](http://www.soimort.org/tech-blog/2011/11/19/introduction-to-jekyll_zh.html)
-
-[Jekyll Quick Start ](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
-
-[基于github的jekyll模板开发的网站/博客](https://github.com/mojombo/jekyll/wiki/sites)
-	
+* [像极客一样写博客](http://zyzhang.github.com/blog/2012/08/29/%E5%83%8F%E6%9E%81%E5%AE%A2%E4%B8%80%E6%A0%B7%E5%86%99%E5%8D%9A%E5%AE%A2/)
+* [博客源码](https://github.com/zyzhang/zyzhang.github.com)
+* [用git维护博客,酷.](http://www.worldhello.net/2011/11/29/jekyll-based-blog-setup.html)
+* [在github上写博客](http://www.cnblogs.com/Lvkun/archive/2012/02/08/write-blog-on-github.html)
+* [为github帐号添加SSH keys](http://blog.csdn.net/keyboardota/article/details/7603630)
+* [ubuntu 搭建 Jekyll环境](http://blog.csdn.net/liumengxinfly/article/details/7419144)
+* [像黑客一样写博客——Jekyll入门](http://www.soimort.org/tech-blog/2011/11/19/introduction-to-jekyll_zh.html)
+* [Jekyll Quick Start ](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+* [基于github的jekyll模板开发的网站/博客](https://github.com/mojombo/jekyll/wiki/sites)
 
 ###基本操纵:  
 
@@ -84,36 +74,30 @@ tags: [github,git,jekyll]
 	git rm -r myfolder
 	
 ###2012年9月14日 
-参考文章:  
-[Github+Jekyll构建个人博客](http://equation85.github.com/blog/blog-with-github-and-jekyll/)
+* [Github+Jekyll构建个人博客](http://equation85.github.com/blog/blog-with-github-and-jekyll/)
+* [使用github+jekyll写博客](http://hjkl.me/git/2012/05/29/git-jekyll-blogging.html)
+* [为 Jekyll 博客添加 category 分类](http://www.pizn.me/2012/02/23/use-category-plugin-for-jekyll-blog.html)
+* [使用jekyll写博客](http://www.brucebot.com/2012/03/blog_with_jekyll_and_markdown/)
+* [使用 Git 管理源代码](http://www.ibm.com/developerworks/cn/linux/l-git/)
 
-[使用github+jekyll写博客](http://hjkl.me/git/2012/05/29/git-jekyll-blogging.html)
-
-[为 Jekyll 博客添加 category 分类](http://www.pizn.me/2012/02/23/use-category-plugin-for-jekyll-blog.html)
-
-[使用jekyll写博客](http://www.brucebot.com/2012/03/blog_with_jekyll_and_markdown/)
-
-[使用 Git 管理源代码](http://www.ibm.com/developerworks/cn/linux/l-git/)
-	
-	
 ###2012年9月16日  
-[Markdown 语法等介绍](http://zh.wikipedia.org/wiki/Markdown)  
-[Markdown 语法说明  ](http://wowubuntu.com/markdown/)  
-Markdown中的转义字符为\
-	
+* [Markdown 语法等介绍](http://zh.wikipedia.org/wiki/Markdown)  
+* [Markdown 语法说明  ](http://wowubuntu.com/markdown/)  
+Markdown中的转义字符为\\
+
 ###2012年9月24日
 	配置git环境 用户名和邮件(配置文件目录~/.gitconfig)
 	git config --global user.name "Your Name"
     git config --global user.email you@example.com
 	如:
-		dennis@dennis-VirtualBox:~git config --global user.name "Dennis"
-		dennis@dennis-VirtualBox:~git config --global user.emal "dennis.cpp@gmail.com"
+	  dennis@dennis-VirtualBox:~git config --global user.name "Dennis"
+	  dennis@dennis-VirtualBox:~git config --global user.emal "dennis.cpp@gmail.com"
 	确认配置是否成功:
 	git config user.name
 	git config user.email
 	也可以直接编辑文件:
 	$ cat ~/.gitconfig
-	
+
 ###2012年12月14日
 	环境windows xp，git
 	git status 查看状态
@@ -143,4 +127,10 @@ Markdown中的转义字符为\
 		rake post title="***"
 
 ###2013年01月25日  
-[轻量级标记语言](http://www.worldhello.net/gotgithub/appendix/markups.html)
+* [轻量级标记语言](http://www.worldhello.net/gotgithub/appendix/markups.html)
+
+###2013年01月26日
+* [像黑客一样写博客](http://kyle.xlau.org/posts/blogging-like-a-hacker.html)
+* [Blogging Like a Hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html)
+* [Blog Site use Jekyll](https://github.com/mojombo/jekyll/wiki/Sites)
+* [TechTinkering](http://techtinkering.com/)\([source](https://github.com/lawrencewoodman/techtinkering.com)\)
