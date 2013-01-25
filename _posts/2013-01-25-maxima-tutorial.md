@@ -7,8 +7,9 @@ tags: [maxima]
 ---
 {% include JB/setup %}
 
-1. 安装 `yum install maxima`
-2. 运行 `maxima`
+1. _安装_ `yum install maxima`
+2. _运行_ `maxima`
+3. _例子_  
 
 		[root@localhost ~]# maxima --version
 		Maxima 5.29.1
@@ -93,7 +94,19 @@ tags: [maxima]
 		(%i6) quit ();
 		[root@localhost ~]# 
 
-网络相关教程资源:  
+4. _画图_  
+
+`plot2d(x^3+2*x^2-3,[x,-2,2]);`
+
+ ![plot2d](/assets/image/posts/maxima-plot2d.png)
+
+`plot3d(sin(x)*cos(y),[x,-2,2],[y,-2,2]);`
+
+ ![plot3d](/assets/image/posts/maxima-plot3d.png)
+
+相关教程资源:  
 + [Maxima 5.28.0 Manual](http://maxima.sourceforge.net/docs/manual/en/maxima.html)
 + [Linux下的数学工具Maxima 简明教程 上](http://www.matrix67.com/blog/archives/337)
 + [Linux下的数学工具Maxima 简明教程 下](http://www.matrix67.com/blog/archives/338)
++ [The Computer Algebra Program Maxima - a Tutorial](http://maxima.sourceforge.net/docs/tutorial/en/gaertner-tutorial-revision/Contents.htm)
+
