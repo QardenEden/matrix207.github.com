@@ -174,4 +174,5 @@ tags: [maxima]
 + [一些代码](http://inside.mines.edu/fs_home/whereman/software.html)
 + [一些代码](http://inside.mines.edu/fs_home/whereman/software/painleve/macsyma/single/np_sing.max)
 + [A 10 minute tutorial for solving math problems with maxima](http://math-blog.com/2007/06/04/a-10-minute-tutorial-for-solving-math-problems-with-maxima/)
++ [Maxima快速参考手册](https://webfiles.uci.edu/huanm/www/maxima/maxima_zh.pdf)
 
