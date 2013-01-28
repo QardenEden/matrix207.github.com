@@ -51,7 +51,8 @@ tags: [lisp]
 
 + [中国lisp hacker冰河的lisp文章](http://tianchunbinghe.blog.163.com/blog/#m=0&t=1&c=fks_081066084087083095083086086066)
 
-+ 洪峰何许人也，说白了GNU唯一认可的中国（可能现在该说华裔了）“HACKER” [来源](http://tieba.baidu.com/p/883892221)
++ 洪峰何许人也，说白了GNU唯一认可的中国（可能现在该说华裔了）“HACKER” [来源](http://tieba.baidu.com/p/883892221)  
+  [洪峰主页](http://www.supernovas.cn/hf/hongfeng.html)
 
 + [至今听到关于 Lisp 最迷人的故事](http://article.yeeyan.org/view/legendsland/209584)
 
