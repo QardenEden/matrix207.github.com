@@ -41,7 +41,7 @@ tags: [Linux]
 
 * 办公软件: LibOffice(浏览工作中的文档)
 
-* 浏览器: Firefox、Chrome
+* 浏览器: Firefox(插件vimperator)、Chrome
 
 * 邮件: Thunderbird
 
