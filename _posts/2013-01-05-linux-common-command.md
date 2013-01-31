@@ -132,7 +132,8 @@ tags: [linux, shell, git, svn, vim]
 * `scp abc.sh root@172.168.1.101:/root/test` upload file  
   `scp root@172.168.1.101:/root/test/abc.sh /root/mytest` download file  
 * `nmap ip`     
-  `nmap -v -sn 192.168.1.1/24` 
+  `nmap -v -sn 192.168.1.1/24`  
+* `lsof -i:111`
 * `curl ifconfig.me`
 * `dig domain`   `dig -x host`
 
@@ -161,3 +162,4 @@ tags: [linux, shell, git, svn, vim]
 + [高效操作Bash](http://ahei.info/bash.htm)
 + [Bash readline 使用技巧](http://docs.huihoo.com/homepage/shredderyin/readline.html)
 + [Shell大杂烩](http://floss.zoomquiet.org/item20051011211622-frameset.html)
++ [Check network connection command](http://www.cyberciti.biz/faq/check-network-connection-linux/)
