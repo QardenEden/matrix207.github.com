@@ -61,5 +61,7 @@ tags: [Linux]
 
 * 墙外: ssh + shell account + firefox autoproxy
 
+* 数学软件: maxima
+
 * 其他:  系统监测-Conky
 
