@@ -14,3 +14,5 @@ tags: []
 + [Simple Stateful Firewall](https://wiki.archlinux.org/index.php/Simple_stateful_firewall_HOWTO)
 
 + [智能家庭设计的一些想法](http://blog.youxu.info/2009/08/04/smarthome/)
+
++ [Have you ever chatted with a Hacker within a virus?](http://blogs.avg.com/news-threats/chatted-hacker-virus/)
