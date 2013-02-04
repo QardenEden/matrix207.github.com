@@ -2,7 +2,7 @@
 layout: post
 title: "VIM study log"
 description: "VIM study log"
-tags: [VIM]
+tags: [vim]
 ---
 {% include JB/setup %}
 
@@ -27,3 +27,6 @@ Here is the command to do this:
 3. compare file  
    `vimdiff file1 file2` or `gvim -d file1 file2`
 
+4. digit operator  
+	`ctrl+a` increment 1  
+	`ctrl+x` subtract 1  
