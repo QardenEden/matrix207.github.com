@@ -65,6 +65,7 @@ tags: [linux, shell, git, svn, vim]
   `find / -type d -name "gedit"` 查找目录
 * `grep -r "abc" /root/source`  
   `grep -r --include "*.h" "date" path`  
+  `grep -m 1 "model name" /proc/cpuinfo` 只匹配第一个  
 * `cut -d"" -f1`  
 	e.g:  
 	`[root@localhost ~]# sensors |grep "Core "`  
@@ -81,6 +82,7 @@ tags: [linux, shell, git, svn, vim]
   `awk 'NR==1{print $0}'`  
   `arr=($(awk -F'#' '{print $1,$2,$3,$4}' $conf_file))`  
   `ps aux | awk 'NR==1{print $0}$3>10{print $0}'`  
+  `awk -F'<|>' '{if(NF>3){print $2 ":" $3}}' /tmp/test.xml` 解析显示xml  
 
 * sed  
   `sed [options] 'command' file(s)`  
