@@ -63,5 +63,7 @@ tags: [Linux]
 
 * 数学软件: maxima
 
+* 翻译: stardict
+
 * 其他:  系统监测-Conky
 
