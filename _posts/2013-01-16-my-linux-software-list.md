@@ -65,5 +65,7 @@ tags: [Linux]
 
 * 翻译: stardict
 
+* IRC: xchat
+
 * 其他:  系统监测-Conky
 
