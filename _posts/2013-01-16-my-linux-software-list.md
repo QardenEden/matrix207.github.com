@@ -37,7 +37,7 @@ tags: [Linux]
 
 这里罗列Linux(Fedora)下常用的一些工具，主要作为备忘，别无他目.
 
-* 虚拟机: Virtual Box
+* 虚拟机: Virtual Box、kvm
 
 * 办公软件: LibOffice(浏览工作中的文档)
 
@@ -65,7 +65,7 @@ tags: [Linux]
 
 * 翻译: stardict
 
-* IRC: xchat
+* IRC: irssi、xchat
 
 * 其他:  系统监测-Conky
 
