@@ -67,5 +67,7 @@ tags: [Linux]
 
 * IRC: irssi、xchat
 
+* 即时通(IM): skype
+
 * 其他:  系统监测-Conky
 
