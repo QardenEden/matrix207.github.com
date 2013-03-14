@@ -66,9 +66,9 @@ tags: [linux, shell, git, svn, vim]
 * `grep -r "abc" /root/source`  
   `grep -r --include "*.h" "date" path`  
   `grep -m 1 "model name" /proc/cpuinfo` 只匹配第一个  
-  `grep -i -E "abc|123"` 匹配字符串abc或123, -i忽略大小写, -E正则表达式 
-  `grep -r -l "main" .` 在当前目录及其子目录搜索main字符串，只列出匹配的文件名, -L列出不匹配的文件名
-  `grep -w "linux" *.md` 只匹配整个单词，而不是字符串的一部分
+  `grep -i -E "abc|123"` 匹配字符串abc或123, -i忽略大小写, -E正则表达式   
+  `grep -r -l "main" .` 在当前目录及其子目录搜索main字符串，只列出匹配的文件名, -L列出不匹配的文件名  
+  `grep -w "linux" *.md` 只匹配整个单词，而不是字符串的一部分  
 * `cut -d"" -f1`  
 	e.g:  
 	`[root@localhost ~]# sensors |grep "Core "`  
