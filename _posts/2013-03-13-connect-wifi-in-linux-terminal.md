@@ -100,4 +100,8 @@ Reference:
 + [http://blog.csdn.net/lin772662623/article/details/7830336] (http://blog.csdn.net/lin772662623/article/details/7830336)
 
 ##4.其他参考资料
++ [Wireless Tools for Linux](http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html)
 + [http://blog.csdn.net/jacobywu/article/details/7366080](http://blog.csdn.net/jacobywu/article/details/7366080)
++ [Wi-Fi WLAN wireless home networking information](https://help.ubuntu.com/community/WifiDocs/WiFiHowTo)
++ [Fedora: Using the command line interface](docs.fedoraproject.org/en-US/Fedora/13/html/Wireless_Guide/sect-Wireless_Guide-Fedora_And_Wireless-iwconfig.html)
++ [getwifi, a bash script](http://sourceforge.net/projects/getwifi/?source=dlp)
