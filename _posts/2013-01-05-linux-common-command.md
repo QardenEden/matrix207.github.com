@@ -160,6 +160,7 @@ tags: [linux, shell, git, svn, vim]
   `date "+%s"`
 
 * `ldd file` print shared library dependencies
+* `cat /proc/uptime | awk -F. '{d=($1/86400);h=($1%86400)/3600;m=($1%3600)/60;s=($1%60);printf("已运行%d天%d时%d分%d秒\n",d,h,m,s)}'`
   
   
 #### 参考链接
