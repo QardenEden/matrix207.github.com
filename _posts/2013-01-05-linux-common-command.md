@@ -138,7 +138,8 @@ tags: [linux, shell, git, svn, vim]
   `scp root@172.168.1.101:/root/test/abc.sh /root/mytest` download file  
 * `nmap ip`     
   `nmap -v -sn 192.168.1.1/24`  
-* `lsof -i:111`
+* `lsof -i:111`  
+  `netstat -apn | grep 111`  
 * `curl ifconfig.me`
 * `dig domain`   `dig -x host`
 
