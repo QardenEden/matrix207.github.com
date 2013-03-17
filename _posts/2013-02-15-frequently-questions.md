@@ -33,11 +33,15 @@ tags: [FAQ]
 `su -c 'yum install ffmpeg ffmpeg-libs gstreamer-ffmpeg libmatroska xvidcore'`
 
 问题:  
-	获取 GPG 密钥失败：[Errno 14] Could not open/read file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora  
+	安装时出现:  
+	`GPG key retrieval failed: [Errno 14] Could not open/read file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-18-x86_64`  
+	查看目录文件  
+	`ls /etc/pki/rpm-gpg/RPM-GPG-KEY-*`  
+	也找不到文件/etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-18-x86_64  
+
 解决:  
-	打开fusion源官网上的密钥页面：http://rpmfusion.org/keys  
-	下载 RPM Fusion free for Fedora 18 对应的版本RPM-GPG-KEY-rpmfusion-free-fedora-18  
-	`su -c 'rpm --import '/home/XXX/RPM-GPG-KEY-rpmfusion-free-fedora-18''`  
+	`su -c 'yum localinstall --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-18.noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-18.noarch.rpm'`
+
 参考:  
 * [Fedora 17 无法播放mp3 rmvb](http://www.linuxidc.com/Linux/2012-06/62112.htm)  
-* [获取 GPG 密钥失败](http://blog.csdn.net/grantxx/article/details/8509480)  
+* [GPG key retrieval failed](https://ask.fedoraproject.org/question/7439/gpg-key-retrieval-failed/)
