@@ -75,9 +75,10 @@ tags: [wifi, wireless-tools, wpa_supplicant]
     其中TP_Link_Test为无线网络名称, 1234567890为无线网络密码  
     `wpa_passphrase TP_Link_Test "1234567890" > /etc/wpa_supplicant.conf`
 
-2). 修改配置/etc/wpa_supplicant.conf  
+2). 修改配置/etc/wpa_supplicant/wpa_supplicant.conf  
 
 		ctrl_interface=/var/run/wpa_supplicant
+		ctrl_interface_group=wheel
 
 		network={
 			ssid="TP_Link_Test"
@@ -90,7 +91,24 @@ tags: [wifi, wireless-tools, wpa_supplicant]
 		}
 
 3). 连接网络  
-    `wpa_supplicant -Dwext -iwlan0 -c /etc/wpa_supplicant.conf`
+    `wpa_supplicant -Dwext -iwlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf`
+
+	执行命令后可能出现"Operation not permitted",看似是错误信息，不用管。  
+	[root@localhost ~]# wpa_supplicant -Dwext -iwlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf 
+	ioctl[SIOCSIWAP]: Operation not permitted
+	Trying to associate with 1c:92:73:b0:02:33 (SSID='TP_Link_Test' freq=2412 MHz)
+	Associated with 1c:92:73:b0:02:33
+	WPA: Key negotiation completed with 1c:92:73:b0:02:33 [PTK=TKIP GTK=TKIP]
+	CTRL-EVENT-CONNECTED - Connection to 1c:92:73:b0:02:33 completed (auth) [id=0 id_str=]
+	WPA: Group rekeying completed with 1c:fa:68:b9:18:16 [GTK=TKIP]
+
+4). 获取IP  
+	`dhclient wlan0`  
+
+5). 检查是否获取成功  
+	`ifconfig wlan0`  
+	ping 网关:  
+	`ping 192.168.1.1`
 
 Reference:
 + [http://hostap.epitest.fi/wpa_supplicant/](http://hostap.epitest.fi/wpa_supplicant/)
@@ -98,6 +116,7 @@ Reference:
 + [http://xitong.iteye.com/blog/1723427] (http://xitong.iteye.com/blog/1723427)
 + [http://evan7s.blog.163.com/blog/static/108955356201132494921476/] (http://evan7s.blog.163.com/blog/static/108955356201132494921476/)
 + [http://blog.csdn.net/lin772662623/article/details/7830336] (http://blog.csdn.net/lin772662623/article/details/7830336)
++ [wpa_supplicant的移植和可能遇到的问题](http://blog.csdn.net/ti_tantbx/article/details/7037741)
 
 ##4.其他参考资料
 + [Wireless Tools for Linux](http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html)
