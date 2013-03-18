@@ -170,3 +170,4 @@ tags: [linux, shell, git, svn, vim]
 + [Bash readline 使用技巧](http://docs.huihoo.com/homepage/shredderyin/readline.html)
 + [Shell大杂烩](http://floss.zoomquiet.org/item20051011211622-frameset.html)
 + [Check network connection command](http://www.cyberciti.biz/faq/check-network-connection-linux/)
++ [50 Most Frequently Used UNIX / Linux Commands (With Examples)](http://www.thegeekstuff.com/2010/11/50-linux-commands/)
