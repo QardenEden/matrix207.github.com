@@ -136,7 +136,8 @@ tags: [linux, shell, git, svn, vim]
 * `ssh -f -NC -D7070 user@shell.cjb.net` ssh tunnel 
 * `scp abc.sh root@172.168.1.101:/root/test` upload file  
   `scp root@172.168.1.101:/root/test/abc.sh /root/mytest` download file  
-* `nmap ip`     
+  `sshpass -p passwd scp abc.sh root@172.168.1.101:/root/test`
+* `nmap ip`  
   `nmap -v -sn 192.168.1.1/24`  
 * `lsof -i:111`  
   `netstat -apn | grep 111`  

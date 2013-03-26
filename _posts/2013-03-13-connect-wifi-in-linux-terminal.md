@@ -110,6 +110,11 @@ tags: [wifi, wireless-tools, wpa_supplicant]
 	ping 网关:  
 	`ping 192.168.1.1`
 
+6). 断开网络  
+	`wpa_cli disable_network 0`  
+	`wpa_cli remove_network 0`  
+	`dhclient -x wlan0`  
+
 Reference:
 + [http://hostap.epitest.fi/wpa_supplicant/](http://hostap.epitest.fi/wpa_supplicant/)
 + [http://blog.163.com/wxiongn@126/blog/static/11788203820102262748358/] (http://blog.163.com/wxiongn@126/blog/static/11788203820102262748358/)
@@ -117,6 +122,7 @@ Reference:
 + [http://evan7s.blog.163.com/blog/static/108955356201132494921476/] (http://evan7s.blog.163.com/blog/static/108955356201132494921476/)
 + [http://blog.csdn.net/lin772662623/article/details/7830336] (http://blog.csdn.net/lin772662623/article/details/7830336)
 + [wpa_supplicant的移植和可能遇到的问题](http://blog.csdn.net/ti_tantbx/article/details/7037741)
++ [https://github.com/kimperator/Samen/blob/master/src/samen-handler/samen-handler.c](https://github.com/kimperator/Samen/blob/master/src/samen-handler/samen-handler.c)
 
 ##4.其他参考资料
 + [Wireless Tools for Linux](http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html)
