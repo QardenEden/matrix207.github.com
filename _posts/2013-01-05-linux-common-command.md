@@ -139,6 +139,7 @@ tags: [linux, shell, git, svn, vim]
   `sshpass -p passwd scp abc.sh root@172.168.1.101:/root/test`
 * `nmap ip`  
   `nmap -v -sn 192.168.1.1/24`  
+  `nmap -v -sn 192.168.1.1/24 |grep "Nmap scan" |  grep -v -E "Nmap scan .* [host down]"` 用于扫描局域网活动IP
 * `lsof -i:111`  
   `netstat -apn | grep 111`  
 * `curl ifconfig.me`
