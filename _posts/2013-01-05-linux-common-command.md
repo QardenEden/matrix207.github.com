@@ -133,7 +133,8 @@ tags: [linux, shell, git, svn, vim]
 ####network  
 * `python -m SimpleHTTPServer`  
 * `ssh root@172.168.1.101`  
-* `ssh -f -NC -D7070 user@shell.cjb.net` ssh tunnel 
+* `ssh -f -NC -D7070 user@shell.cjb.net` ssh tunnel  
+  `ssh -f -NC -D7070 user@216.194.70.6` ssh tunnel 
 * `scp abc.sh root@172.168.1.101:/root/test` upload file  
   `scp root@172.168.1.101:/root/test/abc.sh /root/mytest` download file  
   `sshpass -p passwd scp abc.sh root@172.168.1.101:/root/test`
