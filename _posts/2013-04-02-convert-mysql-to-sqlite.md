@@ -82,9 +82,9 @@ tags: [mysql,sqlite]
 
 reference:
 * [mysql2sqlite.sh](https://gist.github.com/esperlu/943776/)
-* [http://my.oschina.net/chunquedong/blog/25913](http://my.oschina.net/chunquedong/blog/25913)
-* [http://my.oschina.net/ncu033/blog/103540](http://my.oschina.net/ncu033/blog/103540)
-* [http://stackoverflow.com/questions/5164033/export-a-mysql-database-to-sqlite-database](http://stackoverflow.com/questions/5164033/export-a-mysql-database-to-sqlite-database)
+* [MySQL命令](http://my.oschina.net/chunquedong/blog/25913)
+* [MYSQL命令大全](http://my.oschina.net/ncu033/blog/103540)
+* [Export a MySQL Database to SQLite Database](http://stackoverflow.com/questions/5164033/export-a-mysql-database-to-sqlite-database)
 * [sqlite - Converter Tools](http://www.sqlite.org/cvstrac/wiki?p=ConverterTools)
 * [sqlite3 命令行操作](www.cnblogs.com/lwm-1988/archive/2011/08/20/2147573.html)
 * [mysqldump备份还原](www.cnblogs.com/zeroone/archive/2010/05/11/1732834.html) 
@@ -92,3 +92,5 @@ reference:
 * [mysql to sqlite database](http://blog.sina.com.cn/s/blog_a9ec688101019m8i.html)
 * [How to install SQLite3 on Fedora](http://radicallyrails.blogspot.com/2011/05/how-to-install-sqlite3-on-fedora.html)
 * [sqlite3-to-mysql](https://github.com/athlite/sqlite3-to-mysql/blob/master/sqlite3-to-mysql)
+* [Shell scripts for converting MySQL dump into SQLite](www.stat.berkeley.edu/~statcur/Workshop2/Assignments/Baseball/instructions.html)
+* [MySQL转SQLite Shell脚本](http://mifunny.info/convert-mysql-to-sqlite-script-330.html)
