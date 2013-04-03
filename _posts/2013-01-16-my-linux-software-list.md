@@ -69,5 +69,7 @@ tags: [Linux]
 
 * 即时通(IM): skype
 
+* RSS: greader、liberea
+
 * 其他:  系统监测-Conky
 
