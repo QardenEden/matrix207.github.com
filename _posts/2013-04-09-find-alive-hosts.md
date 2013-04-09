@@ -19,3 +19,141 @@ Reference:
 * [利用ICMP数据包探测网络中的活动主机 VC++](http://download.csdn.net/detail/pilipenhuolong/3118860)
 * [使用ICMP协议来进行主机探测](http://www.xfocus.net/articles/200103/77.html)
 * [一个简单扫描器的实现 ](http://blog.csdn.net/yiyefangzhou24/article/details/6819874)
+
+sample code (on windows win32 console, compile with VS2005):  
+
+	// Find alive hosts
+	// Create by Dennis 
+	// 2013/04/09
+
+	#include <winsock2.h>
+	#include <iphlpapi.h>
+	#include <process.h>
+	#include <stdio.h>
+	#include <stdlib.h>
+
+	#pragma comment(lib, "iphlpapi.lib")
+	#pragma comment(lib, "ws2_32.lib")
+
+	CRITICAL_SECTION  cs;
+
+	unsigned long netIp = 0;
+
+	// Get host IP
+	// Reference: http://blog.csdn.net/happycock/article/details/491424
+	// If you machine have more than one network adapter, you should
+	// fix this function.
+	void GetHostIP(char* ip, int size1, char* mask, int size2)
+	{
+		ULONG len = 0; 
+		GetAdaptersInfo(NULL, &len);
+		PIP_ADAPTER_INFO p = static_cast<PIP_ADAPTER_INFO>(malloc(len));
+		GetAdaptersInfo(p, &len);
+		for (PIP_ADAPTER_INFO q = p; q != NULL; q = q->Next)
+		{
+			if (ip) strncpy(ip, q->IpAddressList.IpAddress.String, size1);
+			if (mask) strncpy(mask, q->IpAddressList.IpMask.String, size2);
+			break;
+		}
+
+		free(p);
+	}
+
+	unsigned int __stdcall ArpThread(LPVOID lParam)
+	{
+		ULONG MacAddr[2];       /* for 6-byte hardware addresses */
+		ULONG PhysAddrLen = 6;  /* default to length of six bytes */
+
+	#if 1
+		EnterCriticalSection(&cs);
+		//converts to TCP/IP network byte order (which is big-endian) 
+		unsigned long dstIP=htonl(++netIp);
+		LeaveCriticalSection(&cs);
+	#else
+		// Reference: http://blog.csdn.net/morewindows/article/details/7429155
+		//netIp++;  
+		InterlockedIncrement((LPLONG)&netIp);
+		unsigned long dstIP=htonl(netIp);
+	#endif
+
+		// Reference: http://msdn.microsoft.com/en-us/library/aa366358(VS.85).aspx
+		if (NO_ERROR == SendARP(dstIP, 0,&(MacAddr[0]),&PhysAddrLen)) {
+			EnterCriticalSection(&cs);
+			BYTE* bPhysAddr = (BYTE *) & MacAddr;
+			if (PhysAddrLen) {
+				struct in_addr addr1;
+				memcpy(&addr1, &dstIP, 4);
+				printf("%16s : ", inet_ntoa(addr1));
+				for (int i = 0; i < (int) PhysAddrLen; i++) {
+					if (i == (PhysAddrLen - 1))
+						printf("%.2X\n", (int) bPhysAddr[i]);
+					else
+						printf("%.2X-", (int) bPhysAddr[i]);
+				}
+			} else
+				printf("Warning: SendArp completed successfully, but returned length=0\n");
+			LeaveCriticalSection(&cs);
+		}
+		
+		return 0;
+	}
+
+	int main(int argc, char **argv)
+	{
+		IPAddr SrcIp = 0;
+
+		char strSrcIP[16] = {0};
+		char strSrcMask[16] = {0};
+		// Get Host IP and Mask
+		GetHostIP(strSrcIP, sizeof(strSrcIP), strSrcMask, sizeof(strSrcMask));
+
+		InitializeCriticalSection(&cs);
+
+		SrcIp = inet_addr(strSrcIP);
+		unsigned long findMask=inet_addr(strSrcMask);
+		int netsize = ~ntohl(findMask);
+		netIp = ntohl(SrcIp & findMask); 
+		
+	#if 0
+		unsigned long dstIp;
+		struct in_addr addr1;
+		HANDLE hThr[63] = {0};
+		for (int i=1; i<64; i++)
+		{
+			//converts to TCP/IP network byte order (which is big-endian) 
+			 dstIp=htonl(netIp+i);
+
+			 hThr[i-1] = (HANDLE)_beginthreadex(NULL, 0, ArpThread, &dstIp, 0, NULL);
+		}
+		
+		WaitForMultipleObjects(63,&(hThr[0]),TRUE,INFINITE);
+	#else
+		HANDLE *phThread = (HANDLE*)malloc(netsize*sizeof(HANDLE));
+		for (int i=1; i<netsize; i++)
+		{
+			// _beginthreadex if more effect than CreateThread
+			// you can google it for more information
+			phThread[i-1] = (HANDLE)_beginthreadex(NULL, 0, ArpThread, 0, 0, NULL);
+		}
+
+		// There is a limit count for function WaitForMultipleObjects
+		int netcount = netsize;
+		int waitcount = 0;
+		for (int i=0; i<netcount;)
+		{
+			waitcount = MAXIMUM_WAIT_OBJECTS;
+			if (netcount-i<MAXIMUM_WAIT_OBJECTS)
+				waitcount = netcount;
+			WaitForMultipleObjects(waitcount,&(phThread[i]),TRUE,INFINITE);
+			i += waitcount;
+		}
+		
+		free(phThread);
+
+	#endif
+
+		DeleteCriticalSection(&cs);
+
+		//system("pause");
+		return 0;
+	}
