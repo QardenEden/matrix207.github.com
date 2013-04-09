@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "find alive hosts"
+title: "Find alive hosts"
 description: ""
 category: 
-tags: [network]
+tags: [network,ARP,ICMP]
 ---
 {% include JB/setup %}
 
@@ -20,11 +20,17 @@ Reference:
 * [使用ICMP协议来进行主机探测](http://www.xfocus.net/articles/200103/77.html)
 * [一个简单扫描器的实现 ](http://blog.csdn.net/yiyefangzhou24/article/details/6819874)
 
-sample code (on windows win32 console, compile with VS2005):  
+##sample code  
 
-	// Find alive hosts
-	// Create by Dennis 
-	// 2013/04/09
+###Find alive hosts with ARP protocol  
+
+	// Find alive hosts with ARP protocol
+	// Win32 console project, compile with VS2005
+	// Create by Dennis
+	// 2013-04-09
+
+	// Reference:
+	// http://msdn.microsoft.com/en-us/library/aa366358(VS.85).aspx
 
 	#include <winsock2.h>
 	#include <iphlpapi.h>
@@ -41,7 +47,7 @@ sample code (on windows win32 console, compile with VS2005):
 
 	// Get host IP
 	// Reference: http://blog.csdn.net/happycock/article/details/491424
-	// If you machine have more than one network adapter, you should
+	// If your machine have more than one network adapter, you should
 	// fix this function.
 	void GetHostIP(char* ip, int size1, char* mask, int size2)
 	{
@@ -76,7 +82,6 @@ sample code (on windows win32 console, compile with VS2005):
 		unsigned long dstIP=htonl(netIp);
 	#endif
 
-		// Reference: http://msdn.microsoft.com/en-us/library/aa366358(VS.85).aspx
 		if (NO_ERROR == SendARP(dstIP, 0,&(MacAddr[0]),&PhysAddrLen)) {
 			EnterCriticalSection(&cs);
 			BYTE* bPhysAddr = (BYTE *) & MacAddr;
@@ -137,13 +142,13 @@ sample code (on windows win32 console, compile with VS2005):
 		}
 
 		// There is a limit count for function WaitForMultipleObjects
-		int netcount = netsize;
+		int netcount = netsize-1;
 		int waitcount = 0;
 		for (int i=0; i<netcount;)
 		{
 			waitcount = MAXIMUM_WAIT_OBJECTS;
 			if (netcount-i<MAXIMUM_WAIT_OBJECTS)
-				waitcount = netcount;
+				waitcount = netcount-i;
 			WaitForMultipleObjects(waitcount,&(phThread[i]),TRUE,INFINITE);
 			i += waitcount;
 		}
@@ -157,3 +162,212 @@ sample code (on windows win32 console, compile with VS2005):
 		//system("pause");
 		return 0;
 	}
+
+__output as below:(For security reasons, replace some of the characters as asterisks)__  
+
+	  192.168.50.1 : **-**-E2-**-C7-**
+	  192.168.50.2 : **-**-4C-**-00-**
+	 192.168.50.16 : **-**-19-**-46-**
+	 192.168.50.22 : **-**-09-**-3A-**
+	 192.168.50.28 : **-**-AE-**-E6-**
+	 192.168.50.29 : **-**-C9-**-6D-**
+	 192.168.50.30 : **-**-6F-**-09-**
+	 192.168.50.36 : **-**-AE-**-EE-**
+	 192.168.50.37 : **-**-C9-**-8C-**
+	 192.168.50.39 : **-**-9B-**-B9-**
+	 192.168.50.40 : **-**-9B-**-DC-**
+	 192.168.50.46 : **-**-C9-**-F1-**
+	 192.168.50.42 : **-**-09-**-A3-**
+	 192.168.50.44 : **-**-AE-**-E6-**
+	 192.168.50.57 : **-**-C9-**-48-**
+	 192.168.50.63 : **-**-AE-**-BF-**
+	 192.168.50.68 : **-**-AE-**-C0-**
+	 192.168.50.69 : **-**-C9-**-1D-**
+	 192.168.50.98 : **-**-64-**-97-**
+	192.168.50.100 : **-**-64-**-6E-**
+	192.168.50.101 : **-**-9B-**-27-**
+	192.168.50.102 : **-**-AE-**-BE-**
+	192.168.50.103 : **-**-5B-**-86-**
+	192.168.50.105 : **-**-29-**-4D-**
+	192.168.50.110 : **-**-29-**-30-**
+	192.168.50.116 : **-**-27-**-01-**
+	192.168.50.112 : **-**-9B-**-6A-**
+	192.168.50.113 : **-**-29-**-8B-**
+	192.168.50.108 : **-**-C9-**-CD-**
+	192.168.50.126 : **-**-D2-**-08-**
+	192.168.50.129 : **-**-9B-**-19-**
+	192.168.50.238 : **-**-6F-**-28-**
+	Press any key to continue. . .
+
+###Find alive hosts with icmp protocol  
+
+	// Find alive hosts with icmp protocol
+	// Win32 console project, compile with VS2005
+	// Create by Dennis
+	// 2013-04-09
+
+	// Reference:
+	// http://msdn.microsoft.com/en-us/library/windows/desktop/aa366050%28v=vs.85%29.aspx
+
+	#include <winsock2.h>
+	#include <iphlpapi.h>
+	#include <icmpapi.h>
+	#include <process.h>
+	#include <stdio.h>
+
+	#pragma comment(lib, "iphlpapi.lib")
+	#pragma comment(lib, "ws2_32.lib")
+
+	#define IP_SECTION "192.168.110.%d"
+
+	CRITICAL_SECTION cs;
+	int g_ip_index = 0;
+
+	unsigned int __stdcall IcmpThread(LPVOID LPARAM)
+	{
+		// Declare and initialize variables
+
+		EnterCriticalSection(&cs);
+		char ip[16] = {0};
+		sprintf(ip, IP_SECTION, ++g_ip_index);
+		HANDLE hIcmpFile;
+		unsigned long ipaddr = INADDR_NONE;
+		DWORD dwRetVal = 0;
+		char SendData[32] = "Data Buffer";
+		LPVOID ReplyBuffer = NULL;
+		DWORD ReplySize = 0;
+
+		ipaddr = inet_addr(ip);
+		if (ipaddr == INADDR_NONE) {
+			return 1;
+		}
+
+		hIcmpFile = IcmpCreateFile();
+		if (hIcmpFile == INVALID_HANDLE_VALUE) {
+			printf("\tUnable to open handle.\n");
+			printf("IcmpCreatefile returned error: %ld\n", GetLastError() );
+			return 1;
+		}    
+
+		ReplySize = sizeof(ICMP_ECHO_REPLY) + sizeof(SendData);
+		ReplyBuffer = (VOID*) malloc(ReplySize);
+		if (ReplyBuffer == NULL) {
+			printf("\tUnable to allocate memory\n");
+			return 1;
+		}    
+		LeaveCriticalSection(&cs);
+
+		dwRetVal = IcmpSendEcho(hIcmpFile, ipaddr, SendData, sizeof(SendData), 
+			NULL, ReplyBuffer, ReplySize, 10);
+	#if 0
+		if (dwRetVal != 0) {
+			PICMP_ECHO_REPLY pEchoReply = (PICMP_ECHO_REPLY)ReplyBuffer;
+			struct in_addr ReplyAddr;
+			ReplyAddr.S_un.S_addr = pEchoReply->Address;
+			printf("\tSent icmp message to %s\n", ip);
+			if (dwRetVal > 1) {
+				printf("\tReceived %ld icmp message responses\n", dwRetVal);
+				printf("\tInformation from the first response:\n"); 
+			}    
+			else {    
+				printf("\tReceived %ld icmp message response\n", dwRetVal);
+				printf("\tInformation from this response:\n"); 
+			}    
+			printf("\t  Received from %s\n", inet_ntoa( ReplyAddr ) );
+			printf("\t  Status = %ld\n", 
+				pEchoReply->Status);
+			printf("\t  Roundtrip time = %ld milliseconds\n", 
+				pEchoReply->RoundTripTime);
+		}
+		else {
+			printf("\tCall to IcmpSendEcho failed.\n");
+			printf("\tIcmpSendEcho returned error: %ld\n", GetLastError() );
+			return 1;
+		}
+	#else
+		if (dwRetVal != 0)
+			printf("%16s is alive\n", ip);
+	#endif
+	}
+
+	int __cdecl main(int argc, char **argv)  {
+
+		InitializeCriticalSection(&cs);
+
+		int netsize = 255;
+
+		HANDLE *phThread = (HANDLE*)malloc(netsize*sizeof(HANDLE));
+		for (int i=1; i<netsize; i++)
+		{
+			// _beginthreadex if more effect than CreateThread
+			// you can google it for more information
+			phThread[i-1] = (HANDLE)_beginthreadex(NULL, 0, IcmpThread, 0, 0, NULL);
+		}
+
+		// There is a limit count for function WaitForMultipleObjects
+		int netcount = netsize-1;
+		int waitcount = 0;
+		for (int i=0; i<netcount;)
+		{
+			waitcount = MAXIMUM_WAIT_OBJECTS;
+			if (netcount-i<MAXIMUM_WAIT_OBJECTS)
+				waitcount = netcount;
+			WaitForMultipleObjects(waitcount,&(phThread[i]),TRUE,INFINITE);
+			i += waitcount;
+		}
+
+		free(phThread);
+
+		DeleteCriticalSection(&cs);
+		system("pause");
+		return 0;
+	}    
+
+__Output as below:__  
+
+	  192.168.110.1 is alive
+	  192.168.110.5 is alive
+	  192.168.110.6 is alive
+	 192.168.110.30 is alive
+	 192.168.110.32 is alive
+	 192.168.110.35 is alive
+	 192.168.110.55 is alive
+	 192.168.110.56 is alive
+	 192.168.110.65 is alive
+	 192.168.110.74 is alive
+	 192.168.110.75 is alive
+	 192.168.110.76 is alive
+	 192.168.110.78 is alive
+	 192.168.110.96 is alive
+	 192.168.110.97 is alive
+	 192.168.110.98 is alive
+	 192.168.110.99 is alive
+	192.168.110.103 is alive
+	192.168.110.104 is alive
+	192.168.110.105 is alive
+	192.168.110.100 is alive
+	192.168.110.121 is alive
+	192.168.110.123 is alive
+	192.168.110.125 is alive
+	192.168.110.127 is alive
+	192.168.110.124 is alive
+	192.168.110.131 is alive
+	192.168.110.132 is alive
+	192.168.110.133 is alive
+	192.168.110.134 is alive
+	192.168.110.135 is alive
+	192.168.110.136 is alive
+	192.168.110.142 is alive
+	192.168.110.144 is alive
+	192.168.110.143 is alive
+	192.168.110.145 is alive
+	192.168.110.150 is alive
+	192.168.110.151 is alive
+	192.168.110.153 is alive
+	192.168.110.159 is alive
+	192.168.110.234 is alive
+	192.168.110.246 is alive
+	192.168.110.247 is alive
+	192.168.110.248 is alive
+	192.168.110.249 is alive
+	Press any key to continue. . .
