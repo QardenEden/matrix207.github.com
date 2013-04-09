@@ -3,7 +3,7 @@ layout: post
 title: "Find alive hosts"
 description: ""
 category: 
-tags: [network,ARP,ICMP]
+tags: [network, ARP, ICMP]
 ---
 {% include JB/setup %}
 
