@@ -9,10 +9,10 @@ tags: [mac, netbios]
 
 ###Find port 139 open machine:  
 
-	[root@localhost netbios]# nmap -p139 172.16.50.22
+	[root@localhost netbios]# nmap -p139 192.168.50.22
 
 	Starting Nmap 6.25 ( http://nmap.org ) at 2013-04-10 20:49 CST
-	Nmap scan report for 172.16.50.22
+	Nmap scan report for 192.168.50.22
 	Host is up (0.00023s latency).
 	PORT    STATE SERVICE
 	139/tcp open  netbios-ssn
@@ -22,11 +22,11 @@ tags: [mac, netbios]
 
 ###Search all:  
 
-	nmap -p139 172.16.50.1/24 | sed '/./{H;$!d};x;/open/!d' | grep -E 'scan' | awk '{print $5}'
+	nmap -p139 192.168.50.1/24 | sed '/./{H;$!d};x;/open/!d' | grep -E 'scan' | awk '{print $5}'
 
 ###scan all:  
 
-	nmap -p139 172.16.50.1/24 | sed '/./{H;$!d};x;/open/!d' | grep -E 'scan' | awk '{print $5}' | xargs -n1 netbios
+	nmap -p139 192.168.50.1/24 | sed '/./{H;$!d};x;/open/!d' | grep -E 'scan' | awk '{print $5}' | xargs -n1 netbios
 
 ###output:  
 
@@ -160,7 +160,7 @@ tags: [mac, netbios]
 		if (argc > 1)
 			server_addr.sin_addr.s_addr = inet_addr(argv[1]);
 		else
-			server_addr.sin_addr.s_addr = inet_addr("172.16.50.39");
+			server_addr.sin_addr.s_addr = inet_addr("192.168.50.39");
 
 		//ret = setsockopt(sock,SOL_SOCKET,SO_BROADCAST,&so_broadcast,sizeof(so_broadcast));
 
