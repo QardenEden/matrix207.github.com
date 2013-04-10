@@ -39,8 +39,12 @@ tags: [mac, netbios]
 	group: WORKGROUP
 	  mac: 00-**-ae-**-**-**
 
-###netbios source code:  
+###netbios.c source code:  
 
+	// Get mac address with NetBIOS protocol
+	// compile with gcc on linux
+	// Create by Dennis
+	// 2013-04-10
 	#include <stdio.h>
 	#include <stdlib.h>
 	#include <unistd.h>
