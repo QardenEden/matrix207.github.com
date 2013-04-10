@@ -143,6 +143,8 @@ tags: [linux, shell, git, svn, vim]
   `nmap -v -sn 192.168.1.1/24 |grep "Nmap scan" |  grep -v -E "Nmap scan .* [host down]"` 用于扫描局域网活动IP
 * `lsof -i:111`  
   `netstat -apn | grep 111`  
+  `iptables -A INPUT -p tcp --dport 111 -j DROP`通过iptables禁掉端口   
+  `iptables -A OUTPUT -p tcp --dport 111 -j DROP`  
 * `curl ifconfig.me`
 * `dig domain`   `dig -x host`
 
