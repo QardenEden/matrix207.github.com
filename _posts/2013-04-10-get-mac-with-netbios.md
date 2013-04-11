@@ -136,7 +136,7 @@ tags: [mac, netbios]
 			}  
 		}
 
-#if 0
+	#if 0
 		for(i=0;i<count;i++){  
 			// 如果最后一位是0x00，则表示当前名字表项为保存计算机名或者工作组  
 			if(Names[i].nb_name[15] == 0x00){  
@@ -151,7 +151,7 @@ tags: [mac, netbios]
 				}  
 			}  
 		}  
-#endif
+	#endif
 
 		unsigned char mac[6];
 		// 名字表后面是MAC地址  
@@ -236,3 +236,5 @@ tags: [mac, netbios]
 * [Nmap扫描原理与用法](http://blog.csdn.net/aspirationflow/article/details/7694274)
 * [NetBIOS Working Group](http://tools.ietf.org/html/rfc1002)
 * [NetBIOS WikiPedia](http://en.wikipedia.org/wiki/NetBIOS)
+* [精解局域网访问及共享](http://tech.ddvip.com/2009-06/1244885786123662_2.html)
+* []()
