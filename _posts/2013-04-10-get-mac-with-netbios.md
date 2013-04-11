@@ -16,33 +16,57 @@ tags: [mac, netbios]
 	Host is up (0.00023s latency).
 	PORT    STATE SERVICE
 	139/tcp open  netbios-ssn
-	MAC Address: 00:**:09:**:**:** (Dell)
+	MAC Address: 00:**:09:**:3a:** (Dell)
 
 	Nmap done: 1 IP address (1 host up) scanned in 0.12 seconds
 
 ###Search all:  
 
-	nmap -p139 192.168.50.1/24 | sed '/./{H;$!d};x;/open/!d' | grep -E 'scan' | awk '{print $5}'
+	Linux shell command : 
+		nmap -p139 192.168.50.1/24 | sed '/./{H;$!d};x;/open/!d' | grep 'scan' | awk '{print $NF}'
+	or
+		nmap -p139 192.168.50.1/24 | grep -B 3 'open' | grep 'scan' | awk '{print $NF}'
+	or 
+		nmap -p139 192.168.50.1/24 | tac | sed -n '/open/,+3p' | tac | grep 'scan' | awk '{print $NF}'	
+
+	[root@localhost netbios]# time nmap -p139 192.168.50.1/24 | grep -B 3 'open' | grep 'scan' | awk '{print $NF}'
+	192.168.50.16
+	192.168.50.22
+	192.168.50.26
+	192.168.50.28
+	192.168.50.29
+	192.168.50.36
+	192.168.50.37
+	192.168.50.39
+	...
+	192.168.50.238
+
+	real	0m4.451s
+	user	0m0.067s
+	sys	0m0.024s
+
 
 ###scan all:  
 
-	nmap -p139 192.168.50.1/24 | sed '/./{H;$!d};x;/open/!d' | grep -E 'scan' | awk '{print $5}' | xargs -n1 netbios
+	[root@localhost netbios]# nmap -p139 192.168.50.1/24 | grep -B 3 'open' | grep 'scan' | awk '{print $NF}' | xargs -n1 ./netbios
+     192.168.50.16 : 00-**-19-**-46-**
+     192.168.50.22 : 00-**-09-**-3a-**
+     192.168.50.26 : b8-**-6f-**-06-**
+     192.168.50.28 : 00-**-ae-**-e6-**
+     192.168.50.29 : 00-**-c9-**-6d-**
+     192.168.50.35 : 00-**-19-**-59-**
+     192.168.50.36 : 00-**-ae-**-ee-**
+     192.168.50.37 : 00-**-c9-**-8c-**
+     192.168.50.39 : 00-**-9b-**-b9-**
+	...
+	192.168.50.238 : b8-**-6f-**-28-**
 
-###output:  
-
-	   ip: 192.168.50.22
-	 name: B-B87F57290BC04
-	group: WORKGROUP
-	  mac: 00-**-09-**-**-**
-	   ip: 192.168.50.28
-	 name: 20120717-0804DD
-	group: WORKGROUP
-	  mac: 00-**-ae-**-**-**
 
 ###netbios.c source code:  
 
+	// netbios.c
 	// Get mac address with NetBIOS protocol
-	// compile with gcc on linux
+	// compile with gcc on linux: gcc -o netbios netbios.c
 	// Create by Dennis
 	// 2013-04-10
 	#include <stdio.h>
@@ -112,6 +136,7 @@ tags: [mac, netbios]
 			}  
 		}
 
+#if 0
 		for(i=0;i<count;i++){  
 			// 如果最后一位是0x00，则表示当前名字表项为保存计算机名或者工作组  
 			if(Names[i].nb_name[15] == 0x00){  
@@ -126,11 +151,12 @@ tags: [mac, netbios]
 				}  
 			}  
 		}  
+#endif
 
 		unsigned char mac[6];
 		// 名字表后面是MAC地址  
 		memcpy(mac,(respuesta+57+count*sizeof(struct names)),6);  
-		printf("  mac: %02x-%02x-%02x-%02x-%02x-%02x\n", 
+		printf(": %02x-%02x-%02x-%02x-%02x-%02x\n", 
 			mac[0],mac[1],mac[2],mac[3],mac[4],mac[5]);
 	}
 
@@ -185,13 +211,14 @@ tags: [mac, netbios]
 				case -1:
 					break;
 				case 0:
-					printf("timeout\n");
+					printf("%s timeout\n", inet_ntoa(server_addr.sin_addr));
+					return 0;
 					break;
 				default:
 					if(FD_ISSET(sock,&readfd)) {
 						memset(recvbuf, 0, sizeof(recvbuf));
 						count=recvfrom(sock,recvbuf,sizeof(recvbuf),0,(struct sockaddr*)&from_addr,&from_len);
-						printf("   ip: %s\n", inet_ntoa(from_addr.sin_addr));
+						printf("%16s ", inet_ntoa(from_addr.sin_addr));
 						parse_netbios(recvbuf, count);
 						return 1;  
 					}
