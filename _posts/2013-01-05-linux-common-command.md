@@ -101,13 +101,14 @@ tags: [linux, shell, git, svn, vim]
 
 
 ####VIM  
-	v|c|d  i|a  {|[\(|"|'  
-	qq operator q   100@q  
-	:Tlist    C-WW  
-	ctags -R   :set tags=..../tags     C-[, C-T  
-	cscope -Rb :cs add .../cscope.out :cs find g *** :cs find c ***  
-	:cw  
-	C-X C-P/N/L  
+
+		v|c|d  i|a  {|[\(|"|'  
+		qq operator q   100@q  
+		:Tlist    C-WW  
+		ctags -R   :set tags=..../tags     C-[, C-T  
+		cscope -Rb :cs add .../cscope.out :cs find g *** :cs find c ***  
+		:cw  
+		C-X C-P/N/L  
 
 ####git and svn  
 * git  
@@ -140,33 +141,31 @@ tags: [linux, shell, git, svn, vim]
   `sshpass -p passwd scp abc.sh root@172.168.1.101:/root/test`
 * `nmap ip`  
   `nmap -v -sn 192.168.1.1/24`  
-  `nmap -v -sn 192.168.1.1/24 |grep "Nmap scan" |  grep -v -E "Nmap scan .* [host down]"` 用于扫描局域网活动IP
+  `nmap -v -sn 192.168.1.1/24 |grep 'report' |grep -v 'down' |awk '{print $NF}'`用于扫描局域网活动IP
 * `lsof -i:111`  
   `netstat -apn | grep 111`  
   `iptables -A INPUT -p tcp --dport 111 -j DROP`通过iptables禁掉端口   
   `iptables -A OUTPUT -p tcp --dport 111 -j DROP`  
 * `curl ifconfig.me`
 * `dig domain`   `dig -x host`
+* `netstat -nlp`查看服务及监听端口 
 
 ####other  
 * patch  
   `diff a.c b.c > c.patch`  
   `patch a.c c.patch`  
-
 * `vmstat iostat ifstat nload top hexdump od`
-
 * `dd if=/dev/zero of=$test_file bs=1M count=$dev_size 2>> $log`
-
 * `> file.txt`
 * `man ascii`
 * `watch -n 5 command`
 * `chroot .`
-
 * `date "+%F %R:%S"`       
-  `date "+%s"`
-
+  `date "+%s"`  
 * `ldd file` print shared library dependencies
 * `cat /proc/uptime | awk -F. '{d=($1/86400);h=($1%86400)/3600;m=($1%3600)/60;s=($1%60);printf("已运行%d天%d时%d分%d秒\n",d,h,m,s)}'`
+* `fuser -u /home`  
+  `fuser -v -n tcp 7070`  
   
   
 #### 参考链接

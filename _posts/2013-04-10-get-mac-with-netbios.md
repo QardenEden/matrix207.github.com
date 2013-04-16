@@ -237,4 +237,3 @@ tags: [mac, netbios]
 * [NetBIOS Working Group](http://tools.ietf.org/html/rfc1002)
 * [NetBIOS WikiPedia](http://en.wikipedia.org/wiki/NetBIOS)
 * [精解局域网访问及共享](http://tech.ddvip.com/2009-06/1244885786123662_2.html)
-* []()
