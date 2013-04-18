@@ -32,12 +32,14 @@ tags: [linux, shell, git, svn, vim]
   `C-M-h` 向后删一个单词, 单词之间以符号分割  
   `C-w`   向后删一个单词, 单词之间以空格分割  
 
+* `<alt>+.`马上得到上一个命令的最后一个参数
+
+####常用系统命令
+
 * `cd -`切回上次目录  
   `cd` 回到用户目录
 
 * `cp filename{,.bak}`快速备份文件
-
-* `<alt>+.`马上得到上一个命令的最后一个参数
 
 * `time command`计算命令运行时间
 
@@ -58,6 +60,7 @@ tags: [linux, shell, git, svn, vim]
   `grep -c "lm" /proc/cpuinfo` 查看cpu位数  
 
 * `df   fdisk -l  du -sh    du -s * |sort -n |tail`
+
 * `free   bg   kill pid    killall proc    chmod 777 (r:4,w:2,x:1)(user,group,all)`
 
 * `find / -name "***"`  
@@ -65,12 +68,14 @@ tags: [linux, shell, git, svn, vim]
   `find / -type d -name "gedit"` 查找目录  
   `find . \( -path ./.git -o -path dir2 \) -prune -o -type d -print`查找子目录，.git和dir2除外  
   `find /usr/include/ -path /usr/include/boost -prune -o -name '*.h' -print >1.txt`  
+
 * `grep -r "abc" /root/source`  
   `grep -r --include "*.h" "date" path`  
   `grep -m 1 "model name" /proc/cpuinfo` 只匹配第一个  
   `grep -i -E "abc|123"` 匹配字符串abc或123, -i忽略大小写, -E正则表达式   
   `grep -r -l "main" .` 在当前目录及其子目录搜索main字符串，只列出匹配的文件名, -L列出不匹配的文件名  
   `grep -w "linux" *.md` 只匹配整个单词，而不是字符串的一部分  
+
 * `cut -d"" -f1`  
 	e.g:  
 	`[root@localhost ~]# sensors |grep "Core "`  
@@ -79,6 +84,17 @@ tags: [linux, shell, git, svn, vim]
 	`[root@localhost ~]# sensors |grep "Core " |cut -d"+" -f2 |cut -d" " -f1`  
 	30\.0°C  
 	37\.0°C  
+
+* `history|awk '{print $3}'|awk 'begin {FS="1"} {print $1}'|sort|uniq -c|sort -rn|head -10`
+
+* `ps aux | sort -nk +4 | tail`
+
+* `uname -a`
+
+* `rpm -qf /usr/bin/cp`  
+  `rpm -ivp ***.rpm`  
+
+* `mkdir -p`
 
 ####awk and sed  
 * awk  
@@ -94,23 +110,16 @@ tags: [linux, shell, git, svn, vim]
   `sed [options] -f scriptfile file(s)`  
   `sed -i '/'$prj'/{s/\(.*#.*#\)[0-9]\+/\1'$rev_new'/}' $conf_file`  
 
-* `history|awk '{print $3}'|awk 'begin {FS="1"} {print $1}'|sort|uniq -c|sort -rn|head -10`
-* `ps aux | sort -nk +4 | tail`
-* `uname -a`
-* `rpm -qf /usr/bin/cp`  
-  `rpm -ivp ***.rpm`  
-* `mkdir -p`
-
-
 ####VIM  
-
-		v|c|d  i|a  {|[\(|"|'  
-		qq operator q   100@q  
-		:Tlist    C-WW  
-		ctags -R   :set tags=..../tags     C-[, C-T  
-		cscope -Rb :cs add .../cscope.out :cs find g *** :cs find c ***  
-		:cw  
-		C-X C-P/N/L  
+* vim  
+  `:e filename` add a file to editor  
+  `:bn` or `:bp` goto the next or previous buffer  
+  `:bd!` delete current buffer tag  
+  `C-x` or `C-a` minus or add 1 to current digit  
+  `wm` open or close netrw and TagList windows  
+  `:set syntax=python` manual set syntax language  
+  `nohl` not highlight  
+  `:set nu` show number  
 
 ####git and svn  
 * git  
@@ -151,6 +160,13 @@ tags: [linux, shell, git, svn, vim]
 * `curl ifconfig.me`
 * `dig domain`   `dig -x host`
 * `netstat -nlp`查看服务及监听端口 
+
+####os
+* Fedora  
+   `Alt+Tab` switch windows  
+   `Alt+\``  switch sub-windows  
+   `Win` windows key, use to show all application  
+   `Win`->`Space`, search application  
 
 ####other  
 * patch  
