@@ -166,7 +166,7 @@ tags: [linux, shell, git, svn, vim]
    `Alt+Tab` switch windows  
    `Alt+\``  switch sub-windows  
    `Win` windows key, use to show all application  
-   `Win`->`Space`, search application  
+   `Win` -> `Space` , search application  
 
 ####other  
 * patch  
