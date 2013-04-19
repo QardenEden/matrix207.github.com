@@ -164,7 +164,7 @@ tags: [linux, shell, git, svn, vim]
 ####os
 * Fedora  
    `Alt+Tab` switch windows  
-   `Alt+\``  switch sub-windows  
+   ``Alt+` ``  switch sub-windows  
    `Win` windows key, use to show all application  
    `Win` -> `Space` , search application  
 
