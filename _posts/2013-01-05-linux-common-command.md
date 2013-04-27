@@ -164,7 +164,7 @@ tags: [linux, shell, git, svn, vim]
 ####os
 * Fedora  
    `Alt+Tab` switch windows  
-   `Alt+\``  switch sub-windows  
+   ``Alt+` ``  switch sub-windows  
    `Win` windows key, use to show all application  
    `Win` -> `Space` , search application  
 
@@ -184,7 +184,10 @@ tags: [linux, shell, git, svn, vim]
 * `cat /proc/uptime | awk -F. '{d=($1/86400);h=($1%86400)/3600;m=($1%3600)/60;s=($1%60);printf("已运行%d天%d时%d分%d秒\n",d,h,m,s)}'`
 * `fuser -u /home`  
   `fuser -v -n tcp 7070`  
-  
+* `echo 1 > /proc/sys/kernel/sysrq` enable sysrq  
+  `echo "b" > /proc/sysrq-trigger`  reboot  
+  `echo "o" > /proc/sysrq-trigger`  shutdown  
+  `shutdown -h now`                 shutdown  
   
 #### 参考链接
 + [你可能不知道的Shell](http://coolshell.cn/articles/8619.html)
