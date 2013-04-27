@@ -124,45 +124,16 @@ step 2. 然后将刚写的MIB C code编译进net-snmp，有几种方法：
       参考： http://net-snmp.sourceforge.net/tutorial/tutorial-5/toolkit/dlmod/index.html 
 
 ####  5.2 compile net-snmp by shell script
-    function compile_net_snmp()
-    {
-        # prepare for compile
-        if [ -d /tmp/${USER_DIR}/net-snmp-5.4.2 ];then
-            rm -rf /tmp/${USER_DIR}/net-snmp-5.4.2
-        fi
-
-        cd /tmp/$USER_DIR
-
-        # add our extensions in dennis.c
-        rm -f /tmp/${USER_DIR}/net-snmp-5.4.2/agent/mibgroup/dennis.*
-        cp -f /tmp/${USER_DIR}/src/snmp/src/dennis.* /tmp/${USER_DIR}/net-snmp-5.4.2/agent/mibgroup
-
-        # compile net-snmp
-        cd /tmp/${USER_DIR}/net-snmp-5.4.2
-        ./configure --prefix=/usr --with-mib-modules="dennis"
-        make clean
-        make
-        if [ "$?" -ne 0 ];then
-            echo "["`date '+%Y/%m/%d-%T'`"][compile net-snmp-5.4.2 error]" >>/tmp/${USER_DIR}/compile_log
-            exit 1
-        fi
-
-        # install net-snmp-5.4.2
-        make DESTDIR=${REAL_EXTRA_PACKAGES}/tmp install
-        if [ "$?" -ne 0 ];then
-            echo "["`date '+%Y/%m/%d-%T'`"][install net-snmp-5.4.2 error]" >>/tmp/${USER_DIR}/compile_log
-            exit 1
-        fi
-
-        # delete unwanted files to reduce size
-        rm -rf ${REAL_EXTRA_PACKAGES}/tmp/usr/include
-        rm -rf ${REAL_EXTRA_PACKAGES}/tmp/usr/man
-        rm -rf ${REAL_EXTRA_PACKAGES}/tmp/usr/share
-        rm -f  ${REAL_EXTRA_PACKAGES}/tmp/usr/lib/*.la
-        rm -f  ${REAL_EXTRA_PACKAGES}/tmp/usr/lib/*.a
-
-    }
+	cd /home/dennis/net-snmp-5.4.2/
+	cp -f /home/dennis/dennis.{h,c} ./agent/mibgroup
+	./configure --prefix=/usr --with-mib-modules="dennis"
+	make clean
+	make
+	make install
  
+####  5.3 update mib
+	copy "net-snmp-5.4.2/agent/.libs/libnetsnmpmibs.so" to "/usr/lib/"
+
 ## 6. Reference
 ####  6.1 network link
 * [net-snmp之利用pass做snmpget和snmpset](http://imxie.net/2011/07/use_pass_for_snmp_get_and_set.htm)
