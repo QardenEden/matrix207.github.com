@@ -126,6 +126,7 @@ tags: [linux, shell, git, svn, vim]
   `git clone url`  
   `git add .`  
   `git commit -m "***"`  
+  `git commit file -m "***"`  
   `git push origin master`  
   `git status`  
   `git rm ***`	remove file  
