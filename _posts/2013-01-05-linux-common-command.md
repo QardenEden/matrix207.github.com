@@ -168,6 +168,30 @@ tags: [linux, shell, git, svn, vim]
    `Win` windows key, use to show all application  
    `Win` -> `Space` , search application  
 
+####vimperator
+* vimperator  
+`:help`  Open help page  
+`C-[`    cancel command mode  
+`d`      close current page  
+`/`      search
+`H`      Go back in the browser history  
+`gg`     Go to the top of the page	 
+`G`      Go to the bottom of the page  
+`C-f`    forward page  
+`C-b`    backward page  
+`y`      Copy the current URL to clipboad  
+`p`      Open the URL from current clipboad contents in current buffer  
+`P`      Open the URL from current clipboad contents in a new tab buffer  
+`r`      Reload current page  
+`ZZ`     Quit and save the session  
+`C-n`    Go to the next buffer  
+`C-p`    Go to the previous buffer  
+`gi`     Go to input field  
+`g-u`    Go to the parent directory  
+`g-U`    Go to the root of the website  
+`c`		 Start caret mode.Like vim's normal mode, use `h j k l` to move, and 
+press `v` to start visual mode, then press `y` to copy select text.  
+
 ####other  
 * patch  
   `diff a.c b.c > c.patch`  
