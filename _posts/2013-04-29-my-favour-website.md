@@ -7,20 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-
-* [【机票查询|机票|飞机票查询|飞机票|特价机票】- 酷讯机票](http://jipiao.kuxun.cn/)
-* [酷迅,酷迅旅行网,机票,飞机票,电子机票,国际机票,机票预订,酒店预订-Kuxunwang.com](http://www.kuxunwang.com/journey/orderinfo.aspx?ordercode=J110531210004)
-* [机票预订-机票查询-机票价格查询-特价机票预定-打折机票查询, 携程旅行网国内机票预订](http://flights.ctrip.com/Domestic/SearchFlights.aspx?utm_source=baidu&utm_medium=cpc&utm_campaign=baidu0e&campaign=CHNbaidu0e&adid=flight&gclid=&isctrip=T)
-* [机票,飞机票查询,特价机票,打折机票预订-去哪儿网](http://www.qunar.com/)
-* [京东网上商城-综合网购首选，正品行货，机打发票，售后上门取件，省钱又放心](http://www.360buy.com/)
-* [亚马逊 Z.cn：网上购物：图书，手机，数码，家电，化妆品，钟表，首饰，日用百货等在线销售](http://www.amazon.cn/ref=z_cn)
-* [计算机图书 - china-pub网上书店](http://www.china-pub.com/itbook/)
-* [当当网—网上购物中心：图书、母婴、美妆、家居、数码、家电、服装、鞋包等，正品低价，货到付款](http://www.dangdang.com/)
-* [China-Pub网上书店:计算机 经管、外语、建筑、法律、原版图书……](http://www.china-pub.com/)
-* [欢迎光临 Apple Store - Apple Store（中国）](http://store.apple.com/cn)
-* [IKEA | 家居用品,小空间,收纳,门厅方案,衣柜收纳](http://www.ikea.com/cn/zh)
-* [PChome Online 網路家庭](http://www.pchome.com.tw/)
-* [中铁快运](http://www.95572.com/jsp/index.jsp)
+###math
 * [Wolfram|Alpha: Computational Knowledge Engine](http://www.wolframalpha.com/)
 * [数学研发论坛 (bbs.emath.ac.cn)](http://bbs.emath.ac.cn/)
 * [Wolfram MathWorld: The Web&#39;s Most Extensive Mathematics Resource](http://mathworld.wolfram.com/)
@@ -28,15 +15,22 @@ tags: []
 * [Timus Online Judge](http://acm.timus.ru/)
 * [Welcome To PKU JudgeOnline](http://poj.org/)
 * [Project Euler](http://projecteuler.net/)
+###computer
+###program
+###algorithm
 * [当今世界最受人们重视的十大经典算法 - 结构之法 算法之道 - CSDN博客](http://blog.csdn.net/v_JULY_v/archive/2011/03/07/6228235.aspx)
 * [Bcrypt Algorithm](http://www.usenix.org/event/usenix99/provos/provos_html/node5.html)
 * [Bcrypt - Blowfish File Encryption](http://bcrypt.sourceforge.net/)
 * [Blowfish (cipher) - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Blowfish_(cipher))
 * [算法设计与分析--广西区精品课程申报](http://www.gljpkc.com/algorithms/7.asp)
 * [Archive of Interesting Code](http://www.keithschwarz.com/interesting/)
+###api
+###google
 * [google-api-php-client - Google APIs Client Library for PHP - Google Project Hosting](http://code.google.com/p/google-api-php-client/)
 * [Google Code University - Google Code](http://code.google.com/edu/)
+###qq
 * [API文档 - 腾讯社区开放平台](http://wiki.opensns.qq.com/wiki/API%E6%96%87%E6%A1%A3)
+###skype
 * [Accessories (Public API)](http://developer.skype.com/accessories)
 * [也来玩转Skype ——基于Skype4Com API编写Skype外壳程序 - 贝高林的Blog - CSDN博客](http://blog.csdn.net/lin_bei/archive/2007/08/28/1762187.aspx)
 * [SkypeShell可执行程序、代码、开发文档 CSDN 下载频道](http://download.csdn.net/down/236631/lin_bei)
@@ -51,38 +45,50 @@ tags: []
 * [SkypeTracerSource VOIP program IP电话/视频会议 133万源代码下载- www.pudn.com](http://www.pudn.com/downloads65/sourcecode/multimedia/ip_phone/detail233797.html)
 * [Skype UNICODE support? - Skype Community](http://forum.skype.com/index.php?showtopic=77830)
 * [API Design Principles | Qt Wiki | Qt Developer Network](http://developer.qt.nokia.com/wiki/API_Design_Principles)
+###architecture
 * [浅谈Facebook的服务器架构_知识库_博客园](http://kb.cnblogs.com/page/105560/)
 * [[从架构到设计]第一回：设计，应该多一点 - Anytao - 博客园](http://www.cnblogs.com/anytao/archive/2007/08/15/anytao_design_01.html)
 * [插件式架构设计实践二：基于Silverlight的B/S插件式架构设计方法_知识库_博客园](http://kb.cnblogs.com/page/89205/)
 * [InfoQ: Google Wave’s Architecture](http://www.infoq.com/news/2009/06/wave)
 * [网站架构相关PPT、文章整理（更新于2009-7-15） - BlueDavy之技术Blog - BlogJava](http://www.blogjava.net/BlueDavy/archive/2009/04/28/267970.html)
+###arduino
 * [Arduino - HomePage](http://arduino.cc/en/)
 * [arduino - Arduino is an open-source electronics prototyping platform based on flexible, easy-to-use hardware and software. - Google Project Hosting](http://code.google.com/p/arduino/)
 * [Arduino · Arduino中国](http://blog.flamingoeda.com/arduino/)
+###cgi
 * [Linux TCP server系列（8）-cgi server - Aga.J - 博客园](http://www.cnblogs.com/aga-j/archive/2011/09/18/2180687.html)
 * [cgic: an ANSI C library for CGI Programming](http://www.boutell.com/cgic/#obtain)
 * [用C/C++写CGI程序](http://www.moon-soft.com/program/bbs/readelite887957.htm)
 * [cgic: CGI的C函数库 - hurtmanzc的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/hurtmanzc/article/details/1757747)
 * [Linux Tutorial: C++ CGI and Linux](http://www.yolinux.com/TUTORIALS/LinuxTutorialC++CGI.html)
 * [HOW-TO Write a CGI Program in C/C++](http://www.purplepixie.org/cgi/howto.php)
+###crack
+###wifi
 * [无线网络安全工具 - 开源软件库 - 开源中国社区](http://www.oschina.net/project/tag/243/wireless-password-cr)
 * [Ophcrack - 密码破解软件 - 开源中国社区](http://www.oschina.net/p/ophcrack)
+###zip
 * [FCrackZip - zip密码破解工具 - 开源中国社区](http://www.oschina.net/p/fcrackzip)
+###pdf
 * [pdfcrack - PDF密码破解工具 - 开源中国社区](http://www.oschina.net/p/pdfcrack)
+###crashreport
 * [Add Crash Reporting to Your Applications with the CrashRpt Library - CodeProject](http://www.codeproject.com/KB/debug/crash_report.aspx)
 * [XCrashReport : Exception Handling and Crash Reporting - Part 4 - CodeProject](http://www.codeproject.com/KB/debug/XCrashReportPt4.aspx)
 * [QQ等软件崩溃时的那个bugReport模块的怎么做的，原理是什么 - VC/MFC / 进程/线程/DLL](http://topic.csdn.net/u/20070125/20/acc9ae9b-b87b-40e9-afe0-e522aea758d8.html)
 * [Bug Report机制的实现 - 今夜雨 - 博客频道 - CSDN.NET](http://blog.csdn.net/netlinux/article/details/6290824)
 * [Bugslayer, MSJ, April 1998](http://www.microsoft.com/msj/0498/bugslayer0498.aspx)
 * [crash dump的捕捉原理 - - 博客频道 - CSDN.NET](http://blog.csdn.net/xuminggang/article/details/5492879)
+###debug
+###linux
 * [使用 GDB 调试 Linux 软件](http://www.ibm.com/developerworks/cn/linux/sdk/gdb/index.html)
 * [Linux调试工具strace和gdb常用命令小结 - 大圆那些事 - 博客园](http://www.cnblogs.com/panfeng412/archive/2011/10/24/strace-and-gdb-summary.html)
 * [掌握 Linux 调试技术](http://www.ibm.com/developerworks/cn/linux/sdk/l-debug/)
+###windows
 * [Windows调试技术-创建MiniDump文件 - moonz-wu - 博客园](http://www.cnblogs.com/moonz-wu/archive/2008/08/21/1272708.html)
 * [异常处理与MiniDump详解(4) MiniDump - 程序即人生 - 博客频道 - CSDN.NET](http://blog.csdn.net/vagrxie/article/details/4398721)
 * [MiniDump小结 - woaidongmao - C++博客](http://www.cppblog.com/woaidongmao/archive/2009/10/22/99201.html)
 * [Gustavo Duarte](http://duartes.org/gustavo/blog/)
-* [到底什么叫做编程能力？怎么衡量自己的编程能力？ - TopLanguage | Google 网上论坛](https://groups.google.com/group/pongba/browse_thread/thread/7b136702f7ca7c58#)
+###discuss
+* [{非技术}{讨论}到底什么叫做编程能力？怎么衡量自己的编程能力？ - TopLanguage | Google 网上论坛](https://groups.google.com/group/pongba/browse_thread/thread/7b136702f7ca7c58#)
 * [TopLanguage | Google Groups](https://groups.google.com/group/pongba)
 * [有些事情,作起来要比想象中的容易 - TopLanguage | Google 网上论坛](https://groups.google.com/group/pongba/browse_frm/thread/9a459b6efe94985a/)
 * [Arm设计思想与高效C编程 - 嵌入式人的成长历程。。。 - CSDN博客](http://blog.csdn.net/woshixingaaa/archive/2011/03/15/6249767.aspx)
@@ -90,23 +96,28 @@ tags: []
 * [OnStartups - Stack Exchange](http://answers.onstartups.com/)
 * [Super User](http://superuser.com/)
 * [Server Fault](http://serverfault.com/)
+###doxygen
 * [Doxygen](http://www.stack.nl/~dimitri/doxygen/projects.html)
 * [转贴：Doxygen注释风格 百度空间_应用平台](http://apps.hi.baidu.com/share/detail/19717901)
 * [Doxygen使用简介（4） - jeamywu的专栏 - CSDN博客](http://blog.csdn.net/jeamywu/archive/2010/07/12/5730006.aspx)
 * [Doxygen C++风格的注释_孙高勇的后花园_百度空间](http://hi.baidu.com/sungaoyong/blog/item/df086cef3ecc94dc2f2e2126.html)
 * [Doxygen注释风格_孙高勇的后花园_百度空间](http://hi.baidu.com/sungaoyong/blog/item/41914eed2345f7f6b2fb955b.html)
 * [doxygen+VIM文档实用指南for C/C-liked Programmers - clarkZHUO的专栏 - CSDN博客](http://blog.csdn.net/clarkZHUO/archive/2006/12/31/1471573.aspx#title3)
+###driver
 * [CY3681 EZ - USB FX2 Development Kit - Cypress Semiconductor](http://www.cypress.com/?rID=14319)
 * [CY3674 EZ - USB FX1 Development Kit - Cypress Semiconductor](http://www.cypress.com/?rID=14317)
 * [Source code of Control Center/CyConsole/EZ - USB Control panel - Cypress Semiconductor](http://www.cypress.com/?id=4&rID=27721)
 * [【驱动】Linux设备驱动开发详解 - 下载共享 - ChinaUnix.net](http://bbs.chinaunix.net/thread-1962774-1-1.html)
 * [A simple demo for WDM Driver development - CodeProject](http://www.codeproject.com/kb/system/WDM_Driver_development.aspx?df=100&tid=957464&forumid=121122&select=957464)
 * [菜鸟之驱动开发1 - 开心程序 - 博客频道 - CSDN.NET](http://blog.csdn.net/favormm/article/details/6686779)
+###usb
 * [USB设备驱动开发深度解析--华清远见嵌入式培训视频教程 - 视频 - 优酷视频 - 在线观看](http://v.youku.com/v_show/id_XMTAxODY0OTMy.html)
 * [usb驱动程序开发技术总结 - li_guotao blog - CSDN博客](http://blog.csdn.net/li_guotao/archive/2008/02/17/2100130.aspx)
+###WDF
 * [WDF Windows Driver Foundation for Driver Developers](http://msdn.microsoft.com/en-us/windows/hardware/gg463268)
 * [Windows Driver Foundation - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/Windows_Driver_Foundation)
 * [windows驱动开发学习&lt;1&gt; - imFolish - 博客园](http://www.cnblogs.com/xielechuan/archive/2011/11/01/2232237.html)
+###embedded
 * [Tony嵌入式论坛 Tony嵌入式](http://www.cevx.com/bbs/index.php)
 * [FreeRTOS-A Free professional grade RTOS supporting 26 architectures, including ARM7, ARM9, Cortex-M3, RX600, MSP430, MicroBlaze, AVR, x86, PIC32, PIC24, dsPIC, H8S, HCS12 and 8051](http://www.freertos.org/)
 * [WinCE5.0开发环境的建立 - hejianbang的专栏 - CSDN博客](http://blog.csdn.net/hejianbang/archive/2008/01/14/2043744.aspx)
@@ -117,14 +128,18 @@ tags: []
 * [从零开始构建一个GNU/Linux ARM toolchain(翻译及注解）_嵌入式研习室_百度空间](http://hi.baidu.com/%D1%A9%B6%C0%D5%F0/blog/item/fb0a6913aa86d9876438db7f.html)
 * [Wind River Systems - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Wind_River_Systems)
 * [嵌入式系统 - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F)
+###mcu
 * [STC: 8051单片机全球第一品牌, 全球最大的8051单片机设计公司](http://www.stcmcu.com/)
 * [单片机学习|单片机教程|单片机开发|编程器|编程器制作-伟纳电子-http://www.willar.com/](http://www.willar.com/)
+###skyeye
 * [Embedded Operating System](http://staff.ustc.edu.cn/~xlanchen/EmbeddedOperatingSystems2009Spring/EmbeddedOperatingSystems2009Spring.html)
 * [Embedded Operating System](http://staff.ustc.edu.cn/~xlanchen/EmbeddedOperatingSystems2007Spring/EmbeddedOperatingSystems2007Spring.html)
 * [Skyeye学习（一）—— 安装与使用测试例子 - 鯎鯎 - 博客园](http://www.cnblogs.com/bakasen/archive/2011/03/25/1995622.html)
 * [SkyEye - Browse Files at SourceForge.net](http://sourceforge.net/projects/skyeye/files/)
 * [源码开放的嵌入式系统软件分析与实践——基于SkyEye和ARM开发平台 - china-pub网上书店](http://product.china-pub.com/21879#qy)
+###gnu
 * [GNURadio - 中文社区 - GNU Radio 中文社区](http://gnuradio.microembedded.com/chinese/)
+###google
 * [Programming Languages - Google Code University - Google Code](http://code.google.com/edu/languages/)
 * [gtest-gbar - Google Test UI - Google Project Hosting](http://code.google.com/p/gtest-gbar/)
 * [玩转Google开源C++单元测试框架Google Test系列(gtest)之五 - 死亡测试 - CoderZh的技术博客 - 博客园](http://www.cnblogs.com/coderzh/archive/2009/04/08/1432043.html)
@@ -132,11 +147,16 @@ tags: []
 * [gdata-python-client - Google Data APIs Python Client Library - Google Project Hosting](http://code.google.com/p/gdata-python-client/)
 * [YouTube - China GDD 2009-大师们的程序编码纠错艺术](http://www.youtube.com/watch?v=bgbxODU_QjQ&feature=relmfu)
 * [google-styleguide - Style guides for Google-originated open-source projects - Google Project Hosting](http://code.google.com/p/google-styleguide/)
+###chrome
 * [Vimium - the hacker&#39;s browser](http://vimium.github.com/)
+###hacker
 * [Eric S. Raymond五部曲](http://docs.huihoo.com/joyfire.net/7-2.html)
+###backbox
 * [Home | BackBox Linux](http://www.backbox.org/)
+###backtrack
 * [BackTrack Linux - Penetration Testing Distribution](http://www.backtrack-linux.org/)
 * [VirtualBox Install - BackTrack Linux](http://www.backtrack-linux.org/wiki/index.php/VirtualBox_Install)
+###icon
 * [Icon Archive v3 *reloaded* - 217,573 free icons, buddy icons, xp icons, vista icons,desktop icons](http://www.iconarchive.com/)
 * [8个高质量图标的最佳搜索引擎 - CSDN.NET - CSDN软件研发频道](http://sd.csdn.net/a/20110408/295499.html)
 * [Icon Search Engine | Iconfinder](http://www.iconfinder.com/)
@@ -146,7 +166,10 @@ tags: []
 * [Very Icon, Free Icons, PNG ICO Icons,Vista Icons Search AND Download](http://www.veryicon.com/)
 * [Icons Search Engine](http://icons-search.com/)
 * [ICO 图标 在线制作](http://free.logomaker.cn/tools/icoMaker.aspx)
+###ide_online
 * [codepad](http://codepad.org/)
+###eclipse
+###RCP
 * [Eclipse RCP开发桌面程序 - kenty - 博客园](http://www.cnblogs.com/kentyshang/archive/2007/08/02/840027.html)
 * [介绍接个实用Eclipse RCP开发示例 - 宋力崴－My Eclipse RCP－－基于插件应用典范 - 博客频道 - CSDN.NET](http://blog.csdn.net/songliwei2005/article/details/2691146)
 * [Eclipse RCP - 富客户端开发平台 - 开源中国社区](http://www.oschina.net/p/eclipse+rcp)
@@ -157,16 +180,22 @@ tags: []
 * [Eclipse Community Forums: Welcome to the forum](http://www.eclipse.org/forums/)
 * [Eclipse从入门到精通 陈刚 - 共享资料](http://ishare.iask.sina.com.cn/search.php?key=Eclipse%B4%D3%C8%EB%C3%C5%B5%BD%BE%AB%CD%A8+%B3%C2%B8%D5&format=)
 * [Eclipse RCP开发书籍资料简介 - Java - ITeye论坛](http://www.iteye.com/topic/49060)
+###IPC
 * [Interprocess communication tutorial - CodeProject](http://www.codeproject.com/KB/threads/ipc_tute.aspx)
-* [VC++中进程间相互通信的十一种方法](http://soft.yesky.com/257/2212757.shtml)
+* [VC++中进程间相互通信的十一种方法 _天极网](http://soft.yesky.com/257/2212757.shtml)
 * [VC中使用自定义消息在进程间通讯 - GT_Andy - 博客园](http://www.cnblogs.com/GT_Andy/archive/2010/12/27/1918397.html)
 * [VC 进程间通讯发送自符串消息 - 凌点 - 博客园](http://www.cnblogs.com/ganmk/archive/2009/05/25/1489027.html)
+###language
+###assembly
 * [How to write a simple operating system in assembly language](http://mikeos.berlios.de/write-your-own-os.html)
 * [MikeOS - simple x86 assembly language operating system](http://mikeos.berlios.de/)
 * [汇编 开发工具 - 开源软件库 - 开源中国社区](http://www.oschina.net/project/tag/11/devtools?sort=view&lang=162&os=0)
-* [_beginthread, _beginthreadex \(CRT\)](http://msdn.microsoft.com/en-us/library/kdzttdcb(v=vs.80).aspx)
+###c
+###multithread
+* [_beginthread, _beginthreadex (CRT)](http://msdn.microsoft.com/en-us/library/kdzttdcb(v=vs.80).aspx)
 * [WaitForSingleObject Function (Windows)](http://msdn.microsoft.com/en-us/library/ms687032(v=vs.85).aspx)
 * [VC知识库BLOG-风中的流沙-_beginthread还是CreateThread](http://blog.vckbase.com/flowsand/articles/3549.html#Post)
+###笔试
 * [嵌入式c笔试题(整理)_jiangchike-ChinaUnix博客](http://blog.chinaunix.net/uid-27002868-id-3224516.html)
 * [华为C/C++笔试题(附答案，华为面试题系列)](http://www.sf.org.cn/Article/base/200803/20885.html)
 * [Google Objective-C Style Guide](http://google-styleguide.googlecode.com/svn/trunk/objcguide.xml)
@@ -181,6 +210,8 @@ tags: []
 * [strlen源码剖析 - #ant - C++博客](http://www.cppblog.com/ant/archive/2007/10/12/32886.html)
 * [C, The Beautiful Language | TENACIOUS C](http://tenaciousc.com/?p=1787)
 * [变量定义与声明的区别 - 路吾 - 博客园](http://www.cnblogs.com/wangliang651/archive/2009/04/06/1430098.html)
+###c++
+###Boost
 * [Linux下编译安装boost | Eyoung&#39;s Blog](http://blog.ehomy.net/archives/148)
 * [配置bjam的步骤_学着站在巨人的肩膀上_百度空间](http://hi.baidu.com/jrckkyy/blog/item/e90fbafa3902fe9d58ee904a.html)
 * [Boost Downloads](http://www.boost.org/users/download/)
@@ -189,12 +220,15 @@ tags: []
 * [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Comments)
 * [cplusplus.com - The C++ Resources Network](http://www.cplusplus.com/)
 * [C++的内存管理 - bizhu12的专栏 - CSDN博客](http://blog.csdn.net/bizhu12/article/details/6668834)
+###haskell
 * [Cn/Haskell - HaskellWiki](http://www.haskell.org/haskellwiki/Cn/Haskell)
+###html
 * [HTML &lt;span&gt; 标签](http://www.w3school.com.cn/tags/tag_span.asp)
 * [HTML 系列教程](http://www.w3school.com.cn/h.asp)
 * [HTML5中国](http://html5cn.net/)
 * [使用HTML5和CSS3来创建幻灯片 - 蒋宇捷的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/hfahe/article/details/6527467)
 * [imakewebthings/deck.js - GitHub](https://github.com/imakewebthings/deck.js)
+###java
 * [Linux(Fedora 13)下 java开发环境配置（一） ——jdk的安装与配置 - leer的学习笔记本 - ITeye技术网站](http://weijun8611-126-com.iteye.com/blog/748777)
 * [Linux(Fedora 13)下 java开发环境配置（二） ——tomcat的安装与配置 - leer的学习笔记本 - ITeye技术网站](http://weijun8611-126-com.iteye.com/blog/748779)
 * [Linux(Fedora 13)下 java开发环境配置（三） ——eclipse 安装与配置 - leer的学习笔记本 - ITeye技术网站](http://weijun8611-126-com.iteye.com/blog/748780)
@@ -210,15 +244,21 @@ tags: []
 * [Java Native Access - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Java_Native_Access)
 * [Apache Ant - Welcome](http://ant.apache.org/)
 * [【转】linux jna调用so动态库_南无龙明佛_百度空间](http://hi.baidu.com/nxdl/blog/item/cc1966f475f1a6cff2d3852d.html/cmtid/b8d7baefadf1d419fcfa3c6f)
+###php
 * [风雪之隅-Laruence的博客](http://www.laruence.com/)
+###perl
 * [4 本免费的 Perl 语言编程书籍 — LinuxTOY](http://linuxtoy.org/archives/4-free-perl-books.html)
 * [The Comprehensive Perl Archive Network - www.cpan.org](http://www.cpan.org/)
+###python
+###mssql server
 * [Linux 下用 Python 连接 MSSql Server 2008 - 赖勇浩的编程私伙局 - 博客频道 - CSDN.NET](http://blog.csdn.net/lanphaday/article/details/3838967)
+###network
 * [python 网络编程_python 中文社区](http://www.python-cn.cn/wangluobiancheng/2009/1012/16.html)
 * [floppsie.comp.glam.ac.uk/Glamorgan/gaius/wireless/5.html#index](http://floppsie.comp.glam.ac.uk/Glamorgan/gaius/wireless/5.html#index)
 * [File transmission over TCP with Python - Stack Overflow](http://stackoverflow.com/questions/5020658/file-transmission-over-tcp-with-python)
 * [20.17. SocketServer — A framework for network servers — Python v2.7.2 documentation](http://docs.python.org/library/socketserver.html)
 * [17.2. socket — Low-level networking interface — Python v2.7.2 documentation](http://docs.python.org/library/socket.html)
+###中文抓取
 * [Python正则表达式处理中文。引号前的u和r - 日志 - 静夜思 - 编程中国](http://hi.bccn.net/space-2-do-blog-id-31603.html)
 * [匹配中文字符的正则表达式： [u4e00-u9fa5] - 日志 - 阿米 - PHP圈子 - Powered by UCenter Home](http://home.phpchina.com/space.php?uid=46362&do=blog&id=43420)
 * [python 正则匹配中文 - longmans的日志 - 网易博客](http://longmans1985.blog.163.com/blog/static/70605475200911110525986/)
@@ -249,23 +289,30 @@ tags: []
 * [The PyCon China 2011 Playback](http://live.topgeek.org/)
 * [uliweb - UnLimited Web Framework - Google Project Hosting](http://code.google.com/p/uliweb/)
 * [笨办法学 Python （Learn Python The Hard Way） — 笨办法学 Python 2.0 documentation](http://learn-python-the-hard-way-zh_cn-translation.readthedocs.org/en/latest/index.html)
+###quantumprogram
 * [QP量子编程学习笔记（原创） - tech - Quick &amp; Win -- 五多](http://blogold.chinaunix.net/u/16651/showart_465495.html)
 * [【原创】技术系列之 状态机（二） - CppExplore - C++博客](http://www.cppblog.com/CppExplore/archive/2008/01/30/42205.html)
 * [State machines and tools for embedded | Quantum Leaps](http://www.state-machine.com/index.php)
+###tcl
 * [Tcl Tutorial](http://www.tcl.tk/man/tcl8.5/tutorial/tcltutorial.html)
 * [Tcl/Tk Documentation](http://www.tcl.tk/doc/)
 * [Introduction to the Tcl Programming Language](http://www2.lib.uchicago.edu/keith/tcl-course/)
 * [Tcl Programming/Examples - Wikibooks, open books for an open world](http://en.wikibooks.org/wiki/Tcl_Programming/Examples)
+###xml
 * [TinyXml快速入门（一） - clever101的专栏 - CSDN博客](http://blog.csdn.net/clever101/archive/2010/02/28/5334369.aspx)
 * [TinyXml快速入门（二） - clever101的专栏 - CSDN博客](http://blog.csdn.net/clever101/archive/2010/03/15/5379466.aspx)
 * [TinyXml快速入门（三） - clever101的专栏 - CSDN博客](http://blog.csdn.net/clever101/archive/2010/03/14/5379751.aspx)
 * [How To Serialize a CTreeCtrl in XML - CodeProject](http://www.codeproject.com/KB/tree/ctreectrl_xml.aspx)
 * [TinyXml简介(转自CSDN) | 我的网上小窝](http://zhousanfeng.wordpress.com/2009/11/10/tinyxml%E7%AE%80%E4%BB%8B%E8%BD%AC%E8%87%AAcsdn/)
 * [TinyXML | Download TinyXML software for free at SourceForge.net](http://sourceforge.net/projects/tinyxml/)
+###VB
 * [Visual Basic 从入门到精通视频教程-VB视频教程下载-eNet网络学院](http://www.enet.com.cn/eschool/video/vb/)
+###vba
 * [ExcelVBA程序开发 - Excel Home论坛](http://club.excelhome.net/forum-2-1.html)
 * [ExcelVBA程序开发 - Excel Home论坛](http://club.excelhome.net/forumdisplay.php?fid=2&filter=digest)
+###VC
 * [可靠UDP传输的实现！ - VC/MFC / 网络编程](http://topic.csdn.net/u/20110210/08/D4E31E9C-7299-4A0A-8A52-C7215A9D5732.html)
+###COM
 * [www.vckbase.com/vckbase/columnist/yangfeng/](http://www.vckbase.com/vckbase/columnist/yangfeng/)
 * [COM组件开发实践（一） - Phinecos(洞庭散人) - 博客园](http://www.cnblogs.com/phinecos/archive/2008/07/25/1251743.html)
 * [MSDN 上的 Visual C++ 教学课程、库和更多内容](http://msdn.microsoft.com/zh-cn/visualc/)
@@ -278,21 +325,29 @@ tags: []
 * [Easy to use class for ScreenCapture to printer - CodeProject](http://www.codeproject.com/KB/printing/prntscreen.aspx?display=PrintAll&fid=15482&df=90&mpp=25&noise=3&sort=Position&view=None&fr=51&select=570309)
 * [Printing ActiveX Controls - CodeProject](http://www.codeproject.com/KB/COM/WirgerPrintArticle.aspx)
 * [OCX控件中怎样把打印功能加上？急 - VC/MFC / ATL/ActiveX/COM](http://topic.csdn.net/t/20050323/15/3874699.html)
+###UI
 * [美化你的.net WinForm应用程序 - 知识就是财富 - 51CTO技术博客](http://lovefly.blog.51cto.com/914912/273416)
 * [模板:程序设计语言 - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/Template:%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80)
+###library
 * [The DLL Hell - Problems and Solutions - CodeProject](http://www.codeproject.com/Articles/4896/The-DLL-Hell-Problems-and-Solutions)
 * [DLL地狱及其解决方案 -- Elegant C++ -- 编程爱好者博客](http://blog.pfan.cn/aurora/32358.html)
 * [编写DLL所学所思(2)——导出类 - 烛秋 - 博客园](http://www.cnblogs.com/cswuyg/archive/2011/10/06/DLL2.html)
 * [抽象工厂模式实现的dll插件功能. - s_51563946的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/s_51563946/article/details/4458480)
+###linux
+###boa
 * [Linux下小型web服务器boa的使用](http://www.latelee.org/using-gnu-linux/98-how-to-use-boa.html)
 * [boa实例测试](http://www.latelee.org/programming-under-linux/99-boa-test.html)
 * [Boa Webserver](http://www.boa.org/)
 * [WEB Server:BOA--linux_fans](http://blog.21ic.com/user1/2255/archives/2006/22511.html)
+###command
 * [sed命令详解 - edwardlost - 博客园](http://www.cnblogs.com/edwardlost/archive/2010/09/17/1829145.html)
 * [www.linuxso.com/command/grep.html](http://www.linuxso.com/command/grep.html)
+###httpd
 * [Apache httpd安装配置 - Khotyn - 博客园](http://www.cnblogs.com/khotyn/archive/2009/06/01/1494111.html)
 * [Compiling and Installing - Apache HTTP Server](http://httpd.apache.org/docs/trunk/install.html)
 * [细述 Apache web server 的安装与配置](http://vod.sjtu.edu.cn/help/Article_Print.asp?ArticleID=1039)
+###kernel
+###driver
 * [驱动开发之简单构建内核树 - 凡人凡居 - 博客频道 - CSDN.NET](http://blog.csdn.net/gnuser/article/details/3024393)
 * [构建内核树——linux驱动编写环境搭建(转载) - zhangyong333revic的日志 - 网易博客](http://zhangyong333revice.blog.163.com/blog/static/1131518832011319440527/)
 * [Linux 2.6.39.1 内核编译总结 - justinzhang - 博客园](http://www.cnblogs.com/justinzhang/archive/2011/07/18/2109643.html)
@@ -313,6 +368,7 @@ tags: []
 * [Linux 内核剖析](http://www.ibm.com/developerworks/cn/linux/l-linux-kernel/index.html)
 * [How to: Compile Linux kernel 2.6](http://www.cyberciti.biz/tips/compiling-linux-kernel-26.html)
 * [Linux: The 0.01 Release | KernelTrap](http://kerneltrap.org/node/14002)
+###makefile
 * [Makefile Examples](http://www-numi.fnal.gov/offline_software/srt_public_context/WebDocs/example_makefiles.html)
 * [Makefile之wildcard,notdir,patsubst - wl_haanel的专栏 - CSDN博客](http://blog.csdn.net/wl_haanel/archive/2009/08/24/4476975.aspx)
 * [第四章 : Makefile的规则](http://www.linuxsir.org/main/doc/gnumake/GNUmake_v3.80-zh_CN_html/make-04.html)
@@ -321,6 +377,7 @@ tags: []
 * [例解 autoconf 和 automake 生成 Makefile 文件](http://www.ibm.com/developerworks/cn/linux/l-makefile/)
 * [GNU Automake](http://sources.redhat.com/automake/)
 * [linux程序从编写到安装与发布 - Bob&#39;s Plife - 博客频道 - CSDN.NET](http://blog.csdn.net/sshhbb/article/details/6718694)
+###ulinux
 * [uClinux™ -- Embedded Linux Microcontroller Project -- Home Page](http://www.uclinux.org/)
 * [Linux守护服务进程（Daemon service）编程 - gnuhpc的专栏 - CSDN博客](http://blog.csdn.net/gnuhpc/archive/2010/10/25/5964279.aspx)
 * [我的Linux书架 - wwang&#39;s blog - 博客园](http://www.cnblogs.com/wwang/archive/2011/01/27/1944406.html)
@@ -348,13 +405,17 @@ tags: []
 * [从这里开始学习 Linux](http://www.ibm.com/developerworks/cn/linux/l-start/index.html)
 * [linux下的文件服务器[ftp（ftp/tftp）、 Samba、NFS服务器]_mier_新浪博客](http://blog.sina.com.cn/s/blog_67c5ecda0100mhw8.html)
 * [Linux Command Line tips that every Linux user should know.](http://www.linuxstall.com/linux-command-line-tips-that-every-linux-user-should-know/)
+###memoryleak
 * [内存泄露检测 - dreamflylin的专栏 - CSDN博客](http://blog.csdn.net/dreamflylin/archive/2011/03/15/6251815.aspx)
 * [C/C++内存泄漏及检测 - 吴秦 - 博客园](http://www.cnblogs.com/skynet/archive/2011/02/20/1959162.html)
 * [内存泄漏检测工具(转载) - Shuke - 博客园](http://www.cnblogs.com/da6wei6/archive/2008/09/07/1286400.html)
-* [浅谈C/C++内存泄漏及其检测工具 天极网](http://dev.yesky.com/147/2356147.shtml)
+* [浅谈C/C++内存泄漏及其检测工具 _天极网](http://dev.yesky.com/147/2356147.shtml)
 * [如何在linux下检测内存泄漏](http://www.ibm.com/developerworks/cn/linux/l-mleak/index.html)
 * [一个跨平台的 C++ 内存泄漏检测器](http://www.ibm.com/developerworks/cn/linux/l-mleak2/index.html)
+###memorymanage
 * [内存管理内幕](http://www.ibm.com/developerworks/cn/linux/l-memory/index.html)
+###network
+###ACE
 * [The ADAPTIVE Communication Environment (ACE)](http://www.cs.wustl.edu/~schmidt/ACE.html)
 * [学之者生，用之者死——ACE历史与简评 - 陈硕的Blog - 博客频道 - CSDN.NET](http://blog.csdn.net/Solstice/article/details/5364096)
 * [TrafficWatcher - CodeProject](http://www.codeproject.com/KB/IP/trafficwatcher.aspx)
@@ -369,6 +430,7 @@ tags: []
 * [iocp codeproject - Google Search](http://www.google.com/#hl=en&sugexp=kjrmc&cp=9&gs_id=y&xhr=t&q=iocp+codeproject&pf=p&sclient=psy-ab&newwindow=1&site=&source=hp&pbx=1&oq=IOCP+code&aq=0&aqi=g1g-v3&aql=f&gs_sm=&gs_upl=&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=2196ee66493014b2&biw=1366&bih=653)
 * [IOCPNet - Ultimate IOCP - CodeProject](http://www.codeproject.com/KB/IP/IOCPNet.aspx)
 * [The C10K problem](http://www.kegel.com/c10k.html)
+###opensource
 * [GitHub · Social Coding](https://github.com/)
 * [SourceForge.net: Plugin Development - notepad-plus](http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=Plugin_Development)
 * [开源中国社区 - 找到您想要的开源软件，分享和交流](http://www.oschina.net/)
@@ -394,10 +456,12 @@ tags: []
 * [goldb.org | Corey Goldberg - Software Engineer - Boston](http://www.goldb.org/)
 * [Eclipse - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/Eclipse)
 * [好压—2345旗下解压缩软件，中国用户量最大的免费解压缩软件！](http://www.haozip.com/)
+###oracle
 * [Redhat Enterprise Linux 5.4下安装配置Oracle 11g R2](http://www.linuxidc.com/Linux/2011-01/31760.htm)
 * [redhat enterprise linux5.4 安装 oracle 11g R2 - fwx515354的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/fwx515354/article/details/5596696)
 * [redhat enterprise linux5.4 安装 oracle 11g R2 - inyutal的个人空间 - ITPUB个人空间 - powered by X-Space](http://space.itpub.net/24546326/viewspace-672581)
 * [Oracle Applications Releases 11i and 12](http://www.oracle.com/technetwork/documentation/applications-167706.html?ssSourceSiteId=otncn)
+###other
 * [开放源代码软件列表 - 维基百科，自由的百科全书](http://zh.wikipedia.org/zh-cn/%E5%BC%80%E6%94%BE%E6%BA%90%E4%BB%A3%E7%A0%81%E8%BD%AF%E4%BB%B6%E5%88%97%E8%A1%A8)
 * [开源中国社区 - 找到您想要的开源软件，分享和交流](http://www.oschina.net/)
 * [Some of the Best Open Source Project&#39;s in VC++ &amp; MFC - CodeProject](http://www.codeproject.com/KB/cpp/OpenSource_VC_MFC.aspx)
@@ -407,19 +471,27 @@ tags: []
 * [LibFetion Index](http://www.libfetion.org/demoapp_download.php)
 * [fetion-calling - Fetion Calling Order - Google Project Hosting](http://code.google.com/p/fetion-calling/)
 * [免费短信接口：免费发送手机短信，中国移动飞信](http://sms.api.bz/)
+###plugin
 * [www.vckbase.com/vckbase/vckbase12/vc/nonctrls/atlcomocx_02/1202008.htm](http://www.vckbase.com/vckbase/vckbase12/vc/nonctrls/atlcomocx_02/1202008.htm)
 * [X3C - C++轻量级通用插件框架平台 - 开源中国社区](http://www.oschina.net/p/x3)
 * [An MFC extension library to enable DLL plug-in technology for your application using MESSAGE_MAPs - CodeProject](http://www.codeproject.com/KB/library/piarchitecture.aspx)
 * [SourceForge.net: Analysing Plugin Code - notepad-plus](http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=Analysing_Plugin_Code)
+###protocol
+###I2C
 * [I2C Tutorial](http://www.robot-electronics.co.uk/acatalog/I2C_Tutorial.html)
 * [I²C - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/I%C2%B2C)
+###rlmodbus
 * [rllib: Main Page](http://pvbrowser.org/pvbrowser/sf/manual/rllib/html/index.html)
 * [Modbus - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/Modbus)
+###SCPI
 * [Standard Commands for Programmable Instruments - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Standard_Commands_for_Programmable_Instruments#Example)
+###SPI
+###TL1
 * [TL1电信管理协议介绍_FanQ的空间_百度空间](http://hi.baidu.com/ylfan2006/blog/item/27297d1b69cc04b84aedbc9c.html)
 * [TL1协议（正文信息收集整理来源Internet） - Corrinejtt - ITeye技术网站](http://corrinejtt.iteye.com/blog/1062080)
 * [Transaction Language 1 - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Transaction_Language_1)
 * [TL1(Transaction Language 1) - 下载频道 - CSDN.NET](http://download.csdn.net/download/lf127/1408850)
+###pm
 * [项目管理 - ITPUB论坛 - IT168旗下专业技术社区](http://www.itpub.net/forum-44-1.html)
 * [假如我是一个项目总监/经理——我手写我心 - 不胜人生一场醉 - 博客频道 - CSDN.NET](http://blog.csdn.net/baoqiangwang/article/details/5932697)
 * [PM如何整合资源——来自项目管理群的讨论 - 不胜人生一场醉 - 博客频道 - CSDN.NET](http://blog.csdn.net/baoqiangwang/article/details/6009237)
@@ -429,11 +501,12 @@ tags: []
 * [ITPUB论坛 - IT168旗下专业技术社区](http://www.itpub.net/attachment.php?aid=314196)
 * [推介系列书籍（待续） - 项目管理文档资源 - 项目管理 - ITPUB论坛 - IT168旗下专业技术社区](http://www.itpub.net/thread-709221-1-1.html)
 * [任务/项目管理 - 开源软件库 - 开源中国社区](http://www.oschina.net/project/tag/171/project-mgr)
-* [project-open is an Open Source, web-based Project &amp; Service management / ERP system for companies with 3-3000 employees](http://www.project-open.org/)
+* []project-open[ is an Open Source, web-based Project &amp; Service management / ERP system for companies with 3-3000 employees](http://www.project-open.org/)
 * [项目管理软件比较 - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6%E6%AF%94%E8%BE%83)
 * [dotproject 安装总结 - 讨论区 - 开源中国社区](http://www.oschina.net/question/16_8363)
 * [DotProject - 项目管理工具 - 开源中国社区](http://www.oschina.net/p/dotproject)
 * [Endeavour Agile ALM | Agile Software Development &amp; Application Lifecycle Management](http://endeavour-mgmt.sourceforge.net/index.html)
+###QRcode
 * [QR+code条码编解码及应用的研究.pdf_免费高速下载_新浪爱问共享资料](http://ishare.iask.sina.com.cn/f/23514544.html)
 * [QR码 - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/QR%E7%A2%BC)
 * [QRcode.com](http://www.denso-wave.com/qrcode/index-e.html)
@@ -445,11 +518,16 @@ tags: []
 * [zxing - Multi-format 1D/2D barcode image processing library with clients for Android, Java - Google Project Hosting](https://code.google.com/p/zxing/)
 * [libdecodeqr QR二维码的译码C语言代码实现。希望大家能够一起学 Linux-Unix program 133万源代码下载- www.pudn.com](http://www.pudn.com/downloads162/sourcecode/unix_linux/detail735030.html)
 * [深圳市移联通信技术有限责任公司](http://eelink.com.cn/Company.asp?ID=13)
+###script
+###batch
 * [[系列教程]批处理for语句从入门到精通[2010.5.26更新] - 批处理教学&amp;资料 - 批处理之家 ─ 做最实用的批处理论坛 - Powered by Discuz!](http://www.bathome.net/thread-2189-1-1.html)
+###bashshell
+###nsis
 * [汉化教学基地 -- 汉化新世纪教学站](http://www.hanzify.org/teach/index.php?Go=Show::332-1067356800)
 * [NSIS命令行的用法_heep_holding_you_百度空间](http://hi.baidu.com/261463493/blog/item/4d9e41f800239905d8f9fd31.html)
 * [Scripting Reference](http://nsis.sourceforge.net/Docs/Chapter4.html)
 * [如何在NSIS中执行BAT文件 - 程序描绘人生 - C++博客](http://www.cppblog.com/humanchao/archive/2008/07/23/56962.html)
+###test
 * [玩转Google开源C++单元测试框架Google Test系列(gtest)之一 - 初识gtest - CoderZh的技术博客 - 博客园](http://www.cnblogs.com/coderzh/archive/2009/03/31/1426758.html)
 * [测试驱动开发 - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91)
 * [便利的开发工具 CppUnit 快速使用指南](http://www.ibm.com/developerworks/cn/linux/l-cppunit/index.html)
@@ -473,9 +551,13 @@ tags: []
 * [【原创】单元测试分享 - CppExplore - C++博客](http://www.cppblog.com/CppExplore/archive/2010/06/28/118850.html)
 * [QAliber - 自动测试框架 - 开源中国社区](http://www.oschina.net/p/qaliber)
 * [搜索：自动测试框架 - 开源中国社区](http://www.oschina.net/search?q=%E8%87%AA%E5%8A%A8%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6&scope=project)
+###tools
+###emace
 * [GNU Emacs 视频教程 — LinuxTOY](http://linuxtoy.org/archives/gnu-emacs-screencasts.html)
 * [生活在 Emacs 中](http://www.ibm.com/developerworks/cn/education/linux/l-emacs/index.html)
 * [为何 Emacs 和 Vim 被称为两大神器 — LinuxTOY](http://linuxtoy.org/archives/why-emacs-vim-good.html)
+###bugmanager
+###mantis
 * [Mantis Bug Tracker](http://www.mantisbt.org/)
 * [首页 - MantisBT](http://www.mantisbt.org/bugs/main_page.php)
 * [Mantis配置手册](http://www.uml.org.cn/Test/201011022.asp)
@@ -522,6 +604,7 @@ tags: []
 * [关于测试过程中的BUG管理 - brucenan - 博客园](http://www.cnblogs.com/brucenan/archive/2010/11/10/1874450.html)
 * [The Will Will Web | 如何設定 TortoiseSVN 整合 Bug Tracker 系統](http://blog.miniasp.com/post/2008/09/02/TortoiseSVN-Integration-with-Bug-Tracking-Systems-Issue-Trackers.aspx)
 * [TestLink Chinese Forums TestLink中文论坛 - Powered by Discuz!](http://www.testlink.org.cn/index.php)
+###latex
 * [Obtaining LaTeX](http://www.latex-project.org/ftp.html)
 * [CTEX: LaTeX](http://www.ctex.org/LaTeX)
 * [CTEX: TeX 基本知识](http://www.ctex.org/BasicKnowledge)
@@ -533,15 +616,19 @@ tags: []
 * [Using the LaTeX Resume Templates](http://www.rpi.edu/dept/arc/training/latex/resumes/)
 * [Latex显示中文汉字的方法 - 万金油 - dove003 - 和讯博客](http://xbbian.blog.hexun.com/65405079_d.html)
 * [我常用的Latex中文报告模板(一) - Haippy - 博客园](http://www.cnblogs.com/haippy/archive/2012/05/18/2507337.html)
+###notepad++
 * [推荐Notepad++ | 沉浮录](http://www.ismiao.com/blog/web_dev/notepad_plus_plus/)
 * [最常用的Notepad++的快捷键 | Log4D](http://dddspace.com/2010/04/notepad-shortcut-keys.html)
+###signature_crypt
 * [我的GnuPG 使用笔记](http://www.linuxbyte.org/wo-de-gnupg-shi-yong-bi-ji.html)
 * [如何在Thunderbird中使用Enigmail和GnuPG | Security In A Box](https://security.ngoinabox.org/zh/thuderbird_encryption)
 * [Thunderbird + Enigmail + GPG实现电子邮件签名和加密 - 吴亮与你共同进步 - 博客频道 - CSDN.NET](http://blog.csdn.net/theplayerwuliang/article/details/6251763)
 * [如何应用GPG加密使您的信息安全保障无忧 - 滴水穿石 - 51CTO技术博客](http://xjsunjie.blog.51cto.com/999372/656687)
 * [邮件的数字签名和加密_无双城堡_百度空间](http://hi.baidu.com/duyaofei/blog/item/a59b08553abb75c4b645ae2a.html)
+###versioncontrol
 * [Mercurial - 分布式版本控制系统](http://www.ibm.com/developerworks/cn/opensource/os-cn-mercurial/)
 * [学习hg(Mercurial)版本控制 | 落落](http://liluo.org/2010/11/%E5%AD%A6%E4%B9%A0hgmercurial%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/)
+###vim
 * [vim使用系列之二——总结一下自己常用的VIM操作（边用边更新, 2010.10.22） - gnuhpc的专栏 - CSDN博客](http://blog.csdn.net/gnuhpc/archive/2010/02/01/5276368.aspx)
 * [VIM使用系列之一——配置VIM下C/C++编程环境 - gnuhpc的专栏 - CSDN博客](http://blog.csdn.net/gnuhpc/archive/2010/01/29/5268965.aspx)
 * [用vim/gvim写程序 - 老单的专栏 - CSDN博客](http://blog.csdn.net/dreambroken/archive/2007/08/14/1743285.aspx)
@@ -549,24 +636,29 @@ tags: []
 * [七个高效的编辑文本的习惯 - Tang Liang&#39;s 专栏 - CSDN博客](http://blog.csdn.net/tangl_99/archive/2007/06/03/1636397.aspx)
 * [高效率编辑器 VIM－操作篇，非常适合 VIM 新手 — LinuxTOY](http://linuxtoy.org/archives/efficient-editing-with-vim.html)
 * [Vimcasts - free screencasts about the text editor Vim](http://vimcasts.org/)
+* [/pub/vim/pc/ 的索引](ftp://ftp.vim.org/pub/vim/pc/)
 * [手把手教你把Vim改装成一个IDE编程环境(图文) - 吴垠的专栏 - CSDN博客](http://blog.csdn.net/wooin/archive/2007/10/31/1858917.aspx)
 * [用Gvim建立IDE编程环境 （Windows篇）_Nothing is impossible for a willing heart._百度空间](http://hi.baidu.com/leemoncc/blog/item/a6be15cf40d7ab31b600c806.html)
 * [TortoiseHg](http://tortoisehg.bitbucket.org/)
 * [OraBSD - ChinaUnix博客 - IT人与你分享快乐生活](http://blog.chinaunix.net/space.php?uid=20784896&do=blog&cuid=1862883)
 * [给程序员的VIM速查卡 | 酷壳 - CoolShell.cn](http://coolshell.cn/articles/5479.html)
 * [简明 Vim 练级攻略 | 酷壳 - CoolShell.cn](http://coolshell.cn/articles/5426.html)
+###UML
 * [软件设计起步：画UML类图 - 源码工作室 - 博客园](http://goodcandle.cnblogs.com/archive/2005/10/19/258015.aspx)
 * [UML 基础: 类图](http://www.ibm.com/developerworks/cn/rational/rationaledge/content/feb05/bell/)
 * [[UML]Class diagram - Level Up- 點部落](http://www.dotblogs.com.tw/larrynung/archive/2009/05/06/8310.aspx)
 * [UML类图关系大全 - riky - 博客园](http://www.cnblogs.com/riky/archive/2007/04/07/704298.html)
 * [UML中几种类间关系：继承、实现、依赖、关联、聚合、组合的联系与区别 - 老唐 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/sfdev/article/details/3906243)
+###web
 * [个人网页模板下载_模板王](http://www.mobanwang.com/mb/ind/index.html)
 * [CJB.NET](http://www.cjb.net/)
 * [Linux ubuntu lamp安装配置环境phpmyadmin – 远方博客](http://farlee.info/archives/linux-ubuntu-lamp-apache-mysql-php-phpmyadmin-install-configuration.html)
 * [PHP: Downloads](http://php.net/downloads.php)
 * [Install PHP 5 Apache MySQL on Windows : WampServer](http://www.wampserver.com/en/index.php)
+###drupal
 * [Drupal - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/Drupal)
 * [Drupal - Open Source CMS | drupal.org](http://drupal.org/)
+###wordpress
 * [我的wordpress终于可以从外网正常访问了！ | Pity is the Bomp!](http://pityonline.info/?p=128)
 * [从0开始玩转WordPress——安装篇(图解) | 零号相册](http://photozero.net/install_apache_mysql_php_wordpress/)
 * [WordPress | China 简体中文](http://cn.wordpress.org/)
@@ -575,10 +667,14 @@ tags: []
 * [[这篇没用]个人电脑搭建wordpress服务[我被下了一盘很大的棋] | Watch back! 望其项背](http://www.cse.msu.edu/~wangyua6/?p=287)
 * [WORDPRESS 视频教程 - 曹鹏作品](http://www.caopeng.org/html/wordpress.htm)
 * [如何使用USBWebserver在本机快速建立网站测试环境 - 行万里路 责任 创新 执着 - 博客园](http://www.cnblogs.com/JoinZhang/archive/2011/01/26/1945245.html)
+###OS
+###Fedora
 * [Fedora Chinese User Group Forum - 中文用户组论坛 - 中文社群論壇 - Home](http://bbs.fedora-zh.org/)
 * [Fedora Project Homepage](http://fedoraproject.org/)
+###Ubuntu
 * [我的 Linux 玩具清单 — LinuxTOY](http://linuxtoy.org/archives/my-linux-toy-lists.html)
 * [VirtualBox安装Ubuntu图文介绍 - Michael(博客迁移至-- www.micmiu.com) - ITeye技术网站](http://sjsky.iteye.com/blog/1123907)
+###Unit
 * [UNIX 高手的 20 个习惯 - tianlesoftware 学习 Oracle - CSDN博客](http://blog.csdn.net/tianlesoftware/archive/2011/01/15/6140900.aspx)
 * [UNIX 高手的 10 个习惯](http://www.ibm.com/developerworks/cn/aix/library/au-badunixhabits.html)
 * [UNIX 技巧: UNIX 高手的另外 10 个习惯](https://www.ibm.com/developerworks/cn/aix/library/au-unixtips/)
@@ -587,7 +683,10 @@ tags: []
 * [Free Shell Accounts - the biggest list on the net :-) - Rankings - Free Shells](http://shells.red-pill.eu/index.php?method=out&cat=Free+Shells)
 * [Linux忘记root密码（fedora 12 ）_Gary Kung_新浪博客](http://blog.sina.com.cn/s/blog_673d9ab30100j18v.html)
 * [UNIX History](http://www.levenez.com/unix/)
+* [/software/server/hmc/recovery_images/ 的索引](ftp://ftp.software.ibm.com/software/server/hmc/recovery_images/)
+###windows
 * [2011最新XP系统下载 GHOSTXPSP3系统下载 电脑系统下载 XP主题下载](http://www.ghostxpsp3.com/)
+###LFS
 * [VirtualBox下构建LFS-6.3 (1-环境的选择) | Bitfly的随笔](http://blog.bitfly.cn/post/build-lfs-in-virtualbox-1/)
 * [LFS Project Homepage](http://www.linuxfromscratch.org/lfs/)
 * [Welcome to Linux From Scratch!](http://www.linuxfromscratch.org/)
@@ -602,11 +701,15 @@ tags: []
 * [Linux 发行版 LFS 讨论区 - LinuxSir.Org](http://www.linuxsir.org/bbs/forumdisplay.php?s=50a32dfb3a992a3dca9000275ce4a18d&f=58)
 * [LFS 从菜鸟到大师。2008-03-03 更新。 - LinuxSir.Org](http://www.linuxsir.org/bbs/thread155219.html)
 * [写给刚刚开始LFS的朋友们的一些建议 - LinuxSir.Org](http://www.linuxsir.org/bbs/showthread.php?t=238141)
+###Mint
 * [Main Page - Linux Mint](http://www.linuxmint.com/index.php)
 * [Linux Mint Forums • Index page](http://forums.linuxmint.com/)
+###Mac
 * [苹果fans－中文Apple Blog](http://www.mac52ipod.cn/)
 * [Mac OS X - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/Mac_OS_X#Mac_OS_X_v10.5.E8.8A.B1.E8.B1.B9.EF.BC.88Leopard.EF.BC.89)
+###centos
 * [Index of /centos/](http://mirrors.ecvps.com/centos/)
+###vsftpd
 * [测试人生 » centos vsftpd服务器的架设和配置](http://www.zhuaijun.cn/?p=226)
 * [鳥哥的 Linux 私房菜 -- 檔案伺服器之三： FTP 伺服器](http://linux.vbird.org/linux_server/0410vsftpd.php#server)
 * [vsFTPd 服务器初学者指南（欢迎大家参与补充） | LinuxSir.Org](http://www.linuxsir.org/main/node/152)
@@ -614,6 +717,7 @@ tags: []
 * [centos打开ftp服务 - Superxgl的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/superxgl/article/details/5108193)
 * [更改vsftpd默认的/var/ftp/pub目录_风格懒妞_新浪博客](http://blog.sina.com.cn/s/blog_498719980100092k.html)
 * [HowTos - CentOS Wiki](http://wiki.centos.org/HowTos#head-a60a0c1a852bb1966eacf7ecd47616a4c8b962b1)
+###subversion
 * [HowTos/Subversion - CentOS Wiki](http://wiki.centos.org/HowTos/Subversion?highlight=%28subversion%29)
 * [Linux subversion 安装后的权限设置_Cisco技术 无忧网客联盟](http://www.net527.cn/a/caozuoxitong/Linux/7473.html)
 * [9.14. 安装Subversion服务器](http://man.chinaunix.net/linux/debian/debian_learning/ch09s14.html)
@@ -623,8 +727,11 @@ tags: []
 * [subversion安装配置记录 - chemz - C++博客](http://www.cppblog.com/chemz/archive/2007/07/02/27352.html)
 * [SVN(Subversion)安装全过程 - liyiye - ITeye技术网站](http://liyiye.iteye.com/blog/240806)
 * [Linux下SVN的三种备份方式 - 相信自己能行，那就一定能行 - 博客频道 - CSDN.NET](http://blog.csdn.net/windone0109/article/details/4040772)
+* [/pub 的索引](ftp://ftp.oss.tw/pub)
 * [The GNU Operating System](http://www.gnu.org/)
 * [DistroWatch.com: Put the fun back into computing. Use Linux, BSD.](http://distrowatch.com/)
+###info
+###blog_en
 * [jacquesmattheij.com](http://jacquesmattheij.com/)
 * [Paul Tyma](http://paultyma.blogspot.com/)
 * [Read This Blog!](http://readthisblog.net/#)
@@ -644,6 +751,7 @@ tags: []
 * [Daedalus Projects](http://www.daedalus.nu/)
 * [Homepage](http://tmd.havit.cz/)
 * [What Makes A Great Programmer? | Think Vitamin](http://thinkvitamin.com/code/what-makes-a-great-programmer/)
+###blog_cn
 * [酷壳 – CoolShell.cn](http://coolshell.cn/)
 * [外刊IT评论 | 国外IT评论,编程技巧,网站开发趋势](http://www.aqee.net/)
 * [英特尔® 软件网络博客 - 中文](http://software.intel.com/zh-cn/blogs/)
@@ -656,20 +764,25 @@ tags: []
 * [菩萨道linux编程](http://www.huzheng.org/)
 * [TourDeBabel - windows-config - My windows configuration files, small utilities, etc. Almost everything. Hodgepodge. - Google Project Hosting](http://code.google.com/p/windows-config/wiki/TourDeBabel)
 * [王垠_新浪博客](http://blog.sina.com.cn/yinwang0)
+###book
 * [Green Tea Press: Free Computer Science Books](http://www.greenteapress.com/)
+###discuss
 * [Programmers - Stack Exchange](http://programmers.stackexchange.com/)
 * [Delicious](http://www.delicious.com/)
 * [Popular programming Bookmarks on Delicious](http://www.delicious.com/popular/programming)
+###news
 * [Hacker News](http://news.ycombinator.com/news)
 * [reddit: the front page of the internet](http://www.reddit.com/)
 * [Slashdot: News for nerds, stuff that matters](http://slashdot.org/)
 * [Solidot: 奇客的资讯，重要的东西](http://solidot.org/)
 * [Digg - All Topics - The Latest News Headlines, Videos and Images](http://digg.com/)
 * [完全珍藏版国外优秀新闻类网站 - 职场博客 - 伯乐在线](http://www.jobbole.com/entry.php/657)
+###other
 * [ibiblio - The Public&#39;s Library and Digital Archive](http://www.ibiblio.org/)
 * [How To Become A Hacker——如何成为黑客 - 刘海粟的专栏 - CSDN博客](http://blog.csdn.net/UndeadWraith/archive/2010/12/26/6099254.aspx)
 * [How To Become A Hacker](http://www.catb.org/~esr/faqs/hacker-howto.html)
 * [RankMyHack.Com - The Hacker Ranking System - Are You The Worlds Best Hacker?](http://rankmyhack.com/)
+###site
 * [CodeProject - Your Development Resource](http://www.codeproject.com/#)
 * [CSDN.NET - 全球最大中文IT社区，为IT专业技术人员提供最全面的信息传播和服务平台](http://www.csdn.net/#)
 * [LinuxTOY](http://linuxtoy.org/)
@@ -681,6 +794,7 @@ tags: []
 * [FogBugz - Effortless Bug Tracking and Project Management | FogBugz from Fog Creek Software](http://www.fogcreek.com/fogbugz/)
 * [Black Hat ® Technical Security Conference // Home](http://www.blackhat.com/)
 * [第6395页 程序源码搜索引擎 - HackChina.com](http://www.hackchina.com/)
+###VM
 * [windows xp 下virtualBox 安装 fedora 13 共享文件夹设置 - wjm1262的日志 - 网易博客](http://blog.163.com/wjm1262@126/blog/static/578140832010616115728951/)
 * [VirtualBox 中共享文件夹的设置 — LinuxTOY](http://linuxtoy.org/archives/configuring-virtualbox.html)
 * [VirtualBox 共享文件夹设置（图文教程，无命令） - 露兜博客](http://www.ludou.org/virtualbox-sharedfolder.html)
@@ -690,11 +804,13 @@ tags: []
 * [如何设置VirtualBox教程(图)](http://www.vmbest.com/school/2-virtualbox-school/9-how-to-config-virtualbox)
 * [ubuntu下VirtualBox 安装和配置指南 - Selective Memory](http://xxb.is-programmer.com/articles/762/VirtualBox.html)
 * [Win7 + VirtualBox安装Mac OS X雪豹操作系统图文详解 - 老赵点滴 - 追求编程之美](http://blog.zhaojie.me/2010/09/how-to-install-mac-os-x-snow-leopard-on-virtualbox.html)
+###share
 * [首页 - 共享资料 - 最大的中文在线资料分享站 免费、高速上传下载](http://ishare.iask.sina.com.cn/)
 * [FileCrop - Search and Download Rapidshare Megaupload and Hotfile Files](http://www.filecrop.com/)
 * [绿色软件 - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/%E7%B6%A0%E8%89%B2%E8%BB%9F%E9%AB%94)
 * [Science Books Online](http://www.sciencebooksonline.info/)
 * [Online backup, file sync, for pad, PC, Andriod and iPhone - ASUS WebStorage](https://www.asuswebstorage.com/navigate/free/)
+###other
 * [给中国学生的第七封信：21世纪最需要的7种人才_李开复_新浪博客](http://blog.sina.com.cn/s/blog_475b3d56010096z8.html)
 * [digitalSignature](http://www.cs.auckland.ac.nz/~pgut001/pubs/authenticode.txt)
 * [How Secure Is My Password?](http://howsecureismypassword.net/)
@@ -707,6 +823,8 @@ tags: []
 * [DocBook.org](http://www.docbook.org/)
 * [IBM 中低端产品选型中心 - System x 系列 - System x3650 M3 - 中国](http://www-03.ibm.com/systems/cn/promotion/esg/xseries/itybuy/system_x3650m3.shtml)
 * [文档格式列表 - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E5%88%97%E8%A1%A8)
+###eng
+###translate
 * [Google 翻译](http://translate.google.cn/#)
 * [在线翻译_在线词典_金山词霸_爱词霸英语](http://www.iciba.com/)
 * [Google Translate](http://translate.google.com/?hl=en&tab=TT)
@@ -726,6 +844,8 @@ tags: []
 * [Free online Dictionary of English Pronunciation - How to Pronounce English words](http://www.howjsay.com/index.php)
 * [Dictionary.com | Find the Meanings and Definitions of Words at Dictionary.com](http://dictionary.reference.com/)
 * [J博士精品美语课程 教你学习地道口语 - Greenhill 格林希尔J博士美语！开玩笑吧？！ - 视频 - 优酷视频 - 在线观看](http://v.youku.com/v_show/id_XNDIyOTI4ODIw.html?f=17290813)
+###work
+###面试
 * [Programming Interview Questions | CareerCup](http://www.careercup.com/)
 * [我是怎么招聘程序员的 | 酷壳 - CoolShell.cn](http://coolshell.cn/articles/1870.html)
 * [程序员需要具备的基本技能 | 酷壳 - CoolShell.cn](http://coolshell.cn/articles/428.html)
@@ -736,6 +856,7 @@ tags: []
 * [我去年的笔经面经整理（一） - 饮水思源](http://bbs.sjtu.edu.cn/bbstcon?board=JobForum&reid=1252725811)
 * [位运算之美——用+,-和位运算实现整数除法和取模(一) - S.l.e!ep.￠% - C++博客](http://www.cppblog.com/sleepwom/archive/2010/11/18/96766.html)
 * [Java面试题 软件测试面试题 华为面试题 C++ .net面试题 微软 腾讯 PHP Oracle Android Linux面试题 - IT公司面试手册](http://www.mianwww.com/)
+###公司
 * [Jobs at IBM - Powered by netMEDIA](https://jobs3.netmedia1.com/cp/search.jsp)
 * [研发 - 招聘信息 - Google](http://www.google.com/intl/zh-CN/jobs/eng/index.html)
 * [社会招聘 | Tencent 腾讯招聘](http://hr.tencent.com/social.php)
@@ -748,8 +869,11 @@ tags: []
 * [晨星网--照亮投资人生 国际权威基金评级机构](http://cn.morningstar.com/main/default.aspx)
 * [晨星资讯（深圳）有限公司公司简介-最新招聘信息-公司地址_中国人才热线](http://www.cjol.com/main/jobseeker/JobTemplates/Default/CN/JobDetail_Company.asp?CompanyID=146625&JobPostID=4757067&FromFlag=&Language=CN&Page=1&TemplateID=Default&VJFID=&FilterID=&DepartmentID=&JobFunction=&JobLocation=)
 * [晨星半導體(Mstar)[晨星軟體研發(深圳)有限公司]公司簡介-最新招聘資訊-公司地址_中國人才熱線](http://big5.cjol.com/main/jobseeker/JobTemplates/Default/CN/JobDetail_Company.asp?CompanyID=190446&JobPostID=&FromFlag=&Language=CN&Page=1&TemplateID=Default&VJFID=&FilterID=&DepartmentID=&JobFunction=&JobLocation=)
+###招聘网
 * [Message Center--My51job--个人服务](http://my.51job.com/my/My_Pmc.php)
 * [招聘 求职找工作_中国人才热线](http://www.cjol.com/)
+###笔试
+###C
 * [C语言的谜题 | 酷壳 - CoolShell.cn](http://coolshell.cn/articles/945.html)
 * [深入理解C语言 | 酷壳 - CoolShell.cn](http://coolshell.cn/articles/5761.html)
 * [如何学好C++语言 | 酷壳 - CoolShell.cn](http://coolshell.cn/articles/4119.html)
@@ -759,12 +883,15 @@ tags: []
 * [数据结构与算法汇总 | 董的博客](http://dongxicheng.org/structure/structure-algorithm-summary/)
 * [ACM竞赛学习菜鸟入门指南（一）：认识OJ与熟悉语言 - 单链DNA - C++博客](http://www.cppblog.com/Geek/archive/2009/11/20/101522.html)
 * [c++电话面试题集锦 - IT公司面试手册](http://www.mianwww.com/html/2012/04/16171.html)
+###edu
+###college
 * [國立高雄大學](http://www.csie.nuk.edu.tw/)
 * [Stanford Center for Professional Development | Stanford University Online](http://scpd.stanford.edu/publicViewHome.do?method=load)
 * [国外程序员推荐：每个程序员都应读的书 - 开源中国](http://www.oschina.net/news/26890/books-for-developers)
 * [国外程序员推荐：每个程序员都应读的书 - 博客 - 伯乐在线](http://blog.jobbole.com/5886/)
 * [resources - What is the single most influential book every programmer should read? - Stack Overflow](http://stackoverflow.com/questions/1711/what-is-the-single-most-influential-book-every-programmer-should-read?tab=votes#tab-top)
 * [学习编程 | Codecademy](http://www.codecademy.com/zh/#!/exercises/0)
+###tmp
 * [SQL Denali CTP3 CTA](https://www.microsoft.com/betaexperience/pd/SQLDCTP3CTA/enus/default.aspx)
 * [值得员工加盟的25佳科技公司 苹果列第16 - 开源中国社区](http://www.oschina.net/news/21088/top-25-tech-companies)
 * [端口扫描 - 代码分享 - 开源中国社区](http://www.oschina.net/code/snippet_103422_5994)
@@ -794,6 +921,8 @@ tags: []
 * [Docu-overview - OpenNMS | The OpenNMS Project](http://www.opennms.org/wiki/Docu-overview)
 * [OpenNMS技术分析与扩展开发 - 两粒种子，一片森林 - 博客频道 - CSDN.NET](http://blog.csdn.net/diy8187/article/details/6359255)
 * [Quantum Random Bit Generator Service](http://random.irb.hr/index.php)
+###ENT
+###blog
 * [有意思吧 - 分享·情怀·超越 ，不仅仅是娱乐！](http://www.u148.net/)
 * [The Big Picture - Boston.com](http://www.boston.com/bigpicture/)
 * [The Big Picture](http://www.thebigpic.org/)
@@ -808,9 +937,12 @@ tags: []
 * [FML: Your everyday life stories](http://www.fmylife.com/)
 * [Forbes](http://blogs.forbes.com/)
 * [Tumblr](https://www.tumblr.com/)
+###book
 * [天涯在线书库](http://www.tianyabook.com/)
+###chat
 * [WebQQ2.0 - 腾讯官方为您打造的一站式网络服务](http://web.qq.com/)
 * [Omegle](http://omegle.com/)
+###IQ
 * [What is Mensa? | Mensa International](http://www.mensa.org/)
 * [Hong Kong Mensa](https://www.mensa.org.hk/Pages/top.htm)
 * [Marilyn vos Savant | Home](http://www.marilynvossavant.com/index.php)
@@ -818,6 +950,7 @@ tags: []
 * [Mensa Workout Quiz | Mensa International](http://www.mensa.org/workout/quiz/1)
 * [欢迎访问门萨中国网站](http://www.mensa.org.cn/show.php?contentid=212)
 * [门萨_百度百科](http://baike.baidu.com/view/185793.htm)
+###music
 * [SongTaste 用音乐倾听彼此](http://www.songtaste.com/)
 * [邻居的耳朵 | 有观点的聆听|开心听电台|音乐故事|音乐分享|音乐推荐|乐评](http://kxt.fm/)
 * [酷狗音乐硬盘 - 下载歌曲：Elize - Sexually Healing-秋讼茴](http://disk.kugou.com/downSongs/C548959886E6996A/2/mini.html)
@@ -825,12 +958,15 @@ tags: []
 * [萨顶顶_新浪博客](http://blog.sina.com.cn/sadingding)
 * [优酷-中国第一视频网站,提供视频播放,视频发布,视频搜索 - 优酷视频](http://www.youku.com/)
 * [Music News, Reviews, Articles, Information, News Online &amp; Free Music | Billboard.com](http://www.billboard.com/)
+###六线谱
 * [1、识谱（五线谱） - 视频 - 优酷视频 - 在线观看](http://v.youku.com/v_show/id_XODEyMzc0NA==.html)
 * [吉他04 - 视频 - 优酷视频 - 在线观看](http://v.youku.com/v_show/id_XNzEwNTU2MDQ=.html)
+###photo
 * [Photography At Its Best - picspile.com](http://www.picspile.com/_Photography_At_Its_Best_1)
 * [The Big Picture - Boston.com](http://www.boston.com/bigpicture/)
 * [The Big Picture](http://www.thebigpic.org/)
 * [よわよわカメラウーマン日記](http://yowayowacamera.com/)
+###site
 * [果壳网 guokr.com - 科技，智趣，生活](http://www.guokr.com/)
 * [Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Main_Page)
 * [维基百科（Wikipedia）——访问英文、中文维基百科全书网站](http://wikipedia.jaylee.cn/)
@@ -840,17 +976,19 @@ tags: []
 * [西祠胡同社区 - 城市生活社区门户](http://www.xici.net/#home.asp)
 * [上海生活信息,促销·优惠券·活动,上海地图,上海公交,上海地铁,自驾车--丁丁网（原丁丁地图）](http://www.ddmap.com/)
 * [Answers.com: Wiki Q&amp;A combined with free online dictionary, thesaurus, and encyclopedias](http://www.answers.com/)
-* [无法访问](http://www.scribd.com/](http://www.scribd.com/)
+* [无法访问 http://www.scribd.com/](http://www.scribd.com/)
 * [歡迎來到 Flickr - 相片分享](http://www.flickr.com/)
 * [World&#39;s Largest Professional Network | LinkedIn](http://www.linkedin.com/)
 * [MySpace.com](http://www.myspace.com/)
 * [Sickipedia - Building the world&#39;s best collection of sick jokes](http://sickipedia.org/)
 * [Business Insider](http://www.businessinsider.com/)
+###game
+###sudoku
 * [在线数独游戏、数独技巧、九宫数独、锯齿数独、Killer数独,在线PK等- 欧泊颗](http://sudoku.oubk.com/)
 * [Speed Sudoku - Play Web Sudoku Puzzle Games Online For Free](http://www.speedsudoku.com/public.php?mode=home)
 * [独·数之道 数独爱好者](http://www.sudokufans.org.cn/index.php)
 * [World Puzzle Federation](http://www.worldpuzzle.org/)
-* [无法访问](http://onigame.livejournal.com/](http://onigame.livejournal.com/)
+* [无法访问 http://onigame.livejournal.com/](http://onigame.livejournal.com/)
 * [Killer Solving Guide](http://www.sudocue.net/killerguide.php)
 * [独·数之道 --杀手助手](http://www.sudokufans.org.cn/killerhelper.html)
 * [PK积分表--- oubk.com](http://sudoku.oubk.com/Multiplayer/ScoreBoard/)
@@ -877,20 +1015,27 @@ tags: []
 * [Sudoku #6 - Tips - YouTube](http://www.youtube.com/watch?v=vfF9jwcsld8&feature=relmfu)
 * [Sudoku #7 - Tips - YouTube](http://www.youtube.com/watch?v=RJaHOHAcDO0&feature=relmfu)
 * [Sudoku #8 - Solution - YouTube](http://www.youtube.com/watch?v=I10_yL2ctRc&feature=relmfu)
+###Minesweeper
 * [扫雷网 Saolei.net - 扫雷,扫雷排行,扫雷录像,扫雷下载,扫雷教程,扫雷纪录,扫雷高手,扫雷玩家,扫雷论坛,扫雷秘籍,扫雷技巧,Minesweeper,Minesweeper Clone](http://www.saolei.net/Main/Index.asp)
+###Billiard
 * [PopGameBox 3D撞球游戏|3D台球|3D斯诺克|斯诺克147|2D台球|2D斯诺克|美式8球|美式9球|美式15球|](http://www.popgamebox.com/cn/index.shtml)
 * [Brain Workshop - a Dual N-Back game](http://brainworkshop.sourceforge.net/)
 * [Armor Games](http://armorgames.com/)
 * [Kingdom Rush | Strategy Games | Play Free Games Online at Armor Games](http://armorgames.com/play/12141/kingdom-rush)
+###sport
+###billiard
 * [台球教学视频-花式撞球大补贴 - 视频专区 - 中式八球网论坛 中式八球人的精神家园 - Powered by Discuz!](http://zs8q.com/upload/bbs/viewthread.php?tid=2097)
 * [我爱台球网](http://www.52tq.net/)
 * [QQ直播网-NBA直播吧|NBA录像|CCTV5在线直播|足球直播|五星体育](http://www.qqzhibo.com/)
 * [Byrne台球教程 学两招就能成为高手了—在线播放—优酷网，视频高清在线观看](http://v.youku.com/v_show/id_XNDM2NjYwNA==.html)
+###TV
 * [直播吧-NBA直播|足球直播|体育直播](http://www.zhibo8.com/)
 * [电视节目预告,电视节目表,电视剧分集剧情 - 电视猫](http://www.tvmao.com/)
+###penspanning
 * [[hot]PSH新手入门全讲解 - 新手提问区(Newbie Question ) - 转笔者之家](http://www.pserhome.com/forum/viewthread.php?tid=3573)
 * [转笔 - 维基百科，自由的百科全书](http://zh.wikipedia.org/wiki/%E8%BD%AC%E7%AC%94)
 * [磨房 - 自助旅行和户外运动的出发地 - 磨房](http://www.doyouhike.net/)
+###书法
 * [赵孟頫 止斋书法摹写帖使用示范视频](http://www.shufaguan.com/show.aspx?id=424&cid=27)
 * [王羲之《兰亭集序》冯承素神龙本书法摹写帖使用视频](http://www.shufaguan.com/show.aspx?id=15&cid=27)
 * [墨斗铺 - 书法馆书法摹写帖专卖 书法用品销售 Powered by Hishop](http://shop.shufaguan.com/)
@@ -898,3 +1043,19 @@ tags: []
 * [【钱沛云硬笔书法讲座（30集全）】28硬笔行书入门技巧（5）.rar_免费高速下载_新浪爱问共享资料](http://ishare.iask.sina.com.cn/f/7447541.html)
 * [《教你写一手好字——钱沛云硬笔书法讲座（30集全）（新加压缩）》wmv_VeryCD电驴下载](http://www.verycd.com/topics/2759647/)
 * [田蕴章书法讲座150讲全集 - 专辑 - 优酷视频](http://www.youku.com/playlist_show/id_1379117.html)
+###shop
+###机票
+* [【机票查询|机票|飞机票查询|飞机票|特价机票】- 酷讯机票](http://jipiao.kuxun.cn/)
+* [酷迅,酷迅旅行网,机票,飞机票,电子机票,国际机票,机票预订,酒店预订-Kuxunwang.com](http://www.kuxunwang.com/journey/orderinfo.aspx?ordercode=J110531210004)
+* [机票预订-机票查询-机票价格查询-特价机票预定-打折机票查询, 携程旅行网国内机票预订](http://flights.ctrip.com/Domestic/SearchFlights.aspx?utm_source=baidu&utm_medium=cpc&utm_campaign=baidu0e&campaign=CHNbaidu0e&adid=flight&gclid=&isctrip=T)
+* [机票,飞机票查询,特价机票,打折机票预订-去哪儿网](http://www.qunar.com/)
+###网购
+* [京东网上商城-综合网购首选，正品行货，机打发票，售后上门取件，省钱又放心](http://www.360buy.com/)
+* [亚马逊 Z.cn：网上购物：图书，手机，数码，家电，化妆品，钟表，首饰，日用百货等在线销售](http://www.amazon.cn/ref=z_cn)
+* [计算机图书 - china-pub网上书店](http://www.china-pub.com/itbook/)
+* [当当网—网上购物中心：图书、母婴、美妆、家居、数码、家电、服装、鞋包等，正品低价，货到付款](http://www.dangdang.com/)
+* [China-Pub网上书店:计算机 经管、外语、建筑、法律、原版图书……](http://www.china-pub.com/)
+* [欢迎光临 Apple Store - Apple Store（中国）](http://store.apple.com/cn)
+* [IKEA | 家居用品,小空间,收纳,门厅方案,衣柜收纳](http://www.ikea.com/cn/zh)
+* [PChome Online 網路家庭](http://www.pchome.com.tw/)
+* [中铁快运](http://www.95572.com/jsp/index.jsp)
