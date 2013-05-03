@@ -59,7 +59,7 @@ tags: [linux, shell, git, svn, vim]
 * `getconf LONG-BIT`           查看系统位数  
   `grep -c "lm" /proc/cpuinfo` 查看cpu位数  
 
-* `df   fdisk -l  du -sh    du -s * |sort -n |tail`
+* `du -sh    du -s * |sort -n |tail`
 
 * `free   bg   kill pid    killall proc    chmod 777 (r:4,w:2,x:1)(user,group,all)`
 
@@ -213,6 +213,15 @@ press `v` to start visual mode, then press `y` to copy select text.
   `echo "b" > /proc/sysrq-trigger`  reboot  
   `echo "o" > /proc/sysrq-trigger`  shutdown  
   `shutdown -h now`                 shutdown  
+* `dmidecode | more`    : 查看mainboard信息  
+  `cat /proc/cpuinfo`   : 查看CPU信息  
+  `cat /proc/pci`       : 查看板卡信息  
+  `lspci `              : 查看PCI信息  
+  `cat /proc/meminfo`   : 查看内存信息  
+  `fdisk -l`            : 查看系统硬盘信息  
+  `df`                  : 查看系统硬盘使用情况  
+  `cat /proc/interrupts`: 查看各设备的中断请求(IRQ)  
+  `dmesg | more`        : 查看启动硬件检测信息日志  
   
 #### 参考链接
 + [你可能不知道的Shell](http://coolshell.cn/articles/8619.html)
