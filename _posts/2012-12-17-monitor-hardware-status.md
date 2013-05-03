@@ -23,6 +23,10 @@ temperature sensors, fan speeds, voltages, load and clock speeds of a computer.
 ### lm-sensors
 __lm-sensors configurations__  
 
+[source code download](http://www.lm-sensors.org/wiki/Download)  
+[developer](http://www.lm-sensors.org/browser/lm-sensors/trunk/doc/developers)  
+[Lm_sensors和相关技术介绍](http://blog.csdn.net/zhenwenxian/article/details/5331079)  
+
 * [Intel](http://www.lm-sensors.org/wiki/Configurations/Intel)
 * [SuperMicro](http://www.lm-sensors.org/wiki/Configurations/SuperMicro)  
 * [Gigabyte](http://www.lm-sensors.org/wiki/Configurations/Gigabyte)
@@ -31,6 +35,9 @@ __lm-sensors configurations__
 [more](http://www.lm-sensors.org/wiki/Configurations)  
 
 [SuperMicro motherboard X8SIL](http://www.supermicro.com/support/faqs/faq.cfm?faq=12015)  
+
+install: `yum install lm_sensors`  
+monitor: `sensors`  
 
 ### Monitor with WinIO
 
