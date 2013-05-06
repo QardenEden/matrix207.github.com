@@ -78,7 +78,11 @@ __install mib2c__
   + 如果该OID是只读的，那就在该文件里编写一个只读的函数（mib2c应该会生成的）；如果可写，也应该有一个写的函数（相样是生成的）
 
 ## 4. Use mib2c
-####  4.1 use mib2c to create source file
+####  4.1 mib object
+scalar: int,  string,  time and so on.  
+table : table has row and column, like table in database.  
+
+####  4.2 use mib2c to create source file
 __append string "DENNIS-MIB" to config file: snmp.conf__   
 `su -c 'vim /etc/snmp/snmpd.conf'`  
 
@@ -86,8 +90,9 @@ __copy mib file to mibs directory__
 `su -c 'cp DENNIS-MIB.txt /usr/share/snmp/mibs/'`  
 
 __generate c source file by mib2c__  
-`mib2c -c mib2c.scalar.conf DENNIS-MIB::dennis`  
-`mib2c -c mib2c.old-api.conf DENNIS-MIB::dennis`  
+`mib2c -c mib2c.scalar.conf DENNIS-MIB::dennis`  for scalar object  
+`mib2c -c mib2c.iterate.conf DENNIS-MIB::dennis` for table  object   
+if failed to translate, check the mibs directory again, or look the output message.
 
 ## 5. Add self-defined mib library
 ####  5.1 steps:
