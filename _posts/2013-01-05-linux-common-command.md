@@ -161,6 +161,9 @@ tags: [linux, shell, git, svn, vim]
 * `curl ifconfig.me`
 * `dig domain`   `dig -x host`
 * `netstat -nlp`查看服务及监听端口 
+* `wget url` download file  
+  `wget -m -p -np -k -E http://site/path/` mirror the site  
+  `wget -A pdf,jpg -m -p -np -k -E http://site/path/` only download pdf and jpg file  
 
 ####os
 * Fedora  
