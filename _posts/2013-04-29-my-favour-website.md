@@ -405,6 +405,7 @@ tags: []
 * [从这里开始学习 Linux](http://www.ibm.com/developerworks/cn/linux/l-start/index.html)
 * [linux下的文件服务器[ftp（ftp/tftp）、 Samba、NFS服务器]_mier_新浪博客](http://blog.sina.com.cn/s/blog_67c5ecda0100mhw8.html)
 * [Linux Command Line tips that every Linux user should know.](http://www.linuxstall.com/linux-command-line-tips-that-every-linux-user-should-know/)
+* [自由飞鸽Linux网站plinux-早期Linux内核分析与注释](http://oldlinux.org/index_cn.html)
 ###memoryleak
 * [内存泄露检测 - dreamflylin的专栏 - CSDN博客](http://blog.csdn.net/dreamflylin/archive/2011/03/15/6251815.aspx)
 * [C/C++内存泄漏及检测 - 吴秦 - 博客园](http://www.cnblogs.com/skynet/archive/2011/02/20/1959162.html)
