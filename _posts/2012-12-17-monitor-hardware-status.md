@@ -59,7 +59,7 @@ On page 54
 
 Software Programming Example
 The following example is written in Intel 8086 assembly language. It assumes that the EFER is located at 2Eh, so
-the EFIR is located at 2Eh and the EFDR is located at 2Fh. If the HEFRAS (CR[26h] bit 6 showing the value of
+the EFIR is located at 2Eh and the EFDR is located at 2Fh. If the HEFRAS (CR\[26h\] bit 6 showing the value of
 the strap pin at power on) is set, 2Eh can be directly replaced by 4Eh and 2Fh replaced by 4Fh.
 This example programs the configuration register F0h (clock source) of logical device 1 (UART A) to the value of
 3Ch (24MHz). First, one must enter the Extended Function Mode, then setting the Logical Device Number (Index

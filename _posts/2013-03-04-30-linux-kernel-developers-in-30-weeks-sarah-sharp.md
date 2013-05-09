@@ -93,7 +93,7 @@ Sarah Sharp
 > From: Greg KH 
 > To: Sarah Sharp 
 > Cc: linux-usb@vger.kernel.org
-> Subject: Re: [RFC 0/3] xhci: Remove useless debugging
+> Subject: Re: \[RFC 0/3\] xhci: Remove useless debugging
 > 
 > On Wed, May 25, 2011 at 04:28:51PM -0700, Sarah Sharp wrote:
 >             The xHCI driver is what, two years old now? It's high time it put on
