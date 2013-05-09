@@ -249,4 +249,4 @@ Notice that, change these two lines for your apply:
 * Reporting Events: <http://msdn.microsoft.com/en-us/library/aa363680(v=vs.85).aspx>
 * Receiving Event Notification: <http://msdn.microsoft.com/en-us/library/aa363677(v=vs.85).aspx>
 * [resource](http://angusj.com/resourcehacker/) a freeware utility to view, modify, rename, 
-add delete and extract resources in 32bit & 64bit windows executable and resource files(*.res).
+add delete and extract resources in 32bit & 64bit windows executable and resource files
