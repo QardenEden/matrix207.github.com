@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "a story of network client server model"
+title: "network client server model"
 description: ""
 category: 
 tags: []
