@@ -244,9 +244,21 @@ Notice that, change these two lines for your apply:
 	#define RESOURCE_DLL  L"<path>\\Provider.dll"
 
 
-## 3. Reference
+## 3. Questions
+How to monitor multi event logs? And make it to be a component.  
+I want to implement it, on this site you can find a first version project 
+[Click here](https://github.com/matrix207/VC/tree/master/eventlog/EventLogMonitor)
+
+But I think, it was a pool method to check each event name. Is there exist any 
+good method to do it? I meet the same problem with this guy, 
+[Unexpected behavior of WaitForMultipleObjects for events used in NotifyChangeEventLog](http://social.msdn.microsoft.com/Forums/en-US/windowssdk/thread/2c0d8708-4d07-47f9-87f4-c3f7141b55fd) 
+I'm sad, why he don't told the detail info.
+
+## 4. Reference
 * [Using Event Logging](http://msdn.microsoft.com/en-us/library/aa363681%28v=vs.85%29.aspx)
 * Reporting Events: <http://msdn.microsoft.com/en-us/library/aa363680(v=vs.85).aspx>
 * Receiving Event Notification: <http://msdn.microsoft.com/en-us/library/aa363677(v=vs.85).aspx>
 * [resource](http://angusj.com/resourcehacker/) a freeware utility to view, modify, rename, 
 add delete and extract resources in 32bit & 64bit windows executable and resource files
+* [Unexpected behavior of WaitForMultipleObjects for events used in NotifyChangeEventLog](http://social.msdn.microsoft.com/Forums/en-US/windowssdk/thread/2c0d8708-4d07-47f9-87f4-c3f7141b55fd)
+* [SNARE Auditing and EventLog Management](http://sourceforge.net/projects/snare/files/Snare for Windows/)
