@@ -261,4 +261,4 @@ I'm sad, why he don't told the detail info.
 * [resource](http://angusj.com/resourcehacker/) a freeware utility to view, modify, rename, 
 add delete and extract resources in 32bit & 64bit windows executable and resource files
 * [Unexpected behavior of WaitForMultipleObjects for events used in NotifyChangeEventLog](http://social.msdn.microsoft.com/Forums/en-US/windowssdk/thread/2c0d8708-4d07-47f9-87f4-c3f7141b55fd)
-* [SNARE Auditing and EventLog Management](http://sourceforge.net/projects/snare/files/Snare for Windows/)
+* SNARE Auditing and EventLog Management: <http://sourceforge.net/projects/snare/files/Snare for Windows/>
