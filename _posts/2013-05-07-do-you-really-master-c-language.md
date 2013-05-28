@@ -7,10 +7,10 @@ tags: [C]
 ---
 {% include JB/setup %}
 
-#1. Array
-#2. point
-#3. structure
-##3.1 
+##1. Array
+##2. point
+##3. structure
+###3.1 
 	struct pid_tag {
 		unsigned int inactive : 1;
 		unsigned int          : 1; /* fill 1 bit */
@@ -20,7 +20,7 @@ tags: [C]
 		struct pid_tag *link;
 	}
 
-##3.2 alignment
+###3.2 alignment
 
 	struct st_a {
 		int a;
@@ -47,9 +47,11 @@ tags: [C]
 Therefore, you should careful for doing structure copy, and socket programming.
 
 
-#4. Function
+##4. Function
 
-#3. For more : 
+# For more : 
+* [comp.lang.c Frequently Asked Questions](http://c-faq.com/index.html)
+* [C-FAQ](ftp://rtfm.mit.edu/pub/usenet-by-group/news.answers/C-faq/faq)
 * [Top votes of c questions on stackoverflow](http://stackoverflow.com/questions/tagged/c?sort=votes&pagesize=15)
 * [如何学好C语言](http://coolshell.cn/articles/4102.html)
 * [C语言的谜题](http://coolshell.cn/articles/945.html)
