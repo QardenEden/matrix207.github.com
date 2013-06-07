@@ -172,6 +172,7 @@ Reference:
 + [iscsitarget](http://sourceforge.net/projects/iscsitarget/)
 + [pyTarget](http://sourceforge.net/projects/pytarget/)
 + [jSCSI is a cross-platform Java implementation of an iSCSI initiator](http://jscsi.sourceforge.net/)
++ [jSCSI on github](https://github.com/disy/jSCSI)
 + [TGT](http://stgt.sourceforge.net/)
 + [Slim PHP iSCSI Panel for Centos](http://slimphpiscsipan.sourceforge.net)
 
