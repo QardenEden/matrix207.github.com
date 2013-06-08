@@ -53,11 +53,11 @@ tags: [Linux]
 
 * 笔记: Emacs org mode
 
-* 流程图: graphviz dot
+* 流程图: graphviz dot (其他工具 PlantUML bouml)
 
 * 博客: github+jekyll
 
-* 下载: 一般直接浏览器下载, 其他wget
+* 下载: wget
 
 * 墙外: ssh + shell account + firefox autoproxy
 
