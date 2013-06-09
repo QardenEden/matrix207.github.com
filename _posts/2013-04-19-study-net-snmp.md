@@ -68,12 +68,13 @@ example:
 	#   receive trap message.
 	# (use command 'snmpconf' to create and config is another choise)
 	# use root to start snmptrapd 
-	[root@localhost ~]# snmptrapd -f -Le -F "%02.2h:%02.2j TRAP%w.%q from %b\n"
+	[root@localhost ~]# snmptrapd -f -Le -F "%02.2h:%02.2j TRAP%w.%q from %b\n %v\n"
 	NET-SNMP version 5.7.2
-	11:25 TRAP0.0 from UDP: [192.168.110.39]:44268->[192.168.50.63]:162
-	
-	# send trap message
-	root:~# snmptrap -v 2c -c public 192.168.50.63 1 .1.3.6.1.4 .1.3.6.1.4.1 i 1
+	14:30 TRAP0.0 from UDP: [192.168.110.39]:52222->[192.168.50.63]:162
+	 DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (1) 0:00:00.01	SNMPv2-MIB::snmpTrapOID.0 = OID: SNMPv2-SMI::enterprises.30901.1.3.0.1	SNMPv2-SMI::enterprises.30901.1.1.2 = INTEGER: 1
+
+	root:~# snmptrap -v 2c -c public 192.168.50.63 1 .1.3.6.1.4.1.30901.1.3.0.1 .1.3.6.1.4.1.30901.1.1.2 i 1
+
 
 ## 2. Install
 ####  2.1 Yum 
