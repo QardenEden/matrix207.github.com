@@ -30,14 +30,15 @@ Reference: [Agent_Architecture](http://www.net-snmp.org/wiki/index.php/Agent_Arc
 Reference: [mib2c_General_Overview](http://www.net-snmp.org/wiki/index.php/TUT:mib2c_General_Overview)
 
 	* snmptranslate: learning about the MIB tree.
-	* snmpget: retrieving data from a host.
-	* snmpgetnext: retrieving unknown indexed data.
-	* snmpwalk: retrieving lots of data at once!
-	* snmptable: displaying a table.
-	* snmpset: peforming write operations.
-	* snmpbulkget: communicates with a network entity using SNMP GETBULK request
-	* snmpbulkwalk: retrieve a sub-tree of management values using SNMP GETBULK requests.
-	* snmptrap: Sending and receiving traps, and acting upon them.
+	* snmpget:       retrieving data from a host.
+	* snmpgetnext:   retrieving unknown indexed data.
+	* snmpwalk:      retrieving lots of data at once!
+	* snmptable:     displaying a table.
+	* snmpset:       peforming write operations.
+	* snmpbulkget:   communicates with a network entity using SNMP GETBULK request
+	* snmpbulkwalk:  retrieve a sub-tree of management values using SNMP GETBULK requests.
+	* snmptrap:      sending traps messages, and acting upon them.
+    * snmptrapd:     receive and logs SNMP TRAP and INFORM messages.  
 
 example: 
 
@@ -54,10 +55,25 @@ example:
 	SNMPv2-SMI::enterprises.30901.1.1.2.5.1.11.1 = INTEGER: 4
 	SNMPv2-SMI::enterprises.30901.1.1.2.5.1.12.1 = INTEGER: 0
 	SNMPv2-SMI::enterprises.30901.1.1.2.5.1.13.1 = INTEGER: 5
+
 	[dennis@localhost ~]$ snmpget -v2c -c public 192.168.110.98 .1.3.6.1.4.1.30901.1.1.2.5.1.3.1
 	SNMPv2-SMI::enterprises.30901.1.1.2.5.1.3.1 = INTEGER: 856398
+
 	[dennis@localhost ~]$ snmpget -v2c -c public 192.168.110.98 .1.3.6.1.4.1.30901.1.1.2.5.1.8.1
 	SNMPv2-SMI::enterprises.30901.1.1.2.5.1.8.1 = STRING: "0:1 0:2 0:3 "
+
+	# use snmptrapd to receive trap message.
+	# 1.first create file "touch /usr/local/share/snmp/snmptrapd.conf" 
+	# 2.then add "authcommunity execute,log,net public" to the file to access 
+	#   receive trap message.
+	# (use command 'snmpconf' to create and config is another choise)
+	# use root to start snmptrapd 
+	[root@localhost ~]# snmptrapd -f -Le -F "%02.2h:%02.2j TRAP%w.%q from %b\n"
+	NET-SNMP version 5.7.2
+	11:25 TRAP0.0 from UDP: [192.168.110.39]:44268->[192.168.50.63]:162
+	
+	# send trap message
+	root:~# snmptrap -v 2c -c public 192.168.50.63 1 .1.3.6.1.4 .1.3.6.1.4.1 i 1
 
 ## 2. Install
 ####  2.1 Yum 
@@ -137,7 +153,11 @@ step 2. 然后将刚写的MIB C code编译进net-snmp，有几种方法：
 	make install
  
 ####  5.3 update mib
-	copy "net-snmp-5.4.2/agent/.libs/libnetsnmpmibs.so" to "/usr/lib/"
+	copy "net-snmp-5.4.2/agent/.libs/libnetsnmpmibs.so" to "/usr/lib/",  
+	64bit system is to "/usr/lib64/"
+
+####  5.4 restart snmp
+	/usr/sbin/snmpd -c /etc/snmp/snmpd.conf -Le
 
 ## 6. Reference
 ####  6.1 network link
