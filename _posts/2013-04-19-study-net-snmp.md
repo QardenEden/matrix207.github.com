@@ -173,4 +173,5 @@ step 2. 然后将刚写的MIB C code编译进net-snmp，有几种方法：
 * [利用NET-SNMP开发代理(原创](http://bibu.bokee.com/inc/net_snmp_doc.htm#_Toc116812027)
 * [Extending the UCD-SNMP(net-snmp) agen](http://blog.csdn.net/linyt/article/details/2842244)
 * [第一次寫MIB就上手★★★★](http://www.tonylin.idv.tw/dokuwiki/doku.php/snmp:snmp:mibhelloworld)
+* [FreeBSD snmptrapd.conf配置详解](http://blog.csdn.net/dumeifang/article/details/4201860)
 
