@@ -40,6 +40,8 @@ Reference: [mib2c_General_Overview](http://www.net-snmp.org/wiki/index.php/TUT:m
 	* snmptrap:      sending traps messages, and acting upon them.
     * snmptrapd:     receive and logs SNMP TRAP and INFORM messages.  
 
+	for more, use 'man' command to see usage.
+
 example: 
 
 	[dennis@localhost ~]$ snmpwalk -v2c -c public 192.168.110.98 .1.3.6.1.4.1.30901
@@ -72,8 +74,11 @@ example:
 	NET-SNMP version 5.7.2
 	14:30 TRAP0.0 from UDP: [192.168.110.39]:52222->[192.168.50.63]:162
 	 DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (1) 0:00:00.01	SNMPv2-MIB::snmpTrapOID.0 = OID: SNMPv2-SMI::enterprises.30901.1.3.0.1	SNMPv2-SMI::enterprises.30901.1.1.2 = INTEGER: 1
+	15:38 TRAP0.0 from UDP: [172.16.110.39]:35505->[172.16.50.63]:162
+	 SNMPv2-MIB::snmpTrapOID.0 = OID: SNMPv2-SMI::enterprises.30901	SNMPv2-SMI::enterprises.30901.1.1.2 = STRING: "string value test"	
 
 	root:~# snmptrap -v 2c -c public 192.168.50.63 1 .1.3.6.1.4.1.30901.1.3.0.1 .1.3.6.1.4.1.30901.1.1.2 i 1
+	root:~# snmptrap -v 2c -c public 192.168.50.63 "abc" .1.3.6.1.4.1.30901 .1.3.6.1.4.1.30901.1.1.2 s "string value test"
 
 
 ## 2. Install
@@ -175,4 +180,5 @@ step 2. 然后将刚写的MIB C code编译进net-snmp，有几种方法：
 * [Extending the UCD-SNMP(net-snmp) agen](http://blog.csdn.net/linyt/article/details/2842244)
 * [第一次寫MIB就上手★★★★](http://www.tonylin.idv.tw/dokuwiki/doku.php/snmp:snmp:mibhelloworld)
 * [FreeBSD snmptrapd.conf配置详解](http://blog.csdn.net/dumeifang/article/details/4201860)
+* [snmptrap、snmpinform和snmptrapd的详细介绍及其用法](http://velep.com/archives/585.html)
 
