@@ -54,7 +54,8 @@ tags: [linux, shell, git, svn, vim]
   映射内存(高速IO操作,磁盘空间不足利用内存)
 
 * `tar xvf example.tar.gz -C /root/test` 解压缩文件到指定目录  
-  `tar tvf example.tar.gz` 查看压缩包文件
+  `tar tvf example.tar.gz` 查看压缩包文件  
+  `7z a -t7z -ptestpsw123 mytest.7z -r testfolder/*` zip folder and encrypt it by 7z  
 
 * `getconf LONG-BIT`           查看系统位数  
   `grep -c "lm" /proc/cpuinfo` 查看cpu位数  
