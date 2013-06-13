@@ -69,6 +69,7 @@ tags: [linux, shell, git, svn, vim]
   `find / -type d -name "gedit"` 查找目录  
   `find . \( -path ./.git -o -path dir2 \) -prune -o -type d -print`查找子目录，.git和dir2除外  
   `find /usr/include/ -path /usr/include/boost -prune -o -name '*.h' -print >1.txt`  
+  `find . -name ".svn" | xargs rm -rf` find .svn folder in current directory, and remove it.  
 
 * `grep -r "abc" /root/source`  
   `grep -r --include "*.h" "date" path`  
