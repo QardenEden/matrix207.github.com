@@ -6,6 +6,8 @@ category:
 tags: []
 ---
 {% include JB/setup %}
+###Read
+* [medium](https://medium.com/)
 
 ###math
 * [Wolfram|Alpha: Computational Knowledge Engine](http://www.wolframalpha.com/)
