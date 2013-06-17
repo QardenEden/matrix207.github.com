@@ -6,6 +6,7 @@ category:
 tags: []
 ---
 {% include JB/setup %}
+From <https://medium.com/better-humans/3d7cbcc59cc3>
 
 It's not too late.
 
