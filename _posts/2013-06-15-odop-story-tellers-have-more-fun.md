@@ -3,10 +3,10 @@ layout: post
 title: "ODOP Story tellers have more fun"
 description: ""
 category: 
-tags: []
+tags: [ODOP]
 ---
 {% include JB/setup %}
-#Story tellers have more fun.
+From <https://medium.com/p/15baf764eead>
 "Great stories happen to those who can tell them."--Ira glass
 
 We all want to be interesting people. We want people to listen to us, to like us. We want them to date us, hire us, elect us, acquit us. We want influence.
