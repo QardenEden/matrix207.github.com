@@ -193,6 +193,10 @@ Here is the command to do this:
 	`ctrl+a` increment 1  
 	`ctrl+x` subtract 1  
 
+5. delete all comments  
+	`%s/\/\*\_.\{-}\*\//g`  
+	`%s#\M/*\m\_.\{-}\M*/##g`
+
 ###other valued skills
 * [vim notes](http://www.brezeale.com/technical_notes/vim_notes.shtml)
 * [Best of Vim Tips](http://www.rayninfo.co.uk/vimtips.html)
