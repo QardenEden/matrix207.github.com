@@ -5,38 +5,41 @@ description: "VIM study log"
 tags: [vim]
 ---
 {% include JB/setup %}
+I use a variety of vi(m) commands for my job, so many that I can't always remember how to do something that I have done before. Therefore I keep notes them here, for my bad memory.
 
 ###General command use in VIM
 	
 	<C-*> = Ctrl *
 
 	###基本操作
-	gg 	第一行第一个字符处
-	G	末行第一个字符处
+	gg 	  第一行第一个字符处
+	G	  末行第一个字符处
 
 	<C-f> <C-b> 往后(前)翻页 
 
-	^ $ 跳到当前行首(末)端字符处.
-	0 | 跳到当前行第一个字符前.
-	w b 往后(前)移动到下一个单词
-	e 移动到单词末尾
-	u 撤销操作
+	^ $   跳到当前行首(末)端字符处.
+	0 |   跳到当前行第一个字符前.
+	w b   往后(前)移动到下一个单词
+	e     移动到单词末尾
+	u     撤销操作
 	<C-R> 还原被撤消的编辑操作
-	% 跳到匹配的大中小括号{}[]() #if #endif
-	i 在光标前插入
-	I 在当前行第一个非空白符号前插入
-	a 在光标后插入
-	A 在行尾插入
-	o O 在行后(前)插入一行,并进入插入模式
-	dd 删除当前行
-	yy 复制当前行
-	yyp 复制并粘贴当前行
+	%     跳到匹配的大中小括号{}[]() #if #endif
+	i     在光标前插入
+	I     在当前行第一个非空白符号前插入
+	a     在光标后插入
+	A     在行尾插入
+	o O   在行后(前)插入一行,并进入插入模式
+	dd    删除当前行
+	yy    复制当前行
+	yyp   复制并粘贴当前行
+	yw    复制单词
+	yiw   复制单词
 	<< >> 当前行左(右)缩进
 	n<< n>> 从当前行起n行 左(右)缩进
-	= 格式化选中的代码
-	==格式化当前行
-	n==格式化n行(从当前行算起)
-	gg=G格式化整个文件
+	=     格式化选中的代码
+	==    格式化当前行
+	n==   格式化n行(从当前行算起)
+	gg=G  格式化整个文件
 
 	xp	交换两个字符
 	zz	当前行至屏幕中间
@@ -63,26 +66,26 @@ tags: [vim]
 
 	// 查找替换功能
 	f(F) h a
-	查找当前行当前位置往后(或往前)的第一个h字符后,然后进入插入模式
-	f : Find, 查找. f往后查找, F往前查找 
-	h : 要查找的字符
-	a : append 在字符的后面追加(同时进入插入模式)
+	  查找当前行当前位置往后(或往前)的第一个h字符后,然后进入插入模式
+	  f : Find, 查找. f往后查找, F往前查找 
+	  h : 要查找的字符
+	  a : append 在字符的后面追加(同时进入插入模式)
 
 	查找后
 	n 下一个
 	N 上一个
 
 	:[range]s/pattern/string/[c,e,g,i]
-	r 	范围, 
-		1,7表示第一到第七行.
-		1,$表示第一到最后一行.
-		%  表示整篇文章
-	pattern 被替换的字串
-	string 替换用的字串
-	c	comfirm, 询问确认
-	e	不显示error
-	g	globe, 不询问,整行替换.
-	i	ignore, 不区分大小写.
+	  r 	范围, 
+	  	1,7表示第一到第七行.
+	  	1,$表示第一到最后一行.
+	  	%  表示整篇文章
+	  pattern 被替换的字串
+	  string 替换用的字串
+	  c	comfirm, 询问确认
+	  e	不显示error
+	  g	globe, 不询问,整行替换.
+	  i	ignore, 不区分大小写.
 	例子:
 		:%s/\s\+$//	删除每行后面多余的空格
 		:%s/h14/h12/g 替换整个文档中的h14为h12
@@ -119,8 +122,8 @@ tags: [vim]
 	change     An Object      {} [] () "" ''
 	delete
 	例如:
-	vi{ ： 选中大括号内(不包括大括号本身)全部内容
-	va" ： 选中双引号(包括双引号本身)全部内容
+	  vi{ ： 选中大括号内(不包括大括号本身)全部内容
+	  va" ： 选中双引号(包括双引号本身)全部内容
 
 	gd 可以跳转到当前光标所在的单词(变量)的局部定义处
 
@@ -190,3 +193,6 @@ Here is the command to do this:
 	`ctrl+a` increment 1  
 	`ctrl+x` subtract 1  
 
+###other valued skills
+* [vim notes](http://www.brezeale.com/technical_notes/vim_notes.shtml)
+* [Best of Vim Tips](http://www.rayninfo.co.uk/vimtips.html)
