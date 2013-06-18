@@ -101,6 +101,7 @@ I use a variety of vi(m) commands for my job, so many that I can't always rememb
 
 	C 修改到行尾,并进入插入模式
 
+	###copy and paste
 	"+y  复制
 	"+gP 粘贴
 
@@ -117,33 +118,34 @@ I use a variety of vi(m) commands for my job, so many that I can't always rememb
 	<C-v> 进入列选取模式
 
 	Operator Mapping
-	v|c|d       i|a          {|[\(|"|'
+	v|c|d       i|a          {|[|(|"|'|w
 	visual  Inner Object      Region
-	change     An Object      {} [] () "" ''
+	change     An Object      {} [] () 
 	delete
 	例如:
-	  vi{ ： 选中大括号内(不包括大括号本身)全部内容
-	  va" ： 选中双引号(包括双引号本身)全部内容
+	  vi{ : 选中大括号内(不包括大括号本身)全部内容
+	  va" : 选中双引号(包括双引号本身)全部内容
+	  viw : visual a word
 
 	gd 可以跳转到当前光标所在的单词(变量)的局部定义处
 
 	###命令跳转
-	* `zt` 当前行至窗口首行
-	* `zz` 当前行至窗口中间
-	* `zb` 当前行至窗口末尾
+	* zt 当前行至窗口首行
+	* zz 当前行至窗口中间
+	* zb 当前行至窗口末尾
 
 	###折叠
-	* `zm` 折叠全部
-	* `zo` 打开当前折叠
-	* `zO` 打开所在范围全部折叠
-	* `zc` 折叠当前
-	* `zC` 对所属范围所有嵌套全部折叠
-	* `zj` 跳转至下一个折叠处
-	* `zk` 跳转至上一个折叠处
+	* zm 折叠全部
+	* zo 打开当前折叠
+	* zO 打开所在范围全部折叠
+	* zc 折叠当前
+	* zC 对所属范围所有嵌套全部折叠
+	* zj 跳转至下一个折叠处
+	* zk 跳转至上一个折叠处
 
 	###多文档跳转
-	* `:bp`, 前一个文档
-	* `:bn`, 后一个文档
+	* :bp 前一个文档
+	* :bn 后一个文档
 
 	###搜索替换
 	* `:%s/Matirx207/Matrix207/g`, 全文搜索`Matirx207`替换为`Matrix207`
@@ -151,18 +153,24 @@ I use a variety of vi(m) commands for my job, so many that I can't always rememb
 	###自动补齐
 	* C-P, 即Ctrl+P, 自动补齐上个可能字
 	* C-N, 即Ctrl+N, 自动补齐下个可能字
+    * C-x C-p Word completion, backward
+    * C-x C-n Word completion, forward
+    * C-x C-l Line completion
+    * C-x C-f File name completion
+
 
 	###历史命令
-	* Normal模式下输入 `q`, 输入`:`, 就可以编辑历史命令了
-	* 使用vim的命令(hjkl等)来跳转编辑, 回车即执行命令
+	* q: enter history commands
+	* move by hjkl, type enter to execute the command
 
 	###标签
-	* `mx`设置标签x, x可用a..z
-	* `'x`跳转至标签x
+	* mx     set mark x, x can use a..z characters
+	* 'x     jump to mark x
+	* :marks show all marks
 
 	###寄存器
-	* 输入`:reg`查看寄存器内容
-	* 输入 `"寄存器名p` 即可粘贴相应的寄存器内容
+	* 输入:reg 查看寄存器内容
+	* 输入 "寄存器名p 即可粘贴相应的寄存器内容
 
 	###宏操作录制
 	* qq operator q
@@ -184,7 +192,7 @@ into the lines:
 > \+ \[Org-mode写作的几个快捷方式\](http://emacser.com/org-mode-tricks.htm)  
 > \+ \[组织你的意念：Emacs org mode\](http://i.linuxtoy.org/docs/guide/ch32.html)  
 Here is the command to do this:  
-`%s/+ \(.*\)\(\[.*\]\)/+ \2\1/g`
+`:%s/+ \(.*\)\(\[.*\]\)/+ \2\1/g`  
 
 3. compare file  
    `vimdiff file1 file2` or `gvim -d file1 file2`
@@ -194,9 +202,18 @@ Here is the command to do this:
 	`ctrl+x` subtract 1  
 
 5. delete all comments  
-	`%s/\/\*\_.\{-}\*\//g`  
-	`%s#\M/*\m\_.\{-}\M*/##g`
+	`:%s/\/\*\_.\{-}\*\//g` or `:%s#\M/*\m\_.\{-}\M*/##g`
+
+6. delete match lines  
+	`:g/.*patternSearch.*/d`
+
+7. more substitution  
+	Substituting all lines with its line number  
+	`:%s/^/\=line(".") . ". "/g`  
+	Resort numeric  
+	`:4,$s/\d\+/\=submatch(0) + 1/`  
 
 ###other valued skills
 * [vim notes](http://www.brezeale.com/technical_notes/vim_notes.shtml)
 * [Best of Vim Tips](http://www.rayninfo.co.uk/vimtips.html)
+* [Vi and Vim Editor: 12 Powerful Find and Replace Examples](http://www.thegeekstuff.com/2009/04/vi-vim-editor-search-and-replace-examples/)
