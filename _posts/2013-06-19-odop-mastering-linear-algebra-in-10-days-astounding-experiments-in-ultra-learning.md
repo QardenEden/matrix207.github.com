@@ -12,7 +12,11 @@ Also, you can get author's more information from [here](http://www.scotthyoung.c
 
 I like learning guy, so, maybe I should follow Scott's steps.
 
+And [here](http://way4ever.com/?p=377) is a version of chinese.
+
 Here we go:
+
+-----
 
 The MIT Challenge:
 
