@@ -6,6 +6,11 @@ category:
 tags: [ODOP]
 ---
 {% include JB/setup %}
+
+From <https://medium.com/this-happened-to-me/9ab3cc1292a8>
+
+---
+
 My only goal was to keep running.
 
 I started running a year ago. I had just begun  a new job after leaving my own startup. I was tired of being a founder and desperately needed a break.  I wanted to have a calmer lifestyle and I wanted a hobby.
