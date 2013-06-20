@@ -3,7 +3,7 @@ layout: post
 title: "ODOP Why you should quit your job and travel now"
 description: ""
 category: 
-tags: []
+tags: [ODOP]
 ---
 {% include JB/setup %}
 From <https://medium.com/better-humans/3d7cbcc59cc3>
