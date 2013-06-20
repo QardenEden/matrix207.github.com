@@ -3,7 +3,7 @@ layout: post
 title: "ODOP Four Steps to Google, Without a Degree"
 description: ""
 category: 
-tags: [One day one paper]
+tags: [ODOP]
 ---
 {% include JB/setup %}
 
