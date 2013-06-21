@@ -222,8 +222,9 @@ Here is the command to do this:
 	`:g/^$/d`  
 	`:g/^ *$/d` delete lines only contain space   
 
-9. add "inline" to all function
-	`:%s/\(.*(\)/inline \1/g`  this can work, but not perfect!!  
+9. add "inline" to all function  
+	`:%s/\(.*(\)/inline \1/g`  this can work, but not perfect!!    
+	`%s/\(^[□tab]*\)\(.*(.*\)/\1inline \2/g`  
 
 10. delete all spaces at the end of every line:
 	`:%s/\(.*\)  *$/\1/`
