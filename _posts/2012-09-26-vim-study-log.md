@@ -153,10 +153,10 @@ I use a variety of vi(m) commands for my job, so many that I can't always rememb
 	###自动补齐
 	* C-P, 即Ctrl+P, 自动补齐上个可能字
 	* C-N, 即Ctrl+N, 自动补齐下个可能字
-    * C-x C-p Word completion, backward
-    * C-x C-n Word completion, forward
-    * C-x C-l Line completion
-    * C-x C-f File name completion
+	* C-x C-p Word completion, backward
+	* C-x C-n Word completion, forward
+	* C-x C-l Line completion
+	* C-x C-f File name completion
 
 
 	###历史命令
@@ -175,6 +175,11 @@ I use a variety of vi(m) commands for my job, so many that I can't always rememb
 	###宏操作录制
 	* qq operator q
 	* 100@q
+	
+	###Editing Files in other places
+	vim scp://[user@]hostname[:port]//FilePath
+	e.g.: vim scp://root@172.16.110.39//root/a.c
+
 
 ###some skills
 
@@ -219,6 +224,9 @@ Here is the command to do this:
 
 9. add "inline" to all function
 	`:%s/\(.*(\)/inline \1/g`  this can work, but not perfect!!  
+
+10. delete all spaces at the end of every line:
+	`:%s/\(.*\)  *$/\1/`
 
 ###other valued skills
 * [vim notes](http://www.brezeale.com/technical_notes/vim_notes.shtml)
