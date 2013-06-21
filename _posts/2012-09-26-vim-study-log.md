@@ -213,6 +213,13 @@ Here is the command to do this:
 	Resort numeric  
 	`:4,$s/\d\+/\=submatch(0) + 1/`  
 
+8. delete bank line
+	`:g/^$/d`  
+	`:g/^ *$/d` delete lines only contain space   
+
+9. add "inline" to all function
+	`:%s/\(.*(\)/inline \1/g`  this can work, but not perfect!!  
+
 ###other valued skills
 * [vim notes](http://www.brezeale.com/technical_notes/vim_notes.shtml)
 * [Best of Vim Tips](http://www.rayninfo.co.uk/vimtips.html)
