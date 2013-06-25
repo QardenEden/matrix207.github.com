@@ -75,7 +75,7 @@ May 9th, 2009
 - Fixed a --read-batch hang when rsync is reading a batch file that was created from an incremental-recursion transfer.
 - Fixed the daemon's socket code to handle the simultaneous arrival of multiple connections.
 - Fix --safe-links/--copy-unsafe-links to properly handle symlinks that have consecutive slashes in the value.
-- Fixed the parsing of an [IPv6_LITERAL_ADDR] when a USER@ is prefixed.
+- Fixed the parsing of an IPv6_LITERAL_ADDR when a USER@ is prefixed.
 - The sender now skips a (bogus) symlink that has a 0-length value, which avoids a transfer error in the receiver.
 - Fixed a case where the sender could die with a tag-0 error if there was an I/O during the sending of the file list.
 - Fixed the rrsync script to avoid a server-side problem when -e is at the start fo the short options.

@@ -97,11 +97,11 @@ Here's an example of [notes I took](http://www.scotthyoung.com/mit/machine-visio
 
 Practice problems are huge for boosting your understanding, but there are two main efficiency traps you can get caught in if you're not careful.
 
-_#1 - Not Getting Immediate Feedback 
+1-Not Getting Immediate Feedback 
 
 The research is clear: If you want to learn, you need immediate feedback. The best way to do this is to go question-by-question with the solution key in hand. Once you've finished a question, check yourself against the provided solutions. Practice without feedback, or with delayed feedback, drastically hinders effectiveness.
 
-_#2 - Grinding Problems
+2-Grinding Problems
 
 Like the students who fall into the trap of believing that most learning occurs in the classroom, some students believe understanding is generated mostly from practice questions. While you can eventually build an understanding simply by grinding through practice, it's slow and inefficient.
 
