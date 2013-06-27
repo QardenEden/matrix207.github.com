@@ -72,4 +72,32 @@ More close to home, my wife Emily had a Little, Big Idea recently. Subscription 
 
 When you've got a Big Idea, you're always thinking about it, and if you focus on just making that first step, you're maximising on that passion and energy. It's pointless trying to do a Big Idea when you're not passionate about it, and the main problem I see with the "write it all down, spend a year getting lots of documents together" model is that your passion isn't going to be in it. It's formula for making sure that you're tired of it before you've even spoken to any users.
 
-I often care myself when I've had an idea by putting it out almost immediately on the web. I tweet something like "Hey guys! I'm looking for some people who know about x to help beta test an idea. Let me know". It's exciting, and you get great feedback. We're doing this at Makeshift, where we come up with a product idea, do a two week hack,
+I often care myself when I've had an idea by putting it out almost immediately on the web. I tweet something like "Hey guys! I'm looking for some people who know about x to help beta test an idea. Let me know". It's exciting, and you get great feedback. We're doing this at [Makeshift](http://makeshift.io/), where we come up with a product idea, do a two week hack, put it in front of people and try to find out if there's anything in it. We only do hacks on things that are easily achieved with our skills as a team, yet that point towards a large market. We're trying to get to the point where everything we make is a Little, Big Idea.
+
+##Use the feature knife
+
+I do most of my hacks in one or two days. I've leant that if I can't do something in that time, then I've probably overthrought it, and it's too complicated. And the things that are successful on the web are the simple things. Sure - after those few days it's into iterate, iterate, iterate, but I try in my hacks to make sure that I've successfully demonstrated the bare minimum of the idea in that time.
+
+To work this way you have to choose that constitutes the absolute bare bones, minimal version of the idea you're going to go for. Then focus, say no to every feature that doesn't help validate that idea. No, no, no. I call it the feature knife. This. Not that. This. Not that. Trim it down to it's basic components, then set aside a fixed period of time and build it.
+
+Obviously I'm lucky in that I can make a thing in a day - like [Attending](http://attending.io/), a simple event-page maker I made last Friday out of frustration with Eventbrite. I had a good reaction, then asked [Jase](http://twitter.com/jasecoop] to give it some design attention. We did a few tweaks together, so as it stands today, that's about 7 days of person-time. And now we try to get feedback about whether there's anything in the idea.
+
+##Optimise for demonstrability over time 
+
+The joyful thing about the make-something-quickly spirit that I refer to as hacking, for want of a better word, is that if you get it right you are optimising for visible productivity early on.
+
+If you attend a hack day, or you're building a rapid prototype (like the Sugru knife handle), you'll get a graph that looks a little like this.
+
+In the first 10% of time you'll probably be able to demonstrate 90% of what the idea will be about. The remaining 90% of the time will be refinement, but it will still only add 10% of the perceived "done-ness" of the idea you're demonstrating. It's the shlep - the long, hard, graft that's required to take a product idea to market and get it right.
+
+But given that by hacking on an idea you can get to that 10% point very quickly, I'd argue that is a very good idea indeed for a certain class of Big Ideas. Clearly, you can't build a bridge this way. Or come up with a cure for a serious disease. But if your idea is digital in nature, then I'd argue that there is much to be done by optimising for that early part of the demonstrability-over-time curve.
+
+##Build something small
+
+There is a prevailing wisdom that in order to make something successful you should write an extensive business plan before you start. It's the MBA school of thought. Whilst I am sure that this is relevant in many situations, I would argue that this is stage comes later than when you've had your initial, unproven idea. At that stage I think that a one-pager will suffice. If you can't explain what the business model is in a one-pager then you've got bigger problems!
+
+So, I suspect if you've read this far, you're someone who has one of these Big Ideas. Are you writing the business plan without any validation? Have you done a prototype? Have you done a hack to really see, with real people if you've got something worth investing your time in?
+
+Set aside the business planning and the idea-flood for a moment, and get back to the simple, basic, core idea of what your idea is about and go and test that out. Good luck!
+
+With thanks to [#sundaypost](http://attending.io/events/sunday-post)(write a blog post on a Sunday with others) and everyone who supported me to write this idea on Help Me Write. What should I write next?
