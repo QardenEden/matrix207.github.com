@@ -41,4 +41,5 @@ If you want to run you application on really device, you should read this page
 ##7. Reference:  
 + [Android Developers](http://developer.android.com/index.html)
 + [Build your](http://developer.android.com/training/basics/firstapp/index.html)
++ [HOWTO Setup Android Development](http://fedoraproject.org/wiki/HOWTO_Setup_Android_Development)
 + [Fedora 13 下配置Android开发环境](http://www.isspy.com/fedora-13-下配置android开发环境/)
