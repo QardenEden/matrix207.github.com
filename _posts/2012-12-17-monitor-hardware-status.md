@@ -312,8 +312,8 @@ on LPCIO.cs, found the calling code:
 
 ####Get fan speed:
 
-call ReadByte(FAN_TACHO_BANK[i], FAN_TACHO_REG[i]) to get speed value to "count" 
-, then set real fan spee to array variable "fans[]".
+call ReadByte(FAN_TACHO_BANK\[i\], FAN_TACHO_REG\[i\]) to get speed value to "count" 
+, then set real fan spee to array variable "fans\[\]".
 
     private readonly byte[] FAN_TACHO_REG = 
       new byte[] { 0x28, 0x29, 0x2A, 0x3F, 0x53 };

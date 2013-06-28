@@ -80,7 +80,7 @@ I do most of my hacks in one or two days. I've leant that if I can't do somethin
 
 To work this way you have to choose that constitutes the absolute bare bones, minimal version of the idea you're going to go for. Then focus, say no to every feature that doesn't help validate that idea. No, no, no. I call it the feature knife. This. Not that. This. Not that. Trim it down to it's basic components, then set aside a fixed period of time and build it.
 
-Obviously I'm lucky in that I can make a thing in a day - like [Attending](http://attending.io/), a simple event-page maker I made last Friday out of frustration with Eventbrite. I had a good reaction, then asked [Jase](http://twitter.com/jasecoop] to give it some design attention. We did a few tweaks together, so as it stands today, that's about 7 days of person-time. And now we try to get feedback about whether there's anything in the idea.
+Obviously I'm lucky in that I can make a thing in a day - like [Attending](http://attending.io/), a simple event-page maker I made last Friday out of frustration with Eventbrite. I had a good reaction, then asked [Jase](http://twitter.com/jasecoop) to give it some design attention. We did a few tweaks together, so as it stands today, that's about 7 days of person-time. And now we try to get feedback about whether there's anything in the idea.
 
 ##Optimise for demonstrability over time 
 

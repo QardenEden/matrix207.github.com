@@ -110,8 +110,8 @@ Some opcodes operate on a specific Logical Unit.  The Logical Unit
 Number (LUN) field identifies which Logical Unit.  If the opcode does
 not relate to a Logical Unit, this field is either ignored or may be
 used in an opcode specific way.  The LUN field is 64-bits and should
-be formatted in accordance with [SAM2].  For example, LUN[0] from
-[SAM2] is BHS byte 8 and so on up to LUN[7] from [SAM2], which is BHS
+be formatted in accordance with \[SAM2\].  For example, LUN\[0\] from
+\[SAM2\] is BHS byte 8 and so on up to LUN\[7\] from \[SAM2\], which is BHS
 byte 15.
 
 The general format of an AHS is:

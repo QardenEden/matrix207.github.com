@@ -37,7 +37,7 @@ Bug FIXES:
 - If rsync was compiled with a newer time-setting function (such as lutimes), rsync will fall-back to an older function (such as utimes) on a system where the newer function is not around. This helps to make the rsync binary more portable in mixed-OS-release situations.
 - Fixed a batch-file writing bug that would not write out the full set of compatibility flags that the transfer was using. This fixes a potential protocol problem for a batch file that contains a sender-side I/O error; i would have been sent in a way that the batch-reader wasn't expecting.
 - Some improvements to the hard-linking code to ensure that device-number hashing is working right, and to supply more information if the hard-link code fails.
-- The --inplace code was improved to not search for  and impossible checksum position. The quadruple-verbose chunk[N] message will now mention when an inplace chunk was handled by a seek rather than a read+write.
+- The --inplace code was improved to not search for  and impossible checksum position. The quadruple-verbose chunk\[N\] message will now mention when an inplace chunk was handled by a seek rather than a read+write.
 - If we fail to connect to an rsync daemon, report all the connection errors (e.g. IPv4 & IPv6), not just the last one.
 - Improved ACL mask handling, e.g. for Solaris.
 - Fixed an issue where an xattr and/or ACL transfer that used an alt-dest option (e.g. --link-dest) could output an error trying to itemize the changes against the alt-dest directory's xattr/ACL info but was instead trying to access the not-yet-existing new destination directory.
