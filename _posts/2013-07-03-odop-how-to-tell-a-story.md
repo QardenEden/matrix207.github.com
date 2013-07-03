@@ -40,3 +40,24 @@ A girl with brown hair and blue eyes could be described in your story as a young
 
 Before you tell your story, give it a try. You may want to videotape yourself or do it in front of a mirror so you can see the flaws in your telling. After you watch the video of your telling, mute the sound so you can only pay attention to the visual aspects. Did you use hand motions? Check your expressions as well. Now, close your eyes and just listen to the story. How is your articulation? Did you use "ahs" or "ums?" Adjust the telling based on what you notice.
 
+##Tips 
+
+Include the audience. Asking rhetorical questions is a perfect way to do so. Example:"Goldilocks was very tired after walking through the woods all day. You'd want a place to rest if you had been walking in the woods, right? So di Goldilocks."ask to see if they figure out the story.
+
+##Things You'll Need 
++ A story to tell
++ An audience 
++ Props(optional)
+
+##Related wikiHows 
++ [How to Tell a Great Story](http://www.wikihow.com/Tell-a-Great-Story)
++ [How to Submit a Story to a Magazine](http://www.wikihow.com/Submit-a-Story-to-a-Magazine)
++ [How to Add Emotion to a Story](http://www.wikihow.com/Add-Emotion-to-a-Story)
++ [How to Act](http://www.wikihow.com/Act)
++ [How to Have a Pleasant Facial Expression](http://www.wikihow.com/Have-a-Pleasant-Facial-Expression)
++ [How to Write a Fantasy Story](http://www.wikihow.com/Write-a-Fantasy-Story)
++ [How to Have a Good Stage Presence](http://www.wikihow.com/Have-a-Good-Stage-Presence)
+
+##Sources and Citations
+<http://www.aaronshep.com/storytelling/Tips.html>  
+<http://www.storytelling-nyc.org/tips.html>
