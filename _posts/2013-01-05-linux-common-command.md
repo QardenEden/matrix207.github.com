@@ -31,6 +31,8 @@ tags: [linux, shell, git, svn, vim]
   `M-d`   向前删一个单词  
   `C-M-h` 向后删一个单词, 单词之间以符号分割  
   `C-w`   向后删一个单词, 单词之间以空格分割  
+  `C-]`   search character forward
+  `C-M-]` search character backward
 
 * `<alt>+.`马上得到上一个命令的最后一个参数
 
@@ -114,14 +116,17 @@ tags: [linux, shell, git, svn, vim]
 
 ####VIM  
 * vim  
+  `:e` reload current file  
   `:e filename` add a file to editor  
   `:bn` or `:bp` goto the next or previous buffer  
   `:bd!` delete current buffer tag  
   `C-x` or `C-a` minus or add 1 to current digit  
   `wm` open or close netrw and TagList windows  
   `:set syntax=python` manual set syntax language  
-  `nohl` not highlight  
+  `:nohl` not highlight  
   `:set nu` show number  
+  `:set wrap`  
+  `:set nowrap`  
 
 ####git and svn  
 * git  
@@ -141,9 +146,10 @@ tags: [linux, shell, git, svn, vim]
   `svn co url`  
   `svn status`  
   `svn info url`  
+  `svn di`
   `svn log -r ***:****`  
-  `svn commit -m "***"`  
   `svn add ***`  
+  `svn commit -m "***"`  
 
 ####network  
 * `python -m SimpleHTTPServer`  
@@ -174,7 +180,7 @@ tags: [linux, shell, git, svn, vim]
    `Win` windows key, use to show all application  
    `Win` -> `Space` , search application  
 
-####vimperator
+####vimperator(Firfox plugin)
 * vimperator  
 `:help`  Open help page  
 `C-[`    cancel command mode  
