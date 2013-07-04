@@ -41,10 +41,13 @@ I use a variety of vi(m) commands for my job, so many that I can't always rememb
 	n==   格式化n行(从当前行算起)
 	gg=G  格式化整个文件
 
+	gu    uppercase select characters
+	gU    lowercase select characters 
+
+	C   修改到行尾,并进入插入模式
+	D   删除到行尾
+
 	xp	交换两个字符
-	zz	当前行至屏幕中间
-	zt	当前行至屏幕顶端
-	zb	当前行至屏幕低端
 
 	ZZ	保存退出.(可以替换:wq)
 	:e!	重新载入原始文件
@@ -96,18 +99,9 @@ I use a variety of vi(m) commands for my job, so many that I can't always rememb
 	或
 	/h14[enter]2lr2
 
-	di“ 光标移动到双引号内,用来删除双引号的全部字串
-	ci( 光标移动到小括号内,用来修改小括号的全部字串,可以用来修改函数的全部参数
-
-	C 修改到行尾,并进入插入模式
-
 	###copy and paste
 	"+y  复制
 	"+gP 粘贴
-
-	剪切粘贴 技巧
-	使用v或V选中要剪切的文本, 使用x剪切.
-	然后移动光标到要粘贴的地方使用p粘贴.
 
 	[或] 用来移动到所属的 {或}
 	{或} 向前(或后)移动到空白行
@@ -126,6 +120,8 @@ I use a variety of vi(m) commands for my job, so many that I can't always rememb
 	  vi{ : 选中大括号内(不包括大括号本身)全部内容
 	  va" : 选中双引号(包括双引号本身)全部内容
 	  viw : visual a word
+	  di“ : 光标移动到双引号内,用来删除双引号的全部字串
+	  ci( : 光标移动到小括号内,用来修改小括号的全部字串,可以用来修改函数的全部参数
 
 	gd 可以跳转到当前光标所在的单词(变量)的局部定义处
 
@@ -135,13 +131,16 @@ I use a variety of vi(m) commands for my job, so many that I can't always rememb
 	* zb 当前行至窗口末尾
 
 	###折叠
-	* zm 折叠全部
-	* zo 打开当前折叠
-	* zO 打开所在范围全部折叠
-	* zc 折叠当前
-	* zC 对所属范围所有嵌套全部折叠
-	* zj 跳转至下一个折叠处
-	* zk 跳转至上一个折叠处
+	* zm increase the foldlevel by one
+	* zM close all open folds
+	* zr decrease the foldlevel by one
+	* zR decrease the foldlevel to zero -- all folds will be open
+	* zo opens a fold at the curse
+	* zO opens all folds at the curse
+	* zc close one fold
+	* zC close all folds at the curse
+	* zj jump to next fold
+	* zk jump to previous fold
 
 	###多文档跳转
 	* :bp 前一个文档
