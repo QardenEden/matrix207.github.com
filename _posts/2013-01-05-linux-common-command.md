@@ -89,7 +89,7 @@ tags: [linux, shell, git, svn, vim]
 	30\.0°C  
 	37\.0°C  
 
-* `history|awk '{print $3}'|awk 'begin {FS="1"} {print $1}'|sort|uniq -c|sort -rn|head -10`
+* `history|awk '{print $2}'|awk 'begin {FS="|"} {print $1}'|sort|uniq -c|sort -rn|head -10`
 
 * `ps aux | sort -nk +4 | tail`
 
