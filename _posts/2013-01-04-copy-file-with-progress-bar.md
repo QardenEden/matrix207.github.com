@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "显示进度条的拷贝"
+title: "Copy file with progress bar"
 description:
-tags: [shell, progress bar]
+tags: [shell]
 ---
 {% include JB/setup %}
 
-####显示拷贝进度的cp#### 
+####Copy file with progress bar  
 
 	#!/usr/bin/bash
 
@@ -82,5 +82,5 @@ tags: [shell, progress bar]
 	echo
 
 
-####参考  
-[raider: src/lib/progbar](http://sourceforge.net/projects/raider/files/?source=navbar)
+####Reference  
+* [raider: src/lib/progbar](http://sourceforge.net/projects/raider/files/?source=navbar)

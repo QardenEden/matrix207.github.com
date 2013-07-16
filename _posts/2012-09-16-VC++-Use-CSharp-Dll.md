@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "VC++使用C#的Dll"
-description: "VC++中使用C#的Dll, 即C#的类库."
+title: "Dll write by C# use on VC++"
+description: ""
 category: 
-tags: [VC++, C#Dll]
+tags: []
 ---
 {% include JB/setup %}
 

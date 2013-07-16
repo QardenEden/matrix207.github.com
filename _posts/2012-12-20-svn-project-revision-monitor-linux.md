@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Linux监控SVN仓库源码版本更新"
-description: "自动获取监控SVN仓库源码最新版本,邮件发送更新日志信息"
+title: "SVN project revision monitor on Linux"
+description: ""
 tags: [shell, svn, mail, sed, awk]
 ---
 {% include JB/setup %}
 
-###Linux自动获取SVN版更新信息,并发送邮件通知###  
+###Monitor revision of SVN repository, auto send change log to user by mail  
 
 
 __pmt.sh__  

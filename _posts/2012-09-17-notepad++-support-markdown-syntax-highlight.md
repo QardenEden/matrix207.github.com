@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Notepad++支持markdown语言高亮"
-description: "设置Notepad++支持Markdown语言高亮显示."
+title: "Notepad++ support highlight of markdown"
+description: ""
 category:
-tags: [Notepad++, Markdown, Syntax Highlighg]
+tags: [Notepad++]
 ---
 {% include JB/setup %}
 

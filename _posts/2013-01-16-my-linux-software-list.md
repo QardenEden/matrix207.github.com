@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "我的linux软件清单"
+title: "List my linux software"
 description: ""
 category: 
 tags: [Linux]
