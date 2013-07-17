@@ -7,37 +7,38 @@ tags: [linux, shell, git, svn, vim]
 {% include JB/setup %}
 
 ####shell terminal
-
-* `!!` 上一个命令, 常用于su或sudo执行上一次命令，如`su !!`  
-  相当于`su !-1`,其实就是history显示的命令的倒数第一个，类似的!-2为倒数第二个  
-  同类型的技巧: `!^`上一个命令的第一个参数(同`!:1`,其他参数类推)，`!$`最后一个参数
+* `!!` the previous command (Actually the latest command list with command `history`)   
+  `!-1` is equal to `!!`  
+  `!-2` is second command list with command `history`   
+  `!^`  first parameter  
+  `!:1` first parameter   
+  `!:$` last parameter  
 
 * `C-A/E` jump to the head/end position  
-  `C-U/K` 截取命令字串至头/尾  
+  `C-U/K` trim to head/tail  
   `C-P/N` prev/next command  
   `C-R`	  history command  
   `C--`   zoom in  
   `C-L`	  clear screen, same as `clear`  
   `C-C`	  cancel current command  
-  `C-&`	  撤销  
+  `C-&`	  cancel modify  
   `C-T`	  switch  
   `C-Y`   paste  
   `C-W`   delete a word  
-  下面的操作需要去掉Terminal的Enable menu access keys选项.  
-  `C-f/b` 向前/后移动一个字符  
-  `M-f/b` 向前/后移动一个字  
-  `C-d`	  向前删一个字符  
-  `C-h`   向后删一个字符  
-  `M-d`   向前删一个单词  
-  `C-M-h` 向后删一个单词, 单词之间以符号分割  
-  `C-w`   向后删一个单词, 单词之间以空格分割  
-  `C-]`   search character forward
-  `C-M-]` search character backward
+  Below operation need to unset Enable menu access keys option of terminal.  
+  `C-f/b` move cursor forward/backward a character  
+  `M-f/b` move cursor forward/backward a word  
+  `C-d`	  delete a character forward  
+  `C-h`   delete a character backward  
+  `M-d`   delete a word froward  
+  `C-M-h` delete a word backward, the word was splited by any special symbols  
+  `C-w`   delete a word backward, the word was splited by space symbol only  
+  `C-]`   search character forward  
+  `C-M-]` search character backward  
 
 * `<alt>+.` get the last parameter of previous command
 
 ####common command
-
 * `cd -` switch to last dir  
   `cd` switch to user home dir  
 
