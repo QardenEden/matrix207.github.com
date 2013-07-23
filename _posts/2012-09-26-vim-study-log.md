@@ -228,6 +228,9 @@ Here is the command to do this:
 10. delete all spaces at the end of every line:
 	`:%s/\(.*\)  *$/\1/`
 
+11. read range of lines from another file to current file 
+	`:r! sed -n 100,158p /home/dennis/test.c`
+
 ###other valued skills
 * [vim notes](http://www.brezeale.com/technical_notes/vim_notes.shtml)
 * [Best of Vim Tips](http://www.rayninfo.co.uk/vimtips.html)
