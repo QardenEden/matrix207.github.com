@@ -108,11 +108,13 @@ tags: [linux, shell, git, svn, vim]
   `arr=($(awk -F'#' '{print $1,$2,$3,$4}' $conf_file))`  
   `ps aux | awk 'NR==1{print $0}$3>10{print $0}'`  
   `awk -F'<|>' '{if(NF>3){print $2 ":" $3}}' /tmp/test.xml` parse xml file  
+  `awk -F'=' '/HWADDR/{print $2}' /etc/sysconfig/network-scripts/ifcfg-eth0`
 
 * sed  
   `sed [options] 'command' file(s)`  
   `sed [options] -f scriptfile file(s)`  
   `sed -i '/'$prj'/{s/\(.*#.*#\)[0-9]\+/\1'$rev_new'/}' $conf_file`  
+  `sed -n 10,23p filepath` -n print the specific lines  
 
 ####VIM  
 * `vimdiff a.log b.log` diff two files
