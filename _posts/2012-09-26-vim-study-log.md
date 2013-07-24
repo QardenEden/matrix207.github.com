@@ -231,7 +231,14 @@ Here is the command to do this:
 11. read range of lines from another file to current file 
 	`:r! sed -n 100,158p /home/dennis/test.c`
 
+12. list all the match lines of searching on screen 
+	`:g/pattern/p` In its longer format: `:global/regular-expression/print`  
+	If `pattern` is leave out, like `:g//p`, vim will uses previous search item.  
+	You can leave `p` out too, because p(rint) is the default action.
+
 ###other valued skills
 * [vim notes](http://www.brezeale.com/technical_notes/vim_notes.shtml)
+* [VimTip - Vim Tips Wiki](http://vim.wikia.com/wiki/Category:VimTip)
+* [Best Vim Tips](http://vim.wikia.com/wiki/Best_Vim_Tips)
 * [Best of Vim Tips](http://www.rayninfo.co.uk/vimtips.html)
 * [Vi and Vim Editor: 12 Powerful Find and Replace Examples](http://www.thegeekstuff.com/2009/04/vi-vim-editor-search-and-replace-examples/)
