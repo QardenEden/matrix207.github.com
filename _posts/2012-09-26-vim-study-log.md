@@ -5,179 +5,203 @@ description: "VIM study log"
 tags: [vim]
 ---
 {% include JB/setup %}
-I use a variety of vi(m) commands for my job, so many that I can't always remember how to do something that I have done before. Therefore I keep notes them here, for my bad memory.
+I use a variety of vi(m) commands for my job, so many that I can't always 
+remember how to do something that I have done before. Therefore I keep notes 
+them here, for my bad memory.
 
 ###General command use in VIM
 	
-	<C-*> = Ctrl *
+	###insert mode
+	i insert mode at cursor
+	I insert mode at the beginning of Line
+	a append after the cursor
+	A append at the end ot line 
+	o insert bank line below current line
+	O insert bank line above current line
 
-	###基本操作
-	gg 	  第一行第一个字符处
-	G	  末行第一个字符处
+	###Cursor move
+	h,j,k,l ←, ↓, ↑, →
+	w  jump to the head of next word
+	W  jump to the head of next word which begin with bank
+	e  jump to the end of next word
+	E  jump to the end of next word which begin with bank
+	b  jump to the head of previous word
+	B  jump to the head of previous word which begin with bank
+	0  jump to the first character of current line
+	$  jump to the end of current line
+	^  jump to the first not-white-space character of current line
+	g_ jump to the last not-white-space character of current line
+	gg jump to the first not-while-space character of first line
+	G  jump to the first not-while-space character of last line
+	`. jump the position of last edit
+	'' jump the previous position of cursor
+	H  jump to first line of screen
+	M  jump to the middle line of screen
+	L  jump to the last line of screen
+	%  jump to the match symbol
+	{  paragraph backward
+	}  paragraph backward
+	[  jump to previous 
+	]  jump to next
+	zt move current line to the top of window
+	zz move current line to the center of window
+	zb move current line to the bottom of window
+	ctrl+e  scroll screen backward
+	ctrl+y  scrool screen forward
+	ctrl+u  scroll half screen backward
+	ctrl+d  scroll half screen backward
+	ctrl+f  scrool to next screen
+	ctrl+b  scrool to previous screen
 
-	<C-f> <C-b> 往后(前)翻页 
+	###Edit
+	cw change word
+	C  change to the end of line
+	u  undo
+	~  switch case
+	gu uppercase select characters
+	gU lowercase select characters 
+	>> indent line one column right
+	<< indent line one column left
+	== auto-indent current line
+	ctrl+r redo
 
-	^ $   跳到当前行首(末)端字符处.
-	0 |   跳到当前行第一个字符前.
-	w b   往后(前)移动到下一个单词
-	e     移动到单词末尾
-	u     撤销操作
-	<C-R> 还原被撤消的编辑操作
-	%     跳到匹配的大中小括号{}[]() #if #endif
-	i     在光标前插入
-	I     在当前行第一个非空白符号前插入
-	a     在光标后插入
-	A     在行尾插入
-	o O   在行后(前)插入一行,并进入插入模式
-	dd    删除当前行
-	yy    复制当前行
-	yyp   复制并粘贴当前行
-	yw    复制单词
-	yiw   复制单词
-	<< >> 当前行左(右)缩进
-	n<< n>> 从当前行起n行 左(右)缩进
-	=     格式化选中的代码
-	==    格式化当前行
-	n==   格式化n行(从当前行算起)
-	gg=G  格式化整个文件
+	###Cut, copy and paste
+	dd  delete current line, and put it to clipboard
+	x   delete current character
+	X   delete previous character
+	dw  delete to end of word
+	D   delete to end of line
+	yy  copy current line
+	yw  copy to end of word
+	y$  copy to end of line
+	p   paste after the cursor
+	P   paste befor the cursor
+	"+y copy to system clipboard
+	"+gP  paste from system clipboard
+	[N]yy copy N lines
 
-	gu    uppercase select characters
-	gU    lowercase select characters 
+	###Fold
+	zm increase the foldlevel by one
+	zM close all open folds
+	zr decrease the foldlevel by one
+	zR decrease the foldlevel to zero -- all folds will be open
+	zo opens a fold at the curse
+	zO opens all folds at the curse
+	zc close one fold
+	zC close all folds at the curse
+	zj jump to next fold
+	zk jump to previous fold
 
-	C   修改到行尾,并进入插入模式
-	D   删除到行尾
+	###Search
+	*        search string forward
+	#        search string backward
+	/pattern search for pattern
+	?pattern search backwards for pattern
+	n        repeat search in same direction
+	N        repeat search in opposite direction
+	f        search character forward
+	F        search character backward
 
-	xp	交换两个字符
+	###Save and quit
+	:w  save
+	:wq save and quit
+	:x  save and quit
+	:q  quit, fail to quit if not save the changed
+	:q! force quit
+	ZZ  save and quit
 
-	ZZ	保存退出.(可以替换:wq)
-	:e!	重新载入原始文件
+	###File 
+	use `vim file1 file2 ...` to open multiple files
+	:bn     next buffer
+	:bp     previous buffer 
+	:e path edit file
+	:e      reload current file
+	:r cmd  read the result the command to the cursor of current file
 
-	.   重复上一个编辑操作
+	###simple skills
+	xp   swap two characters
+	gg=G indent the file
+	[N]G jump to Nth line
+	yyp  copy and paste current line
+	yw   yank to the end of word
+	yiw  yank word
+	=    auto-indent selected lines
+	==   auto-indent current lines
+	n==  auto-indent [count] lines (start from current line)
+	gd   jump to the defined position of variable
 
-	J 合并两行
 
-	H (shift+h) 视窗第一行
-	M (shift+m) 视窗中间行
-	L (shift+l) 视窗末行
+	###Other
+	. repeat last change
+	J join [count] lines
 
-	ctrl+e	向上滚屏	
-	ctrl+y	向下滚屏
-	ctrl+u	向下滚半屏
-	ctrl+d	向上滚半屏
-	ctrl+f	向前滚动整屏
-	ctrl+b	向后滚动整屏
-
-	// 查找替换功能
-	f(F) h a
-	  查找当前行当前位置往后(或往前)的第一个h字符后,然后进入插入模式
-	  f : Find, 查找. f往后查找, F往前查找 
-	  h : 要查找的字符
-	  a : append 在字符的后面追加(同时进入插入模式)
-
-	查找后
-	n 下一个
-	N 上一个
-
+	###substitute
+	(use command ":help substitue" for more information)
 	:[range]s/pattern/string/[c,e,g,i]
-	  r 	范围, 
-	  	1,7表示第一到第七行.
-	  	1,$表示第一到最后一行.
-	  	%  表示整篇文章
-	  pattern 被替换的字串
-	  string 替换用的字串
-	  c	comfirm, 询问确认
-	  e	不显示error
-	  g	globe, 不询问,整行替换.
-	  i	ignore, 不区分大小写.
-	例子:
-		:%s/\s\+$//	删除每行后面多余的空格
-		:%s/h14/h12/g 替换整个文档中的h14为h12
-		:1,$s/h14/h12/g 替换整个文档中(第一行到最后一行)的h14为h12
+	  range   1,7 line 1 to 7  1,$ line 1 to last  % all lines
+	  pattern string  be searched
+	  string  string for substitute
+	  c	comfirm
+	  e	not show error
+	  g	global, match all search of current line
+	  i	ignore
+	e.g.
+		:%s/\s\+$//	    delete all spaces between first space to the end of line
+		:%s/h14/h12/g   replace h14 to be h12 for all occurrence in the file
+		:1,$s/h14/h12/g replace h14 to be h12 from first line to the last line
 
-	替换文本中的h14为h12(只有一处)(可以利用n.来找到下一个h14并重复替换操作)
-	/h14[enter]er2
-	或
-	/h14[enter]2lr2
+	###Visual Mode
+	(use command ":help v" for more information)
+	v      start visual mode per character
+	V      start visual mode linewise
+	ctrl+v start visual mode blockwise
 
-	###copy and paste
-	"+y  复制
-	"+gP 粘贴
-
-	[或] 用来移动到所属的 {或}
-	{或} 向前(或后)移动到空白行
-
-	Visual Mode (视图模式)
-	v 进入字符视图选取模式 
-	V 进入行视图选取模式
-	<C-v> 进入列选取模式
-
+	###Text object 
+	(use command ":help objects" for more information)
 	Operator Mapping
 	v|c|d       i|a          {|[|(|"|'|w
 	visual  Inner Object      Region
 	change     An Object      {} [] () 
 	delete
-	例如:
-	  vi{ : 选中大括号内(不包括大括号本身)全部内容
-	  va" : 选中双引号(包括双引号本身)全部内容
+	e.g.
+	  vi{ : select characters between brace
+	  va" : select characters, include double quotes
 	  viw : visual a word
-	  di“ : 光标移动到双引号内,用来删除双引号的全部字串
-	  ci( : 光标移动到小括号内,用来修改小括号的全部字串,可以用来修改函数的全部参数
+	  di“ : delete characters between quotes
+	  ci( : change characters between bracket
 
-	gd 可以跳转到当前光标所在的单词(变量)的局部定义处
+	###Auto completion
+	C-p
+	C-n
+	C-x C-p Word completion, backward
+	C-x C-n Word completion, forward
+	C-x C-l Line completion
+	C-x C-f File name completion
 
-	###命令跳转
-	* zt 当前行至窗口首行
-	* zz 当前行至窗口中间
-	* zb 当前行至窗口末尾
+	###History
+	q: enter history commands, then choose and execute the command
 
-	###折叠
-	* zm increase the foldlevel by one
-	* zM close all open folds
-	* zr decrease the foldlevel by one
-	* zR decrease the foldlevel to zero -- all folds will be open
-	* zo opens a fold at the curse
-	* zO opens all folds at the curse
-	* zc close one fold
-	* zC close all folds at the curse
-	* zj jump to next fold
-	* zk jump to previous fold
+	###Marks
+	(use command ":help mark-motions" for more information)
+	mx     set mark x, x can use a..z characters
+	'x     jump to mark x
+	:marks show all marks
 
-	###多文档跳转
-	* :bp 前一个文档
-	* :bn 后一个文档
+	###Register
+	:reg  view register content
+	"0p   paste from register 0
+	"1p   paste from register 1
 
-	###搜索替换
-	* `:%s/Matirx207/Matrix207/g`, 全文搜索`Matirx207`替换为`Matrix207`
-
-	###自动补齐
-	* C-P, 即Ctrl+P, 自动补齐上个可能字
-	* C-N, 即Ctrl+N, 自动补齐下个可能字
-	* C-x C-p Word completion, backward
-	* C-x C-n Word completion, forward
-	* C-x C-l Line completion
-	* C-x C-f File name completion
-
-
-	###历史命令
-	* q: enter history commands
-	* move by hjkl, type enter to execute the command
-
-	###标签
-	* mx     set mark x, x can use a..z characters
-	* 'x     jump to mark x
-	* :marks show all marks
-
-	###寄存器
-	* 输入:reg 查看寄存器内容
-	* 输入 "寄存器名p 即可粘贴相应的寄存器内容
-
-	###宏操作录制
-	* qq operator q
-	* 100@q
+	###Complex repeats
+	qq operators q   record all operators to q register
+	100@q            repeat the operators 100 times
 	
 	###Editing Files in other places
 	vim scp://[user@]hostname[:port]//FilePath
 	e.g.: vim scp://root@172.16.110.39//root/a.c
+
+	###Help
+	:help symbol
 
 
 ###some skills
@@ -186,15 +210,11 @@ I use a variety of vi(m) commands for my job, so many that I can't always rememb
 
 2. substituttion  
 sample lines:  
-> \+ (http://emacser.com/org-mode.htm)\[Emacs org mode学习笔记\]  
-> \+ (http://www.cnblogs.com/holbrook/archive/2012/04/12/2444992.html#sec-3-5)\[org-mode，最好的文档编辑利器，没有之一\]  
-> \+ (http://emacser.com/org-mode-tricks.htm)\[Org-mode写作的几个快捷方式\]  
-> \+ (http://i.linuxtoy.org/docs/guide/ch32.html)\[组织你的意念：Emacs org mode\]  
+> \+ (http://www.google.com)\[google\]  
+> \+ (http://www.wolframalpha.com/)\[wolfram\]  
 into the lines:  
-> \+ \[Emacs org mode学习笔记\](http://emacser.com/org-mode.htm)  
-> \+ \[org-mode，最好的文档编辑利器，没有之一\](http://www.cnblogs.com/holbrook/archive/2012/04/12/2444992.html#sec-3-5)  
-> \+ \[Org-mode写作的几个快捷方式\](http://emacser.com/org-mode-tricks.htm)  
-> \+ \[组织你的意念：Emacs org mode\](http://i.linuxtoy.org/docs/guide/ch32.html)  
+> \+ \[google\](http://www.google.com)  
+> \+ \[wolfram\](http://www.wolframalpha.com/)  
 Here is the command to do this:  
 `:%s/+ \(.*\)\(\[.*\]\)/+ \2\1/g`  
 
@@ -241,4 +261,4 @@ Here is the command to do this:
 * [VimTip - Vim Tips Wiki](http://vim.wikia.com/wiki/Category:VimTip)
 * [Best Vim Tips](http://vim.wikia.com/wiki/Best_Vim_Tips)
 * [Best of Vim Tips](http://www.rayninfo.co.uk/vimtips.html)
-* [Vi and Vim Editor: 12 Powerful Find and Replace Examples](http://www.thegeekstuff.com/2009/04/vi-vim-editor-search-and-replace-examples/)
+* [12 Powerful Find and Replace Examples](http://www.thegeekstuff.com/2009/04/vi-vim-editor-search-and-replace-examples/)
