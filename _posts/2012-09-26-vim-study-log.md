@@ -204,6 +204,12 @@ them here, for my bad memory.
 	:help symbol
 
 
+###skills for program
+
+1. open file on current cursor, use command `gf`; if the file is not in current 
+	directory, use `:set path+=yourfilepath` to add more dir to the path, use 
+	`:help path` for more info.
+
 ###some skills
 
 1. command mode type `:nohl` cancel high light
