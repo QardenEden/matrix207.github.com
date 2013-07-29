@@ -89,9 +89,9 @@ Link layer
     Media access control(Ethernet/DSL/ISDN/FDDI)
 
 ###3. Protocol Format
-IP - <http://www.ietf.org/rfc/rfc791.txt>, page 11
-TCP - <http://www.ietf.org/rfc/rfc793.txt>, page 15
-UDP - <http://www.ietf.org/rfc/rfc768.txt>, page 1
+IP - <http://www.ietf.org/rfc/rfc791.txt>, page 11  
+TCP - <http://www.ietf.org/rfc/rfc793.txt>, page 15  
+UDP - <http://www.ietf.org/rfc/rfc768.txt>, page 1  
 
 	0                   1                   2                   3   
 	0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 
