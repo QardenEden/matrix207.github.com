@@ -1,0 +1,195 @@
+---
+layout: post
+title: "NetworkStack important structure"
+description: ""
+category: 
+tags: [NetworkStack]
+---
+{% include JB/setup %}
+
+Version: linux-kernel-1.2.13
+
+	File                Struct                        Description
+	-------------------------------------------------------------------
+	path: /include/linux
+	etherdevice.h                                     以太网协议相关函数声明
+	icmp.h                                            ICMP协议结构定议
+	                    icmphdr
+                        icmp_err
+	if.h                                              接口相关结构定议
+	                    ifmap
+                        ifreq
+                        ifconf
+	if_arp.h                                          ARP协议结构定议
+	                    arpreq
+                        arphdr
+	if_ether.h                                        以太网首部及标志位定义
+	                    ethhdr
+                        enet_statistics
+	if_plip.h                                         并行线网络协议
+	                    plip_conf
+	if_slip.h                                         串行线协议
+	igmp.h                                            IGMP协议结构定义
+	                    igmphdr
+                        ip_mc_socklist
+                        ip_mc_list
+	in.h                                              协议号定义
+	                    in_addr
+                        ip_mreq
+                        sockaddr_in
+	inet.h                                            INET域部分函数声明
+	interrupt.h                                       下半部分结构定义
+	                    bh_struct
+	ip.h                                              IP协议结构定义
+	                    timestamp
+                        route
+                        iphdr
+	ip_fw.h                                           防火墙相关结构定义
+	                    ip_fw
+                        ip_fwpkt
+	ipx.h                                             IPX包交换协议结构定义
+	                    sockaddr_ipx
+                        ipx_route_definition
+                        ipx_interface_definition
+                        ipx_config_data
+                        ipx_route_def
+	net.h                                             INET层关键结构定义
+	                    socket
+                        proto_ops
+                        net_proto
+	netdevice.h                                       设备相关结构定义
+	                    de_mc_list
+                        device
+                        packet_type
+	notifier.h                                        事件响应相关结构定义
+	                    notifier_block
+	ppp.h                                             点对点协议结构定义
+	                    ppp_lqp_packet_hdr
+                        ppp_lqp_packet_trailer
+                        ppp_lqp_packet
+                        ppp_ddinfo
+                        ppp
+	route.h                                           路由结构定义
+	                    old_rtentry
+                        rtentry
+	skbuff.h                                          数据包封装结构定义
+	                    sk_buff_head
+                        sk_buff
+	socket.h                                          常数选项定义
+	                    sockaddr
+                        linger
+	sockios.h                                         选项定义
+	tcp.h                                             TCP协议结构定义
+	                    tcphdr
+	timer.h                                           定时器相关结构定义
+	                    timer_struct
+                        timer_list
+	udp.h                                             UDP协议结构定义
+	                    udphdr
+	un.h                                              UNIX域地址结构定义
+	                    sockaddr_un
+
+	path: net/inet
+	ip.h
+	                    ipfraq
+                        ipq 
+	ipx.h
+	                    ipx_address
+                        ipx_packet
+                        ipx_interface
+                        ipx_route
+	protocol.h
+	                    inet_protocol
+	route.h
+	                    rtable
+	snmp.h
+	                    ip_mib
+                        icmp_mib
+                        tcp_mib
+                        udp_mib
+	sock.h
+	                    sock
+                        proto
+
+Structure and memberships
+
+	+----------------------+
+	|struct sock           |
+	+----------------------+
+	|struct sock *next;    |
+	|struct sk_buff_head   |
+	|write_queue;          |
+	|struct proto *prot;   |
+	|struct socket *socket;|
+	+----------------------+
+
+	+--------------------+
+	|struct proto        |
+	+--------------------+
+	|struct sock         |
+	|*sock_array[];      |
+	+--------------------+
+
+	+---------------------------+
+	|struct sk_buff             |
+	+---------------------------+
+	|struct sk_buff	*next;      |
+	|struct sk_buff	*prev;      |
+	|struct sk_buff	*link3;     |
+	|struct sk_buff *mem_addr;  |
+	|struct sock *sk;           |
+	|struct device *dev;        |
+	+---------------------------+
+
+	+----------------------------+
+	|struct device               |
+	+----------------------------+
+	|struct device *next;        |
+	|struct device *slave;       |
+	|struct sk_buff_head buffs[];|
+	+----------------------------+
+
+	+----------------------------------+
+	|struct socket                     |
+	+----------------------------------+
+	|short                type;        |
+	|socket_state         state;       |
+	|long                 flags;       |
+	|struct proto_ops     *ops;        |
+	|void                 *data;       |
+	|struct socket        *conn;       |
+	|struct socket        *iconn;      |
+	|struct socket        *next;       |
+	|struct wait_queue    **wait;      |
+	|struct inode         *inode;      |
+	|struct fasync_struct *fasync_list;|
+	+----------------------------------+
+
+
+	+-----------------------+
+	|struct proto_ops       |
+	+-----------------------+
+	|int	family();       |
+	|int	(*create)();    |
+	|int	(*dup)();       |
+	|int	(*release)();   |
+	|int	(*bind)();      |
+	|int	(*connect)();   |
+	|int	(*socketpair)();|
+	|int	(*accept)();    |
+	|int	(*getname)();   |
+	|int	(*read)();      |
+	|int	(*write)();     |
+	|int	(*select)();    |
+	|int	(*ioctl)();     |
+	|int	(*listen)();    |
+	|int	(*send)();      |
+	|int	(*recv)();      |
+	|int	(*sendto)();    |
+	|int	(*recvfrom)();  |
+	|int	(*shutdown)();  |
+	|int	(*setsockopt)();|
+	|int	(*getsockopt)();|
+	|int	(*fcntl)();     |
+	+-----------------------+
+
