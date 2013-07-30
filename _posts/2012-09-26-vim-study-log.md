@@ -268,3 +268,9 @@ Here is the command to do this:
 * [Best Vim Tips](http://vim.wikia.com/wiki/Best_Vim_Tips)
 * [Best of Vim Tips](http://www.rayninfo.co.uk/vimtips.html)
 * [12 Powerful Find and Replace Examples](http://www.thegeekstuff.com/2009/04/vi-vim-editor-search-and-replace-examples/)
+
+###links
+* [vim author](http://www.moolenaar.net/)
+* [vim fans](http://wiki.hotoo.me/Vim.html)
+* [简明 Vim 练级攻略](http://coolshell.cn/articles/5426.html)
+* [Learn Vim Progressively](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
