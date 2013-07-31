@@ -111,53 +111,45 @@ Version: linux-kernel-1.2.13
 	                    sock
                         proto
 
+	path: include/linux
+	fs.h
+	                    file
+	                    inode
+	                    file_operations
+	                    inode_operations
+
+-----
+
 Structure and memberships
 
-	+----------------------+
-	|struct sock           |
-	+----------------------+
-	|struct sock *next;    |
-	|struct sk_buff_head   |
-	|write_queue;          |
-	|struct proto *prot;   |
-	|struct socket *socket;|
-	+----------------------+
-
-	+--------------------+
-	|struct proto        |
-	+--------------------+
-	|struct sock         |
-	|*sock_array[];      |
-	+--------------------+
-
-	+---------------------------+
-	|struct sk_buff             |
-	+---------------------------+
-	|struct sk_buff	*next;      |
-	|struct sk_buff	*prev;      |
-	|struct sk_buff	*link3;     |
+	+---------------------------+              +------------------------+
+	|struct sk_buff             |              |struct sk_buff_head     |
+	+---------------------------+              +------------------------+
+	|struct sk_buff	*next;      |              |struct sk_buff  *next;  |
+	|struct sk_buff	*prev;      |              |struct sk_buff  *prev;  |
+	|struct sk_buff	*link3;     |              +------------------------+
 	|struct sk_buff *mem_addr;  |
 	|struct sock *sk;           |
 	|struct device *dev;        |
 	+---------------------------+
 
-	+----------------------------+
-	|struct device               |
-	+----------------------------+
-	|struct device *next;        |
-	|struct device *slave;       |
-	|struct sk_buff_head buffs[];|
+	+----------------------------+             +--------------------+ 
+	|struct device               |             |struct proto        |
+	+----------------------------+             +--------------------+
+	|struct device *next;        |             |struct sock         |
+	|struct device *slave;       |             |*sock_array[];      |
+	|struct sk_buff_head buffs[];|             +--------------------+
 	+----------------------------+
 
-	+----------------------------------+
-	|struct socket                     |
-	+----------------------------------+
-	|short                type;        |
-	|socket_state         state;       |
-	|long                 flags;       |
-	|struct proto_ops     *ops;        |
-	|void                 *data;       |
-	|struct socket        *conn;       |
+	+----------------------------------+       +----------------------+
+	|struct socket                     |       |struct sock           |
+	+----------------------------------+       +----------------------+
+	|short                type;        |       |struct sock *next;    |
+	|socket_state         state;       |       |struct sk_buff_head   |
+	|long                 flags;       |       |write_queue;          |
+	|struct proto_ops     *ops;        |       |struct proto *prot;   |
+	|void                 *data;       |       |struct socket *socket;|
+	|struct socket        *conn;       |       +----------------------+
 	|struct socket        *iconn;      |
 	|struct socket        *next;       |
 	|struct wait_queue    **wait;      |
@@ -165,31 +157,30 @@ Structure and memberships
 	|struct fasync_struct *fasync_list;|
 	+----------------------------------+
 
-
-	+-----------------------+
-	|struct proto_ops       |
-	+-----------------------+
-	|int	family();       |
-	|int	(*create)();    |
-	|int	(*dup)();       |
-	|int	(*release)();   |
-	|int	(*bind)();      |
-	|int	(*connect)();   |
-	|int	(*socketpair)();|
-	|int	(*accept)();    |
-	|int	(*getname)();   |
-	|int	(*read)();      |
-	|int	(*write)();     |
-	|int	(*select)();    |
-	|int	(*ioctl)();     |
-	|int	(*listen)();    |
-	|int	(*send)();      |
+	+-----------------------+                  +-----------------------------+
+	|struct proto_ops       |                  |struct file                  |
+	+-----------------------+                  +-----------------------------+
+	|int	family();       |                  |struct file *f_next, *f_prev;|
+	|int	(*create)();    |                  |struct inode *f_inode;       |
+	|int	(*dup)();       |                  |struct file_operations *f_op;|
+	|int	(*release)();   |                  +-----------------------------+
+	|int	(*bind)();      |                  
+	|int	(*connect)();   |                  +-----------------------------+
+	|int	(*socketpair)();|                  |struct file_operations       |
+	|int	(*accept)();    |                  +-----------------------------+
+	|int	(*getname)();   |                  |int (*open) ();              |
+	|int	(*read)();      |                  |int (*read) ();              |
+	|int	(*write)();     |                  |int (*write) ();             |
+	|int	(*select)();    |                  |int (*select) ();            |
+	|int	(*ioctl)();     |                  |int (*release) ();           |
+	|int	(*listen)();    |                  |... ...                      |
+	|int	(*send)();      |                  +-----------------------------+
 	|int	(*recv)();      |
-	|int	(*sendto)();    |
-	|int	(*recvfrom)();  |
-	|int	(*shutdown)();  |
-	|int	(*setsockopt)();|
-	|int	(*getsockopt)();|
-	|int	(*fcntl)();     |
+	|int	(*sendto)();    |                  +------------------------------+
+	|int	(*recvfrom)();  |                  |struct inode                  |
+	|int	(*shutdown)();  |                  +------------------------------+
+	|int	(*setsockopt)();|                  |struct inode *i_next, *i_prev;|
+	|int	(*getsockopt)();|                  |struct inode_operations *i_op;|
+	|int	(*fcntl)();     |                  +------------------------------+
 	+-----------------------+
 
